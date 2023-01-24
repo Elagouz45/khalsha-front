@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشحن البحري</title>
+    <link rel="stylesheet" href="./../assets/css/bootstrap.min.css">
+    <link href="./../assets/css/fontawesome-free-6.2.1-web/css/fontawesome.min.css" rel="stylesheet">
+    <link href="./../assets/css/fontawesome-free-6.2.1-web/css/brands.css" rel="stylesheet">
+    <link href="./../assets/css/fontawesome-free-6.2.1-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../assets/css/index.css">
+</head>
+
+<body>
+    <div class="service-details service-three position-relative">
+        <div class="overlay1 bg-overlay w-100 top-0 position-absolute"></div>
+        <div class="overlay2 bg-overlay w-100 bottom-0 position-absolute"></div>
+        <section class="position-relative header" style="z-index: 3;">
+            <div class="container d-flex justify-content-between  align-items-center  ">
+                <p class="font-bold text-black">
+                    <i class="fa-solid fa-right-long"></i>
+                    الخدمات
+                </p>
+                <p class="font-bold text-black text  d-block"> تعبئة الطلب / الشحن الجوي </p>
+                <p class="font-bold text-black text d-none">خدمات إضافية / الشحن الجوي</p>
+                <p class="font-bold text-black text d-none"> تأكيد الطلب / الشحن الجوي</p>
+                <p class="font-bold text-black text d-none">إرسال الطلب / الشحن الجوي</p>
+                <p class="font-bold text-black text d-none">اختيار العرض / الشحن الجوي</p>
+            </div>
+            <hr class="m-0">
+        </section>
+        <section class="position-relative " style="z-index: 3;">
+            <div class="container">
+                <div class="w-75 mx-auto">
+                    <div class="d-flex justify-content-center mx-auto steps">
+                        <div class="active" style="--i:5">
+                            <span class="position-relative">
+                                <img src="./../assets/images/4.svg" class="d-block">
+                            </span>
+                        </div>
+                        <div style="--i:4">
+                            <span class="position-relative">
+                                <img src="./../assets/images/4.svg" class="d-none">
+                            </span>
+                        </div>
+                        <div style="--i:3">
+                            <span class="position-relative">
+                                <img src="./../assets/images/4.svg" class="d-none">
+                            </span>
+                        </div>
+                        <div style="--i:2">
+                            <span class="position-relative">
+                                <img src="./../assets/images/4.svg" class="d-none">
+                            </span>
+                        </div>
+                        <div style="--i:1">
+                            <span class="position-relative">
+                                <img src="./../assets/images/4.svg" class="d-none">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="step-content fill-application table-responsive  d-block">
+                        <table class="w-100">
+                            <tbody>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">مجال الشحنة</td>
+                                    <td class=" fs-22 text-center text-bold-gray " colspan="2">
+                                        <div class="d-inline-block w-50 px-3">
+                                            <input type="radio" name="type" id="import">
+                                            <label for="import">استيراد</label>
+                                        </div>
+                                        <div class="d-inline-block w-50 px-3">
+                                            <input type="radio" name="type" id="export">
+                                            <label for="export">تصدير</label>
+                                        </div>
+                                    </td>
+
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        <span class="msg-icn">؟</span>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">منافذ الشحنة</td>
+
+                                    <td class=" fs-22 text-center certificate-text text-bold-gray" colspan="2">
+                                        <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                            class="btn text-main-brown font-bold">
+                                           ادخال البيانات المطلوية
+                                        </button>
+                                    </td>
+
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        <span class="msg-icn">؟</span>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">حجم الشحنة</td>
+                                    <td class=" fs-22 text-center text-bold-gray " colspan="2">
+                                        <div class="d-inline-block w-50 px-3">
+                                            <input name="field" type="radio" id="container">
+                                            <label for="container">حاوية</label>
+                                        </div>
+                                        <div class="d-inline-block w-50 px-3">
+                                            <input name="field" type="radio" id="bundled-goods">
+                                            <label for="bundled-goods">بضاعة مجمعة</label>
+                                        </div>
+                                        <div class="text-main-brown font-bold ">تعديل</div>
+                                    </td>
+
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        <span class="msg-icn">؟</span>
+                                    </td>
+                                </tr>
+
+
+                                <tr class="two-input">
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">قيمة الشحنة   </td>
+                                    <td class="  text-center text-bold-gray" colspan="2">
+                                        <input type="number" value="300" class="fs-18">
+                                        <select class="fs-18">
+                                            <option value="" selected>USD </option>
+                                        </select>
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        <span class="msg-icn">؟</span>
+                                    </td>
+                                </tr>
+
+                                <tr >
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">جاهزية الشحنة  </td>
+                                    <td class=" text-center text-bold-gray" colspan="2">
+                                        <select class="fs-18">
+                                            <option value="" selected> في خلال أسبوع</option>
+                                        </select>
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        <span class="msg-icn">؟</span>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="additional-services   no-bg step-content table-responsive d-none">
+                        <table class="w-100">
+                            <tbody>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">خدمة التأمين</td>
+
+                                    <td class=" fs-22 text-center text-bold-gray " colspan="2">
+                                        <div class="d-inline-block w-50 px-3">
+                                            <input type="radio" name="insurance" id="yes">
+                                            <label for="yes">نعم</label>
+                                        </div>
+                                        <div class="d-inline-block w-50 px-3">
+                                            <input type="radio" name="insurance" id="no">
+                                            <label for="no">لا</label>
+                                        </div>
+                                    </td>
+
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        <span class="msg-icn">؟</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">خدمة التخليص الجمركي</td>
+                                    <td class=" fs-22 text-center text-bold-gray " colspan="2">
+                                        <div class="d-inline-block w-50 px-3">
+                                            <input type="radio" name="customs-clearance " id="yes2" class="toggle-fix"
+                                            value="show">
+                                        <label for="yes2">نعم</label>
+                                        </div>
+                                        <div class="d-inline-block w-50 px-3">
+                                            <input type="radio" name="customs-clearance " id="no2" class="toggle-fix">
+                                        <label for="no2">لا</label>
+                                        </div>
+                                    </td>
+
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        <span class="msg-icn">؟</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">المساعدة في استخراج الشهادات
+                                    </td>
+                                    
+                                    <td class=" fs-22 text-center text-bold-gray " colspan="2">
+                                        <div class="d-inline-block w-50 px-3">
+                                            <input type="radio" name="issuance-of-certificates" id="yes2" class="toggle-fix"
+                                            value="show">
+                                        <label for="yes2">نعم</label>
+                                        </div>
+                                        <div class="d-inline-block w-50 px-3">
+                                            <input type="radio" name="issuance-of-certificates" id="no2" class="toggle-fix">
+                                            <label for="no2">لا</label>
+                                        </div>
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        <span class="msg-icn">؟</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">اذكر الشهادات المطلوبة</td>
+                                    <td class=" fs-22 text-center certificate-text text-bold-gray" colspan="2">
+                                        <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                            class="btn text-main-brown font-bold">
+                                            تحديد الشهادات
+                                        </button>
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        <span class="msg-icn">؟</span>
+                                    </td>
+                                </tr>
+
+                                <tr class="other-certificate d-none">
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">
+                                        هل يوجد شهادات آخرى
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                        <input type="text" placeholder="" class="fs-18">
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        <span class="msg-icn">؟</span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="oreder-confirmation step-content table-responsive d-none">
+                        <table class="w-100">
+                            <tbody>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">اسم الشخص المسؤول</td>
+                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
+
+                                        <input type="text" placeholder="عبد الكريم محمد">
+
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        <span class="msg-icn">؟</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">
+                                        رقم الجوال
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                        <input type="text" placeholder="800 XXX XXXX">
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        <span class="msg-icn">؟</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">الإيميل</td>
+                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                        <input type="text" placeholder="Support@khlasha.com">
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        <span class="msg-icn">؟</span>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="send-order step-content d-none">
+                        <div class="card">
+                            <div class="clock rounded-pill">
+                                <img src="./../assets/images/Ellipse 108 (1).png" class="rounded-pill w-100">
+                            </div>
+                            <h3 class="font-bold text-main-blue text-center">تم إرسال الطلب</h3>
+                            <p class="text-center mb-0">تم إرسال طلبك لمقدم الخدمة</p>
+                            <p class="text-center mb-0">
+                                سوف يتم تزويدك بعرض السعر المناسب في أقرب وقت</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="choose-offer step-content d-none">
+                <hr>
+
+                <div class="w-75 mx-auto">
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <p class="bg-main-brown text-white mx-auto ">تصفح شركات مقدمي الخدمات</p>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="position-relative">
+                                <button class="position-absolute btn text-white bg-main-blue ">شركة النقل
+                                    البحري
+                                </button>
+                                <img src="./../assets/images/Trella 1.png" width="100%">
+                                <div class="d-flex justify-content-around">
+
+                                    <p class="text-center">
+                                        <span class="text-bold-gray d-block">متوسط التقييم</span>
+                                        <span class="d-block">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                        </span>
+                                    </p>
+
+                                    <p class="text-center">
+                                        <span class="d-block text-bold-gray">متوسط الأسعار</span>
+                                        <span class="d-block text-main-blue">2000 - 2300 ريال</span>
+                                    </p>
+
+                                </div>
+                                <button class="position-absolute text-white btn">تصفح الآراء</button>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="position-relative">
+                                <button class="position-absolute btn text-white bg-main-blue ">شركة النقل
+                                    البحري
+                                </button>
+                                <img src="./../assets/images/Trella 1.png" width="100%">
+                                <div class="d-flex justify-content-around">
+
+                                    <p class="text-center">
+                                        <span class="text-bold-gray d-block">متوسط التقييم</span>
+                                        <span class="d-block">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                        </span>
+                                    </p>
+
+                                    <p class="text-center">
+                                        <span class="d-block text-bold-gray">متوسط الأسعار</span>
+                                        <span class="d-block text-main-blue">2000 - 2300 ريال</span>
+                                    </p>
+
+                                </div>
+                                <button class="position-absolute btn text-white ">تصفح الآراء</button>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="position-relative">
+                                <button class="position-absolute btn text-white bg-main-blue ">شركة النقل
+                                    البحري
+                                </button>
+                                <img src="./../assets/images/Trella 1.png" width="100%">
+                                <div class="d-flex justify-content-around">
+
+                                    <p class="text-center">
+                                        <span class="text-bold-gray d-block">متوسط التقييم</span>
+                                        <span class="d-block">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                        </span>
+                                    </p>
+
+                                    <p class="text-center">
+                                        <span class="d-block text-bold-gray">متوسط الأسعار</span>
+                                        <span class="d-block text-main-blue">2000 - 2300 ريال</span>
+                                    </p>
+
+                                </div>
+                                <button class="position-absolute text-white btn">تصفح الآراء</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="position-relative">
+                                <button class="position-absolute btn text-white bg-main-blue ">شركة النقل
+                                    البحري
+                                </button>
+                                <img src="./../assets/images/Trella 1.png" width="100%">
+                                <div class="d-flex justify-content-around">
+
+                                    <p class="text-center">
+                                        <span class="text-bold-gray d-block">متوسط التقييم</span>
+                                        <span class="d-block">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                        </span>
+                                    </p>
+
+                                    <p class="text-center">
+                                        <span class="d-block text-bold-gray">متوسط الأسعار</span>
+                                        <span class="d-block text-main-blue">2000 - 2300 ريال</span>
+                                    </p>
+
+                                </div>
+                                <button class="position-absolute btn text-white ">تصفح الآراء</button>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="position-relative">
+                                <button class="position-absolute btn text-white bg-main-blue ">شركة النقل
+                                    البحري
+                                </button>
+                                <img src="./../assets/images/Trella 1.png" width="100%">
+                                <div class="d-flex justify-content-around">
+
+                                    <p class="text-center">
+                                        <span class="text-bold-gray d-block">متوسط التقييم</span>
+                                        <span class="d-block">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                        </span>
+                                    </p>
+
+                                    <p class="text-center">
+                                        <span class="d-block text-bold-gray">متوسط الأسعار</span>
+                                        <span class="d-block text-main-blue">2000 - 2300 ريال</span>
+                                    </p>
+
+                                </div>
+                                <button class="position-absolute text-white btn">تصفح الآراء</button>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-6">
+                            <div class="position-relative">
+                                <button class="position-absolute btn text-white bg-main-blue ">شركة النقل
+                                    البحري
+                                </button>
+                                <img src="./../assets/images/Trella 1.png" width="100%">
+                                <div class="d-flex justify-content-around">
+
+                                    <p class="text-center">
+                                        <span class="text-bold-gray d-block">متوسط التقييم</span>
+                                        <span class="d-block">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                            <img src="../assets/images/Star 10.png" alt="">
+                                        </span>
+                                    </p>
+                                    <p class="text-center">
+                                        <span class="d-block text-bold-gray">متوسط الأسعار</span>
+                                        <span class="d-block text-main-blue">2000 - 2300 ريال</span>
+                                    </p>
+                                </div>
+                                <button class="position-absolute btn text-white ">تصفح الآراء</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="w-75 mx-auto">
+                    <div class="d-flex justify-content-between buttons">
+                        <button class="next btn text-bold-gray font-bold">
+                            <i class="fa-solid fa-right-long"></i>
+                            التالي
+                        </button>
+                        <button class="back btn text-bold-gray font-bold">الرجوع
+                            <i class="fa-solid fa-left-long"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- modal -->
+
+        <div class="modal fade certifications" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 rounded-0 text-bold-gray">
+                    <div class="modal-header position-relative border-0 ">
+                        <button type="button"
+                            class="btn-close opacity-100 position-absolute top-0 rounded-0 start-0 bg-main-brown m-0 text-white "
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center font-bold">حدد الشهادات المطلوبة</p>
+                        <div class="row fs-14">
+                            <div class="col-sm-6">
+                                <input type="checkbox">
+                                <label>شهادة سابر</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="checkbox">
+                                <label>شهادة المنشأ</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="checkbox">
+                                <label>شهادة الغذاء والدواء</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="checkbox">
+                                <label>بوليصة الشحن</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="checkbox">
+                                <label>شهادة المطابقة السعودية</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="checkbox">
+                                <label>شهادة سابر</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="checkbox">
+                                <label>شهادة المطابقة الخارجية</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="checkbox">
+                                <label>شهادة المنشأ</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0 position-relative m-0">
+                        <button data-bs-dismiss="modal" aria-label="Close"
+                            class="btn fs-22 text-white position-absolute confirm">تاكيد</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./../assets/js/jquery-3.6.3.min.js"></script>
+    <script src="./../assets/js/bootstrap.min.js"></script>
+    <script src="./../assets/js/index.js"></script>
+
+    <script>
+        let next = document.querySelector('.buttons .next');
+        let back = document.querySelector('.buttons .back');
+
+
+        let stepsLength = document.querySelectorAll('.steps div').length;
+        let stepContents = document.querySelectorAll('.step-content');
+
+
+        next.onclick = function () {
+            let stepsActive = Array.from(document.querySelectorAll('.steps div.active'));
+            let lastActive = stepsActive[stepsActive.length - 1]
+            let lastStepContentActive = document.querySelector('.step-content.d-block')
+            let lastHeaderTextActive = document.querySelector('.header .text.d-block')
+
+            if ((stepsActive.length - 1) < (stepsLength - 1)) {
+                lastActive.nextElementSibling.classList.add('active')
+                lastActive.children[0].children[0].classList.add('d-none')
+                lastActive.children[0].children[0].classList.remove('d-block')
+                lastActive.nextElementSibling.children[0].children[0].classList.remove('d-none')
+                lastActive.nextElementSibling.children[0].children[0].classList.add('d-block')
+                stepsActive = Array.from(document.querySelectorAll('.steps div.active'));
+                stepContents.forEach(ele => {
+                    ele.classList.add('d-none')
+                    ele.classList.remove('d-block')
+                })
+
+                stepContents[stepsActive.length - 1].classList.add('d-block')
+                stepContents[stepsActive.length - 1].classList.remove('d-none')
+
+                lastHeaderTextActive.nextElementSibling.classList.remove('d-none')
+                lastHeaderTextActive.nextElementSibling.classList.add('d-block')
+                lastHeaderTextActive.classList.remove('d-block')
+                lastHeaderTextActive.classList.add('d-none')
+            }
+
+
+        }
+
+        back.onclick = function () {
+            let stepsActive = Array.from(document.querySelectorAll('.steps div.active'));
+            let lastActive = stepsActive[stepsActive.length - 1]
+            let lastStepContentActive = document.querySelector('.step-content.d-block')
+            let lastHeaderTextActive = document.querySelector('.header .text.d-block')
+
+            if ((stepsActive.length - 1) > 0) {
+                lastActive.classList.remove('active');
+
+                lastActive.children[0].children[0].classList.add('d-none')
+                lastActive.children[0].children[0].classList.remove('d-block')
+                lastActive.previousElementSibling.children[0].children[0].classList.remove('d-none')
+                lastActive.previousElementSibling.children[0].children[0].classList.add('d-block')
+
+                stepsActive = Array.from(document.querySelectorAll('.steps div.active'));
+                stepContents.forEach(ele => {
+                    ele.classList.add('d-none')
+                    ele.classList.remove('d-block')
+                })
+
+                stepContents[stepsActive.length - 1].classList.add('d-block')
+                stepContents[stepsActive.length - 1].classList.remove('d-none')
+
+                lastHeaderTextActive.previousElementSibling.classList.remove('d-none')
+                lastHeaderTextActive.previousElementSibling.classList.add('d-block')
+                lastHeaderTextActive.classList.remove('d-block')
+                lastHeaderTextActive.classList.add('d-none')
+            }
+        }
+
+
+        document.querySelector('.certifications .confirm').addEventListener('click', () => {
+            document.querySelector('.other-certificate').classList.remove('d-none')
+            document.querySelector('.certificate-text button').classList.remove('text-main-brown')
+            document.querySelector('.certificate-text button').classList.add('text-main-blue')
+            document.querySelector('.certificate-text button').innerHTML = 'تعديل الشهادات المختارة'
+        })
+
+        function  calcPositionOfSpan(){
+        let twoInputParent = document.querySelector(".service-details.service-three .two-input td:nth-child(2)").clientWidth
+        let inputWidth = (document.querySelector(".service-details.service-three .two-input td:nth-child(2) input").clientWidth)*2
+        document.querySelector(".service-details.service-three  .two-input  input+span").style.right=((twoInputParent - inputWidth)/2)-10+'px'
+
+        }
+        calcPositionOfSpan()
+        window.addEventListener('resize', () => {
+            calcPositionOfSpan()
+        })
+    </script>
+
+</body>
+
+</html>

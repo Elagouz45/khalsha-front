@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حسابي</title>
+    <link rel="stylesheet" href="./../../assets/css/bootstrap.min.css">
+    <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/fontawesome.min.css" rel="stylesheet">
+    <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/brands.css" rel="stylesheet">
+    <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../../assets/css/index.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./../../assets/images/Frame.svg">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">طريقة الإستخدام</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">الخدمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">التسجيل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">الأسئلة الشائعة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="account-details position-relative">
+
+        <div class="overlay1 bg-overlay top-0 w-100 position-absolute"></div>
+        <div class="overlay2 bg-overlay  bottom-0 w-100 position-absolute"></div>
+
+        <section class="position-relative header" style="z-index: 3;">
+            <div class="container d-flex justify-content-between  align-items-center  ">
+                <p class="font-bold text-black">
+                    <i class="fa-regular fa-right-long"></i>
+                    طلب رقم #1465
+                </p>
+                <p class="font-bold text-black">/ شركة الرياض</p>
+            </div>
+            <hr class="m-0">
+        </section>
+
+        <section class="position-relative steper " style="z-index: 3;">
+
+            <div class="container ">
+
+                <div class="steps m-auto  d-flex justify-content-center align-items-center overflow-auto">
+                    <span data-target="order-describtion"
+                        class="active text-bold-gray text-center text-nowrap font-bold">وصف الطلب</span>
+                    <span></span>
+                    <span data-target="order-status" class="text-bold-gray text-center text-nowrap font-bold"
+                        onclick="changeOrderStatus()">حالة الطلب</span>
+                    <span></span>
+                    <span data-target="bill" class="text-bold-gray text-center text-nowrap font-bold">الفاتورة</span>
+                </div>
+
+                <div class="content order-describtion d-block">
+                    <div class="order-informations">
+
+                        <button class="btn text-main-brown d-block mx-auto border-gray">معلومات الطلب</button>
+                        <div class="d-flex justify-content-center w-75 m-auto">
+                            <div class="right w-50">
+                                <p class="d-flex justify-content-evenly text-bold-gray ">
+                                    <span class=" fs-18 text-nowrap font-bold w-50">عنوان الطلب</span>
+                                    <span class=" fs-18 text-nowrap w-50">نقل أخشاب</span>
+                                </p>
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50"> منفذ الشحنة</span>
+                                    <span class=" fs-18 text-nowrap w-50">ميناء جدة </span>
+                                </p>
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50">نوع الشحنة</span>
+                                    <span class=" fs-18 text-nowrap w-50">استيراد</span>
+                                </p>
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50"> هل يوجد بند جمركي</span>
+                                    <span class=" fs-18 text-nowrap w-50"> نعم</span>
+                                </p>
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50"> اجمالي الفاتورة</span>
+                                    <span class=" fs-18 text-nowrap w-50"> 2500</span>
+                                </p>
+                            </div>
+                            <div class="center"></div>
+                            <div class="left w-50">
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50"> توصيل إلي</span>
+                                    <span class=" fs-18 text-nowrap w-50">الرياض </span>
+                                </p>
+
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50">مجال الشحنة </span>
+                                    <span class=" fs-18 text-nowrap w-50">شخصي </span>
+                                </p>
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50">نوع الشحن </span>
+                                    <span class=" fs-18 text-nowrap w-50">طرد </span>
+                                </p>
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50">رقم البند الجمركي </span>
+                                    <span class=" fs-18 text-nowrap w-50">2345432 </span>
+                                </p>
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50">العملة </span>
+                                    <span class=" fs-18 text-nowrap w-50">ريال سعودي </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <button class="btn text-main-brown d-block mx-auto border-gray"> مواصفات الطلب</button>
+                        <div class="d-flex justify-content-center w-75 m-auto">
+                            <div class="right w-50">
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50">نوع البضاعة </span>
+                                    <span class=" fs-18 text-nowrap w-50"> أخشاب</span>
+                                </p>
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50">إجمالي الحجم </span>
+                                    <span class=" fs-18 text-nowrap w-50">22 متر مربع</span>
+                                </p>
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50"> الكمية</span>
+                                    <span class=" fs-18 text-nowrap w-50"> 33 عدد</span>
+                                </p>
+                            </div>
+                            <div class="center"></div>
+                            <div class="left w-50">
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50">نوع الطرد</span>
+                                    <span class=" fs-18 text-nowrap w-50">صندوق خشبي </span>
+                                </p>
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50">إجمالي الوزن</span>
+                                    <span class=" fs-18 text-nowrap w-50">50 كيلوجرام </span>
+                                </p>
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50">الحالة</span>
+                                    <span class=" fs-18 text-nowrap w-50"> إنتظار</span>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <button class="btn text-main-brown d-block mx-auto border-gray">خدمات إضافية </button>
+                        <div class="d-flex justify-content-center w-75 m-auto">
+                            <div class="right w-50">
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50">هل تريد التخزين</span>
+                                    <span class=" fs-18 text-nowrap w-50"> نعم</span>
+                                </p>
+
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50">خدمة الفك</span>
+                                    <span class=" fs-18 text-nowrap w-50">نعم </span>
+                                </p>
+
+
+
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50">خدمة التركيب</span>
+                                    <span class=" fs-18 text-nowrap w-50">نعم </span>
+                                </p>
+
+                            </div>
+                            <div class="center"></div>
+                            <div class="left w-50">
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50"> عدد أيام التخزين</span>
+                                    <span class=" fs-18 text-nowrap w-50">44 يوم </span>
+                                </p>
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50">خدمة التغليف</span>
+                                    <span class=" fs-18 text-nowrap w-50">لا </span>
+                                </p>
+                                <p class="d-flex justify-content-evenly text-bold-gray">
+                                    <span class=" fs-18 text-nowrap font-bold w-50">تخليص جمركي</span>
+                                    <span class=" fs-18 text-nowrap w-50">لا </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="w-75 m-auto">
+                            <button class="btn d-block back fs-18 me-auto font-bold text-bold-gray"
+                                onclick="navigation('order-status')">
+                                حالة الطلب
+                                <i class="fa-solid fs-5 fa-left-long"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="content order-status d-none">
+                    <div>
+                        <button class="btn text-main-brown d-block mx-auto border-gray"> حالة الطلب</button>
+                        <div class="w-85 mx-auto overflow-auto  position-relative ">
+
+                            <a href="#" class="preSlide top-50 position-absolute ">&#60;</a>
+                            <div class="slideouter  overflow-x-auto" dir="ltr">
+                                <div class="slideinner  position-relative  srcl">
+
+                                    <div style="--i:0" class="circle text-center position-absolute top-0">
+                                        <span class="d-inline-block text-center text-white">Y</span>
+                                        <p class="text-bold-gray text-nowrap font-bold">استلام الأوراق</p>
+                                    </div>
+
+                                    <div style="--i:1" class="circle text-center position-absolute bottom-0">
+                                        <span class="d-inline-block text-center text-white">X</span>
+                                        <p class="text-bold-gray text-nowrap font-bold"> استلام التفويض</p>
+                                    </div>
+
+                                    <div style="--i:2" class="circle text-center position-absolute top-0">
+                                        <span class="d-inline-block text-center text-white">Y</span>
+                                        <p class="text-bold-gray text-nowrap font-bold">التدقيق في الأوراق </p>
+                                    </div>
+
+                                    <div style="--i:3" class="circle text-center position-absolute bottom-0">
+                                        <span class="d-inline-block text-center text-white">X</span>
+                                        <p class="text-bold-gray text-nowrap font-bold"> وصول الشحنة</p>
+                                    </div>
+
+                                    <div style="--i:4" class="circle text-center position-absolute top-0">
+                                        <span class="d-inline-block text-center text-white">X</span>
+                                        <p class="text-bold-gray text-nowrap font-bold">تحضير الحاويات </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" class="nextSlide top-50 position-absolute ">&#62;</a>
+
+                        </div>
+
+                        <div class="m-auto  text-center current-status">
+                            <p class="text-bold-gray">الحالة الحالية</p>
+                            <h5 class="text-main-brown position-relative font-bold">حالة استلام التفويض</h5>
+                            <div class="form w-50 mx-auto card position-relative">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="font-bold mb-0 text-bold-gray">المرحلة الحالية تمت</p>
+                                    <button class="text-white confirm btn">تأكيد</button>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="font-bold mb-0 text-bold-gray">ارفاق ملفــــات </p>
+                                    <input type="file" multiple hidden id="files">
+                                    <label for="files">
+                                        <span class=" upload btn">
+                                            تحميل
+                                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <input type="text" class="form-control text-center" placeholder="ملاحظــات">
+                                <button class="btn transition fs-18 position-absolute text-white  ">الإنتقال للمرحلة
+                                    التالية</button>
+                            </div>
+                        </div>
+                        <div class="w-75 m-auto buttons justify-content-between d-flex">
+                            <button class="btn d-block back fs-18 text-bold-gray font-bold"
+                                onclick="navigation('order-describtion')">
+                                <i class="fa-solid fa-right-long"></i>
+                                وصف الطلب</button>
+                            <button class="btn d-block back fs-18 text-bold-gray font-bold"
+                                onclick="navigation('bill')">
+                                الفاتورة
+                                <i class="fa-solid fa-left-long"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content bill d-none">
+                    <div>
+                        <button class="btn first text-main-brown d-block mx-auto border-gray"> الفاتورة </button>
+                        <div class="w-50 m-auto position-relative">
+
+                            <p class="font-bold text-bold-gray  bill-download" onclick="downloadPill()">
+                                <i class="fa-solid fa-circle-arrow-down"></i>
+                                تحميل الفاتورة
+                            </p>
+
+                            <div class="bill-paper position-relative bg-white">
+                                <h2 class="font-bold text-center position-relative text-main-brown">فاتورة طلب رقم #1465
+                                </h2>
+                                <div class="d-flex" style="margin-top: 48px;">
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">المخلص الجمركي</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">شركة النبهان</span>
+                                </div>
+                                <div class="d-flex">
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">التخليص الجمركي</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                                </div>
+                                <div class="d-flex">
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">العـــرض</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                                </div>
+                                <div class="d-flex">
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">الباخــرة</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                                </div>
+                                <div class="d-flex">
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">رقم البوليصة</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                                </div>
+                                <div class="d-flex">
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">الوزن</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                                </div>
+                                <div class="d-flex">
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">عدد الحاويات</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                                </div>
+                                <div class="d-flex">
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">رقم بيان
+                                        الإستيراد</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                                </div>
+                                <div class="d-flex">
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">تاريخ بيان
+                                        الإستيراد</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                                </div>
+
+                                <span class="w-50 me-auto d-block  text-main-brown
+                                 font-bold text-center" style="margin-bottom: 14px;">إجمالي الفاتورة</span>
+                                <div class="w-50 me-auto">
+                                    <span class=" d-block  m-auto fs-18
+                                 font-bold text-center total-bill ">2100 ريال </span>
+                                </div>
+                            </div>
+
+                            <div class="m-auto  text-center current-status">
+
+                                <div class="form rounded-2 mx-auto card position-relative">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="font-bold mb-0 text-nowrap text-bold-gray">الإجمالي بدون الضريبة
+                                            المضافة </p>
+                                        <input class="form-control fs-18">
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="font-bold mb-0 text-nowrap text-bold-gray">إجمالي الضريبة المضافة </p>
+                                        <input class="form-control fs-18">
+                                    </div>
+
+                                    <div class="d-flex justify-content-between position-relative align-items-center">
+                                        <p class="font-bold mb-0 text-nowrap text-bold-gray">الإجمالي</p>
+                                        <input class="form-control fs-18" value="1800">
+                                        <div class="position-absolute select">
+                                            <select class="fs-14">
+                                                <option value="1" selected>ريال</option>
+                                                <option value="2">دولار</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <input type="text" class="form-control fs-18 notes text-center" placeholder="ملاحظــات">
+                                    <button class="btn fs-18 transition position-absolute text-white  "> ارسال الفاتورة
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="w-75 mx-auto button-back" style="margin-top: 147px;">
+                            <button class="btn d-block back fs-18 text-bold-gray font-bold"
+                                onclick="navigation('order-status');changeOrderStatus()">
+                                <i class="fa-solid fa-right-long"></i>
+                                حالة الطلب</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 d-none d-xl-block "></div>
+                <div class="col-xl-9 ">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 mb-3">
+                            <div class="right-side">
+                                <div class="item mb-3">
+                                    <img src="./../../assets/images/home/footer-logo.svg">
+                                </div>
+                                <p class="fs-14">
+                                    في خلصها, لا نملك شركات مباشرة ولكن نساعدك في البحث و الحصول على الخدمة المناسبة او
+                                    التسويق
+                                    لشركتك بالشكل المناسب . إذا كنت تبحث عن خدمة النقل البري او البحري او الجوي أو خدمة
+                                    المستودعات و
+                                    المختبرات أو التخليص الجمركي, منصة خلصها توفر لك خيارات متعددة ومناسبة لك ونضمن
+                                    لك تجربة ممتعة.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-3">
+                            <ul class="list-none">
+                                <li class="header">
+                                    عن خلصها
+                                </li>
+                                <li>
+                                    من نحن
+                                </li>
+                                <li>
+                                    طريقة الاستخدام
+                                </li>
+                                <li>
+                                    التسجيل
+                                </li>
+                                <li>
+                                    الأسئلة الشائعة
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-3">
+                            <ul class="list-none">
+                                <li class="header">
+                                    خدماتنا
+                                </li>
+                                <li>
+                                    التخليص الجمركي
+                                </li>
+                                <li>
+                                    خدمات الشحن
+                                </li>
+                                <li>
+                                    المخازن والمستودعات
+                                </li>
+                                <li>
+                                    المختبرات والمقاييس
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-3">
+                            <ul class="list-none ps-0">
+                                <li class="header">
+                                    تواصل معنا
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <div class="brand-icon">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </div>
+                                    <div class="brand-icon">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+                                    <div class="brand-icon">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </div>
+                                    <div class="brand-icon">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-brand d-flex justify-content-between">
+                                        <div class="content d-flex flex-column">
+                                            <span class="text-start">GET IN ON</span>
+                                            <img src="./../../assets/images/home/google%20play.svg">
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-google-play"></i>
+                                        </div>
+                                    </div>
+                                </li>
+    
+                                <li>
+                                    <div class="item-brand d-flex justify-content-between">
+                                        <div class="content d-flex flex-column">
+                                            <span class="text-start">Download on the</span>
+                                            <img src="./../../assets/images/home/apple.svg">
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-apple"></i>
+                                        </div>
+                                    </div>
+                                </li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-1 d-none d-xl-block "></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>جميع الحقوق محفوظة لــ خلصها 2021 تم تطويره بواسطة النظم المعتمدة.</span>
+        </div>
+    </footer>
+    <script src="./../../assets/js/jquery-3.6.3.min.js"></script>
+    <script src="./../../assets/js/bootstrap.min.js"></script>
+    <script src="./../../assets/js/index.js"></script>
+    <script src="./../../assets/js/html2canvas.js"></script>
+    <script>
+        function changeOrderStatus() {
+
+            let order_status = [{
+                name: 'استلام الورق',
+                status: 'done'
+            }, {
+                name: 'استلام التفويض',
+                status: 'inproccess'
+            }, {
+                name: 'التدقيق في الاوراق',
+                status: 'none'
+            }, {
+                name: 'وصول الشحنة',
+                status: 'none'
+            }, {
+                name: 'تحضير الحاويات',
+                status: 'none'
+            }]
+
+            let y = Array.from(document.querySelectorAll('.slideinner .circle'))
+            y.forEach((ele, index) => {
+                ele.classList.add(order_status[index].status);
+            });
+
+        }
+
+        function downloadPill() {
+            $('.bill-paper h2').addClass('print')
+            let ele = $(".bill-paper");
+            html2canvas(ele, {
+                onrendered: function (canvas) {
+                    var a = document.createElement('a');
+                    a.href = canvas.toDataURL()
+                    a.download = 'الفاتورة.jpg';
+                    a.click();
+                    $('.bill-paper h2').removeClass('print')
+                }
+            })
+
+        }
+
+        function navigation(item1) {
+            console.log(item1)
+            var linksList = Array.from(document.querySelectorAll('.account-details .steper .steps span:nth-child(odd)'));
+            var contentList = Array.from(document.querySelectorAll('.account-details .steper .content'));
+            linksList.forEach(ele => {
+                if (ele.getAttribute('data-target') == item1) {
+                    ele.classList.add('active');
+                    console.log(ele)
+                } else {
+                    ele.classList.remove('active');
+                }
+            })
+
+            contentList.forEach((content) => {
+                if (content.classList.contains(item1)) {
+                    content.classList.add('d-block');
+                    content.classList.remove('d-none');
+                } else {
+                    content.classList.add('d-none');
+                    content.classList.remove('d-block');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

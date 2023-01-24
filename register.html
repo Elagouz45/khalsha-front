@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="assets/css/fontawesome-free-6.2.1-web/css/fontawesome.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome-free-6.2.1-web/css/brands.css" rel="stylesheet">
+    <link href="assets/css/fontawesome-free-6.2.1-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/Frame.svg">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">طريقة الإستخدام</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">الخدمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">التسجيل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">الأسئلة الشائعة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="register">
+        <section class="position-relative">
+            <div class="overlay position-absolute bg-overlay"></div>
+            <div class="position-relative container form" style="z-index: 2;">
+                <div class="row">
+                    <div class="col-lg-6  col-md-7">
+                        <div class="card text-center">
+
+                            <div class="buttons bg-main-blue ">
+                                <button class="btn  toggle-active-btn font-bold active">مستورد / مصدر</button>
+                                <button class="btn  toggle-active-btn font-bold "> مقدم خدمات لوجيستية</button>
+                            </div>
+
+                            <h2 class="font-bold ">
+                                سجل دخولك
+                            </h2>
+                            <p>
+                                <span class="font-bold fs-16">هل سجلت سابقاً ؟</span>
+                                <span class="fs-18">دخول</span>
+                            </p>
+                            <hr>
+                            <form class="postion-relative">
+
+                                <div class="input-group">
+                                    <label class="font-bold">الاسم</label>
+                                    <input type="text ">
+                                </div>
+
+
+                                <div class="input-group">
+                                    <label class="font-bold fs-18">البريد الإلكتروني</label>
+                                    <input type="email" class="fs-18">
+                                </div>
+
+                                <div class="input-group">
+                                    <label class="font-bold fs-18">الرقم السري</label>
+                                    <input type="password" class="fs-18">
+                                    <span class="position-absolute">
+                                        <img src="./assets/images/Component 74.png">
+                                    </span>
+
+                                </div>
+
+                                <div class="input-group">
+                                    <label class="font-bold fs-18">السجل التجاري</label>
+                                    <input type="file" class="fs-18" hidden id="file">
+                                </div>
+                                <label for="file" class="w-100">
+                                    <div class="position-relative">
+                                        في حال كنت شركة او مؤسسة
+                                        <span class="position-absolute">
+                                            <img src="./assets/images/Group 2759.png">
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <button class="btn font-bold">
+                                    تسجيـل
+                                </button>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5 d-flex align-items-center justify-content-center ">
+                        <div class="text text-center">
+                            <div class="img bg-main-blue p-3">
+                                <img src="assets/images/persons.svg" width="100%" height="100%">
+                            </div>
+
+                            <p class="font-bold">أنت على بعد 30 ثانية من أن تكون فردًا من عائلتنا!</p>
+                            <button class="btn font-bold login" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">تسجيل الدخول</button>
+
+
+                            <div class="buttons position-relative   ">
+                                <button class="btn position-absolute text-white fs-18   ">استمر مع فيسبوك</button>
+                                <button class="btn position-absolute text-white fs-18   ">استمر مع جوجل</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                        <h5 class="modal-title font-bold text-center text-main-blue" id="staticBackdropLabel">سجل دخولك
+                        </h5>
+                        <button type="button" class="btn-close position-absolute text-white " data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-6 mb-sm-0 mb-3">
+                                <label class="font-bold fs-14">البريد الإلكتروني</label>
+                                <input type="email" class="fs-14">
+                            </div>
+                            <div class="col-sm-6 mb-sm-0 mb-3 position-relative">
+                                <label class="font-bold  fs-14">الرقم السري</label>
+                                <input type="password" class="fs-14">
+                                <span class="position-absolute icon">
+                                    <img src="./assets/images/Component 74.png">
+                                </span>
+                            </div>
+
+                            <button class="d-block btn font-bold fs-14  login">تسجيل الدخول</button>
+
+                            <div class="buttons justify-content-center d-flex  w-100 ">
+                                <button class="btn  text fs-14  ">استمر مع فيسبوك</button>
+                                <button class="btn  text fs-14 ">استمر مع جوجل</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 d-none d-xl-block "></div>
+                <div class="col-xl-9 ">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 mb-3">
+                            <div class="right-side">
+                                <div class="item mb-3">
+                                    <img src="assets/images/home/footer-logo.svg">
+                                </div>
+                                <p class="fs-14">
+                                    في خلصها, لا نملك شركات مباشرة ولكن نساعدك في البحث و الحصول على الخدمة المناسبة او
+                                    التسويق
+                                    لشركتك بالشكل المناسب . إذا كنت تبحث عن خدمة النقل البري او البحري او الجوي أو خدمة
+                                    المستودعات و
+                                    المختبرات أو التخليص الجمركي, منصة خلصها توفر لك خيارات متعددة ومناسبة لك ونضمن
+                                    لك تجربة ممتعة.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-3">
+                            <ul class="list-none">
+                                <li class="header fs-18">
+                                    عن خلصها
+                                </li>
+                                <li class="fs-14">
+                                    من نحن
+                                </li>
+                                <li class="fs-14">
+                                    طريقة الاستخدام
+                                </li>
+                                <li class="fs-14">
+                                    التسجيل
+                                </li>
+                                <li class="fs-14">
+                                    الأسئلة الشائعة
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-3">
+                            <ul class="list-none">
+                                <li class="header fs-18">
+                                    خدماتنا
+                                </li>
+                                <li class="fs-14">
+                                    التخليص الجمركي
+                                </li>
+                                <li class="fs-14">
+                                    خدمات الشحن
+                                </li>
+                                <li class="fs-14">
+                                    المخازن والمستودعات
+                                </li>
+                                <li class="fs-14">
+                                    المختبرات والمقاييس
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-3">
+                            <ul class="list-none ps-0">
+                                <li class="header fs-18">
+                                    تواصل معنا
+                                </li>
+                                <li class="d-flex justify-content-between fs-14">
+                                    <div class="brand-icon">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </div>
+                                    <div class="brand-icon">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+                                    <div class="brand-icon">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </div>
+                                    <div class="brand-icon">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </li>
+                                <li class="fs-14">
+                                    <div class="item-brand d-flex justify-content-between">
+                                        <div class="content d-flex flex-column">
+                                            <span class="text-start">GET IN ON</span>
+                                            <img src="assets/images/home/google%20play.svg">
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-google-play"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="fs-14">
+                                    <div class="item-brand d-flex justify-content-between">
+                                        <div class="content d-flex flex-column">
+                                            <span class="text-start">Download on the</span>
+                                            <img src="assets/images/home/apple.svg">
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-apple"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-1 d-none d-xl-block "></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>جميع الحقوق محفوظة لــ خلصها 2021 تم تطويره بواسطة النظم المعتمدة.</span>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
