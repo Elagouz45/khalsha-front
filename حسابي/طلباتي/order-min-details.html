@@ -209,39 +209,42 @@
                         <div class="text-center">
                             <div class="vr"></div>
                         </div>
-                        <div class="w-50 mx-auto card-bill position-relative  ">
+                        <form action="">
+                            <div class="w-50 mx-auto card-bill position-relative  ">
 
-                            <div class="d-flex">
-                                <div class="w-50 fs-18 font-bold text-center">اسم المخلص</div>
-                                <input class="w-50 fs-18 font-bold text-center bg-transparent"
-                                    placeholder="شركة النبهان">
+                                <div class="d-flex">
+                                    <div class="w-50 fs-18 font-bold text-center">اسم المخلص</div>
+                                    <input class="w-50 fs-18 font-bold text-center bg-transparent"
+                                        placeholder="شركة النبهان">
+                                </div>
+    
+                                <div class="d-flex">
+                                    <div class="w-50 fs-18 font-bold text-center">إجمالي أجور التخليص </div>
+                                    <input class="w-50 fs-18 font-bold text-center bg-transparent" placeholder="-">
+                                </div>
+    
+                                <div class="d-flex">
+                                    <div class="w-50 fs-18 font-bold text-center"> إجمالي أجور النقل</div>
+                                    <input class="w-50 fs-18 font-bold text-center bg-transparent" placeholder="-">
+                                </div>
+    
+                                <div class="d-flex">
+                                    <div class="w-50 fs-18 font-bold text-center">أجور ترجمة </div>
+                                    <input class="w-50 fs-18 font-bold text-center bg-transparent" placeholder="-">
+                                </div>
+    
+                                <div class="d-flex">
+                                    <div class="w-50 fs-18 font-bold text-center">أجور عمال</div>
+                                    <input class="w-50 fs-18 font-bold text-center bg-transparent" placeholder="-">
+                                </div>
+    
+                                <button onclick="addTerm()" class="bg-main-brown btn text-white position-absolute fs-14 add-term">أضف
+                                    بند
+                                    جديد</button>
+    
                             </div>
-
-                            <div class="d-flex">
-                                <div class="w-50 fs-18 font-bold text-center">إجمالي أجور التخليص </div>
-                                <input class="w-50 fs-18 font-bold text-center bg-transparent" placeholder="-">
-                            </div>
-
-                            <div class="d-flex">
-                                <div class="w-50 fs-18 font-bold text-center"> إجمالي أجور النقل</div>
-                                <input class="w-50 fs-18 font-bold text-center bg-transparent" placeholder="-">
-                            </div>
-
-                            <div class="d-flex">
-                                <div class="w-50 fs-18 font-bold text-center">أجور ترجمة </div>
-                                <input class="w-50 fs-18 font-bold text-center bg-transparent" placeholder="-">
-                            </div>
-
-                            <div class="d-flex">
-                                <div class="w-50 fs-18 font-bold text-center">أجور عمال</div>
-                                <input class="w-50 fs-18 font-bold text-center bg-transparent" placeholder="-">
-                            </div>
-
-                            <button onclick="test()" class="bg-main-brown btn text-white position-absolute fs-14 add-term">أضف
-                                بند
-                                جديد</button>
-
-                        </div>
+                        </form>
+                       
 
                         <span class="w-50 mx-auto d-block  text-main-brown
                                  font-bold text-center" style="margin-bottom: 14px;margin-top: 95px;">إجمالي
@@ -294,7 +297,7 @@
                         <div class="col-lg-4 col-sm-6 offset-lg-0 order-sm-1 order-lg-0  offset-sm-1 mb-4">
                             <div class="right-side">
                                 <div class="item mb-3">
-                                    <img src="assets/images/home/footer-logo.svg">
+                                    <img src="./../../assets/images/home/footer-logo.svg">
                                 </div>
                                 <p class="fs-14">
                                     في خلصها, لا نملك شركات مباشرة ولكن نساعدك في البحث و الحصول على الخدمة المناسبة او
@@ -368,7 +371,7 @@
                                     <div class="item-brand d-flex justify-content-between">
                                         <div class="content d-flex flex-column">
                                             <span class="text-start">GET IN ON</span>
-                                            <img src="assets/images/home/google%20play.svg">
+                                            <img src="./../../assets/images/home/google%20play.svg">
                                         </div>
                                         <div class="d-flex justify-content-center align-items-center">
                                             <i class="fa-brands fa-google-play"></i>
@@ -379,7 +382,7 @@
                                     <div class="item-brand d-flex justify-content-between">
                                         <div class="content d-flex flex-column">
                                             <span class="text-start">Download on the</span>
-                                            <img src="assets/images/home/apple.svg">
+                                            <img src="./../../assets/images/home/apple.svg">
                                         </div>
                                         <div class="d-flex justify-content-center align-items-center">
                                             <i class="fa-brands fa-apple"></i>
@@ -404,7 +407,7 @@
 
     <script>
         let num = 0
-        function test() {
+        function addTerm() {
             num++;
             let u = document.querySelector('.creation-offer-price .card-bill')
             u.innerHTML += `  <div class="d-flex">

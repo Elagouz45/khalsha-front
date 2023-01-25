@@ -617,7 +617,7 @@
                         <div class="col-lg-4 col-sm-6 offset-lg-0 order-sm-1 order-lg-0  offset-sm-1 mb-4">
                             <div class="right-side">
                                 <div class="item mb-3">
-                                    <img src="assets/images/home/footer-logo.svg">
+                                    <img src="./../../assets/images/home/footer-logo.svg">
                                 </div>
                                 <p class="fs-14">
                                     في خلصها, لا نملك شركات مباشرة ولكن نساعدك في البحث و الحصول على الخدمة المناسبة او
@@ -691,7 +691,7 @@
                                     <div class="item-brand d-flex justify-content-between">
                                         <div class="content d-flex flex-column">
                                             <span class="text-start">GET IN ON</span>
-                                            <img src="assets/images/home/google%20play.svg">
+                                            <img src="./../../assets/images/home/google%20play.svg">
                                         </div>
                                         <div class="d-flex justify-content-center align-items-center">
                                             <i class="fa-brands fa-google-play"></i>
@@ -702,7 +702,7 @@
                                     <div class="item-brand d-flex justify-content-between">
                                         <div class="content d-flex flex-column">
                                             <span class="text-start">Download on the</span>
-                                            <img src="assets/images/home/apple.svg">
+                                            <img src="./../../assets/images/home/apple.svg">
                                         </div>
                                         <div class="d-flex justify-content-center align-items-center">
                                             <i class="fa-brands fa-apple"></i>
@@ -724,96 +724,7 @@
     <script src="./../../assets/js/bootstrap.min.js"></script>
     <script src="./../../assets/js/index.js"></script>
     <script src="./../../assets/js/html2canvas.js"></script>
-    <script>
-        function changeOrderStatus() {
 
-            let order_status = [{
-                name: 'استلام الورق',
-                status: 'done'
-            }, {
-                name: 'استلام التفويض',
-                status: 'inproccess'
-            }, {
-                name: 'التدقيق في الاوراق',
-                status: 'none'
-            }, {
-                name: 'وصول الشحنة',
-                status: 'none'
-            }, {
-                name: 'تحضير الحاويات',
-                status: 'none'
-            }]
-
-            let listOfCircles = Array.from(document.querySelectorAll('.slideinner .circle'))
-            listOfCircles.forEach((ele, index) => {
-                ele.classList.add(order_status[index].status);
-            });
-
-
-        }
-
-        function navigation(item1) {
-
-            console.log(item1)
-            var linksList = Array.from(document.querySelectorAll('.account-details .steper .steps span:nth-child(odd)'));
-            var contentList = Array.from(document.querySelectorAll('.account-details .steper .content'));
-            linksList.forEach(ele => {
-                if (ele.getAttribute('data-target') == item1) {
-                    ele.classList.add('active');
-                    console.log(ele)
-                } else {
-                    ele.classList.remove('active');
-                }
-            })
-
-            contentList.forEach((content) => {
-                if (content.classList.contains(item1)) {
-                    content.classList.add('d-block');
-                    content.classList.remove('d-none');
-                } else {
-                    content.classList.add('d-none');
-                    content.classList.remove('d-block');
-                }
-            });
-        }
-
-        function downloadPill() {
-            $('.bill-paper h2').addClass('print')
-            let ele = $(".bill-paper");
-            html2canvas(ele, {
-                onrendered: function (canvas) {
-                    var a = document.createElement('a');
-                    a.href = canvas.toDataURL()
-                    a.download = 'الفاتورة.jpg';
-                    a.click();
-                    $('.bill-paper h2').removeClass('print')
-                }
-            })
-
-        }
-
-
-    </script>
-
-
-    <script>
-        let listOfOffersTr = Array.from(document.querySelectorAll('.offers table tbody tr'))
-        let agreeButton = document.querySelector('.modal .modal-footer .agree')
-        let disAgreeButton = document.querySelector('.modal .modal-footer .disagree')
-
-        $('.offers table tbody tr td a').click(function (ele) {
-            $('.modal .modal-footer .agree').click(function () {
-                $('.offers table tbody tr').addClass('addLine').removeClass('active')
-                $(ele.target).parents('tr').removeClass('addLine').addClass('active')
-            })
-
-            $('.modal .modal-footer .disagree').click(function () {
-                $('.offers table tbody tr').removeClass('addLine').removeClass('active')
-                $(ele.target).parents('tr').addClass('addLine').removeClass('active')
-            })
-        })
-
-    </script>
 </body>
 
 </html>

@@ -14,6 +14,44 @@
 </head>
 
 <body>
+
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/Frame.svg">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">طريقة الإستخدام</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">الخدمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">التسجيل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">الأسئلة الشائعة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="service-details service-three position-relative">
         <div class="overlay1 bg-overlay w-100 top-0 position-absolute"></div>
         <div class="overlay2 bg-overlay w-100 bottom-0 position-absolute"></div>
@@ -89,7 +127,7 @@
                                     <td class=" fs-22 text-center text-bold-gray font-bold">منافذ الشحنة</td>
 
                                     <td class=" fs-22 text-center certificate-text text-bold-gray" colspan="2">
-                                        <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                        <button data-bs-toggle="modal" data-bs-target="#data-entry"
                                             class="btn text-main-brown font-bold">
                                             ادخال البيانات المطلوية
                                         </button>
@@ -112,7 +150,8 @@
                                             <input name="field" type="radio" id="bundled-goods">
                                             <label for="bundled-goods">بضاعة مجمعة</label>
                                         </div>
-                                        <div class="text-main-brown font-bold ">تعديل</div>
+                                        <div class="text-main-brown font-bold " style="cursor: pointer;"
+                                            data-bs-toggle="modal" data-bs-target="#containerDialog">تعديل</div>
                                     </td>
 
                                     <td class=" fs-22 text-center text-bold-gray">
@@ -551,6 +590,133 @@
             </div>
         </div>
 
+        <!-- Modal -->
+        <div class="modal fade " id="data-entry" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 600px;">
+                <div class="modal-content border-0 rounded-0 text-bold-gray">
+                    <div class="modal-header position-relative border-0 ">
+                        <button type="button"
+                            class="btn-close opacity-100 position-absolute top-0 rounded-0 start-0 bg-main-brown m-0 text-white "
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center fs-18 font-bold">الشحن من</p>
+
+                        <form action="">
+                            <div class="row fs-14">
+                                <div class="col-12">
+                                    <label class="fs-16 font-bold text-bold-gray d-block">موقع الشحنة </label>
+                                    <select class="text-center w-100">
+                                        <option value="" selected>مـــيــنــاء</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="fs-16 font-bold text-bold-gray d-block">المدينة </label>
+                                    <input type="text" class="text-center" value="دبي">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="fs-16 font-bold text-bold-gray d-block">الدولة </label>
+                                    <input type="text" class="text-center" value="الإمارات">
+                                </div>
+
+                            </div>
+                        </form>
+
+
+
+                        <p class="text-center fs-18 font-bold" style="margin-top: 31px;">الشحن الي</p>
+                        <form action="">
+                            <div class="row fs-14">
+                                <div class="col-12">
+                                    <label class="fs-16 font-bold text-bold-gray d-block">موقع الشحنة </label>
+                                    <select class="text-center w-100">
+                                        <option value="" selected>مـــيــنــاء</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="fs-16 font-bold text-bold-gray d-block">المدينة </label>
+                                    <input type="text" class="text-center" value="دبي">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="fs-16 font-bold text-bold-gray d-block">الدولة </label>
+                                    <input type="text" class="text-center" value="الإمارات">
+                                </div>
+                            </div>
+                        </form>
+
+
+
+                    </div>
+                    <div class="modal-footer border-0 position-relative m-0">
+                        <button data-bs-dismiss="modal" aria-label="Close"
+                            class="btn fs-22 text-white position-absolute confirm">تاكيد</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade " id="containerDialog" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 600px;">
+                <div class="modal-content border-0 rounded-0 text-bold-gray">
+                    <div class="modal-header position-relative border-0 ">
+                        <button type="button"
+                            class="btn-close opacity-100 position-absolute top-0 rounded-0 start-0 bg-main-brown m-0 text-white "
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center fs-18 font-bold">ادخل بيانات الحاوية</p>
+
+                        <div class="form-container">
+                            <form>
+                                <div class="row fs-14">
+
+                                    <div class="col-sm-6 order-1 ">
+                                        <label class="fs-16 font-bold text-bold-gray d-block">موقع الشحنة </label>
+                                        <select class="text-center w-100 fs-14">
+                                            <option value="" selected>مـــيــنــاء</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-sm-6 order-sm-2 order-4">
+                                        <label class="fs-16 font-bold text-bold-gray d-block">أضف صورة </label>
+                                        <label for="upload1" class="upload">
+                                            تحميل
+                                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                                        </label>
+                                        <input type="file" hidden id="upload1">
+                                    </div>
+
+                                    <div class="col-sm-6 order-sm-3 order-2">
+                                        <label class="fs-16 font-bold text-bold-gray d-block">نوع الحاوية </label>
+                                        <select class="text-center w-100 fs-14">
+                                            <option value="" selected>20 قدم</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-sm-6 order-sm-4 order-3">
+                                        <label class="fs-16 font-bold text-bold-gray d-block">عدد الحاويات </label>
+                                        <input type="number" class="text-center w-100 fs-14">
+                                    </div>
+
+
+                                </div>
+                            </form>
+                        </div>
+
+
+                        <button class="bg-main-brown fs-14 font-bold text-white add-container">إضافة حاوية آخرى</button>
+
+                    </div>
+                    <div class="modal-footer border-0 position-relative m-0">
+                        <button data-bs-dismiss="modal" aria-label="Close"
+                            class="btn fs-22 text-white position-absolute confirm">تاكيد</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="container">
@@ -561,7 +727,7 @@
                         <div class="col-lg-4 col-sm-6 offset-lg-0 order-sm-1 order-lg-0  offset-sm-1 mb-4">
                             <div class="right-side">
                                 <div class="item mb-3">
-                                    <img src="assets/images/home/footer-logo.svg">
+                                    <img src="./../assets/images/home/footer-logo.svg">
                                 </div>
                                 <p class="fs-14">
                                     في خلصها, لا نملك شركات مباشرة ولكن نساعدك في البحث و الحصول على الخدمة المناسبة او
@@ -635,7 +801,7 @@
                                     <div class="item-brand d-flex justify-content-between">
                                         <div class="content d-flex flex-column">
                                             <span class="text-start">GET IN ON</span>
-                                            <img src="assets/images/home/google%20play.svg">
+                                            <img src="./../assets/images/home/google%20play.svg">
                                         </div>
                                         <div class="d-flex justify-content-center align-items-center">
                                             <i class="fa-brands fa-google-play"></i>
@@ -646,7 +812,7 @@
                                     <div class="item-brand d-flex justify-content-between">
                                         <div class="content d-flex flex-column">
                                             <span class="text-start">Download on the</span>
-                                            <img src="assets/images/home/apple.svg">
+                                            <img src="./../assets/images/home/apple.svg">
                                         </div>
                                         <div class="d-flex justify-content-center align-items-center">
                                             <i class="fa-brands fa-apple"></i>
@@ -669,96 +835,132 @@
     <script src="./../assets/js/index.js"></script>
 
     <script>
+        $(".add-container").bind("click", function () {
 
+            const newForm = document.createElement("form");
+            const newRow = document.createElement("div");
+            newRow.classList.add("row");
+            for (let i = 0; i < 5; i++) {
+                const newCol = document.createElement("div");
+                const deleteDiv = document.createElement("div");
+                newCol.classList.add("col-6");
+                if (i === 1) {
+                    newCol.classList.add("order-1","position-relative");
+                    const newLabel1 = document.createElement("label");
+                    newLabel1.textContent = "موقع الشحنة";
+                    newLabel1.classList.add("text-bold-gray", "fs-16", "font-bold", "d-block");
 
- 
+                    const newselect1 = document.createElement("select");
+                    const newoption = document.createElement("option");
+                    newselect1.classList.add("fs-14", "text-center", "w-100");
+                    newoption.setAttribute("value", "");
 
-       function  calcPositionOfSpan(){
-        let twoInputParent = document.querySelector(".service-details.service-three .two-input td:nth-child(2)").clientWidth
-        let inputWidth = (document.querySelector(".service-details.service-three .two-input td:nth-child(2) input").clientWidth)*2
-        document.querySelector(".service-details.service-three  .two-input  input+span").style.right=((twoInputParent - inputWidth)/2)-10+'px'
+                    let span = document.createElement("span");
+               
 
-        }
-        calcPositionOfSpan()
-        window.addEventListener('resize', () => {
-            calcPositionOfSpan()
-        })
-        let next = document.querySelector('.buttons .next');
-        let back = document.querySelector('.buttons .back');
+                    newselect1.append(newoption)
+                    newCol.appendChild(newLabel1);
+                    newCol.appendChild(newselect1);
+                    newCol.appendChild(span);
+                }
 
+                else if (i === 2) {
+                    newCol.classList.add('order-sm-2', 'order-4')
+                    const newLabel2 = document.createElement("label");
+                    newLabel2.textContent = "أضف صورة";
+                    newLabel2.classList.add("text-bold-gray", "fs-16", "font-bold", "d-block");
+                    const newLabel3 = document.createElement("label");
 
-        let stepsLength = document.querySelectorAll('.steps div').length;
-        let stepContents = document.querySelectorAll('.step-content');
+                    newLabel3.textContent = "تحميل";
+                    const newi = document.createElement("i");
+                    newi.classList.add("fa-solid", "fa-cloud-arrow-up");
+                    newLabel3.appendChild(newi);
+                    const newInput1 = document.createElement("input");
+                    newLabel3.classList.add("upload");
+                    newInput1.setAttribute("type", "file");
+                    newInput1.setAttribute("hidden", true);
+                    newInput1.setAttribute("id", "upload2");
+                    newLabel3.setAttribute("for", "upload2");
+                    newCol.appendChild(newLabel2);
+                    newCol.appendChild(newLabel3);
+                    newCol.appendChild(newInput1);
+                }
 
+                else if (i === 3) {
+                    newCol.classList.add("position-relative",'order-sm-3', 'order-2');
+                    const newLabel1 = document.createElement("label");
+                    newLabel1.textContent = " نوع الحاوية";
+                    newLabel1.classList.add("text-bold-gray", "fs-16", "font-bold", "d-block");
 
-        next.onclick = function () {
-            let stepsActive = Array.from(document.querySelectorAll('.steps div.active'));
-            let lastActive = stepsActive[stepsActive.length - 1]
-            let lastStepContentActive = document.querySelector('.step-content.d-block')
-            let lastHeaderTextActive = document.querySelector('.header .text.d-block')
+                    const newselect1 = document.createElement("select");
+                    const newoption = document.createElement("option");
+                    newselect1.classList.add("fs-14", "text-center", "w-100");
+                    newoption.setAttribute("value", "");
 
-            if ((stepsActive.length - 1) < (stepsLength - 1)) {
-                lastActive.nextElementSibling.classList.add('active')
-                lastActive.children[0].children[0].classList.add('d-none')
-                lastActive.children[0].children[0].classList.remove('d-block')
-                lastActive.nextElementSibling.children[0].children[0].classList.remove('d-none')
-                lastActive.nextElementSibling.children[0].children[0].classList.add('d-block')
-                stepsActive = Array.from(document.querySelectorAll('.steps div.active'));
-                stepContents.forEach(ele => {
-                    ele.classList.add('d-none')
-                    ele.classList.remove('d-block')
-                })
+                    let span = document.createElement("span");
+               
 
-                stepContents[stepsActive.length - 1].classList.add('d-block')
-                stepContents[stepsActive.length - 1].classList.remove('d-none')
+                    newselect1.append(newoption)
+                    newCol.appendChild(newLabel1);
+                    newCol.appendChild(newselect1);
+                    newCol.appendChild(span);
+                }
 
-                lastHeaderTextActive.nextElementSibling.classList.remove('d-none')
-                lastHeaderTextActive.nextElementSibling.classList.add('d-block')
-                lastHeaderTextActive.classList.remove('d-block')
-                lastHeaderTextActive.classList.add('d-none')
+                else if (i === 4) {
+                    newCol.classList.add("order-sm-4","order-3","position-relative")
+                    const newLabel3 = document.createElement("label");
+                    const newInput45 = document.createElement("input");
+
+                    newInput45.classList.add("fs-14", "text-center", "w-100")
+                    newLabel3.textContent = "عدد الحاويات";
+                    newLabel3.classList.add("fs-16", "text-bold-gray", "font-bold", "d-block")
+                    newInput45.setAttribute("type", "number");
+                    newInput45.value = 0
+
+                    let plus = document.createElement("span");
+                    plus.innerText = '+'
+                    let minus = document.createElement("span");
+                    minus.innerText = '-'
+
+                    newCol.append(newLabel3)
+                    newCol.append(newInput45)
+                    newCol.appendChild(plus);
+                    newCol.appendChild(minus);
+
+                    plus.addEventListener('click', () => {
+                        newInput45.value++
+                    })
+                    minus.addEventListener('click', () => {
+                        newInput45.value--
+                    })
+                }
+
+                else {
+                    // create delete button
+                    const deleteButton = document.createElement("i");
+                    deleteButton.classList.add("delete-form-button", "fa", "fa-times", "color-white", "delete-icon");
+                    newCol.classList.remove("col-6");
+                    newCol.classList.add("col-12");
+                    newCol.style.textAlign = "left"
+                    newCol.style.paddingLeft = 0
+                    newCol.appendChild(deleteButton);
+
+                    // add event listener to delete button
+                    deleteButton.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        const formToDelete = event.target.closest("form");
+                        formToDelete.remove();
+                    });
+                }
+
+                newRow.appendChild(newCol);
             }
 
-
-        }
-
-        back.onclick = function () {
-            let stepsActive = Array.from(document.querySelectorAll('.steps div.active'));
-            let lastActive = stepsActive[stepsActive.length - 1]
-            let lastStepContentActive = document.querySelector('.step-content.d-block')
-            let lastHeaderTextActive = document.querySelector('.header .text.d-block')
-
-            if ((stepsActive.length - 1) > 0) {
-                lastActive.classList.remove('active');
-
-                lastActive.children[0].children[0].classList.add('d-none')
-                lastActive.children[0].children[0].classList.remove('d-block')
-                lastActive.previousElementSibling.children[0].children[0].classList.remove('d-none')
-                lastActive.previousElementSibling.children[0].children[0].classList.add('d-block')
-
-                stepsActive = Array.from(document.querySelectorAll('.steps div.active'));
-                stepContents.forEach(ele => {
-                    ele.classList.add('d-none')
-                    ele.classList.remove('d-block')
-                })
-
-                stepContents[stepsActive.length - 1].classList.add('d-block')
-                stepContents[stepsActive.length - 1].classList.remove('d-none')
-
-                lastHeaderTextActive.previousElementSibling.classList.remove('d-none')
-                lastHeaderTextActive.previousElementSibling.classList.add('d-block')
-                lastHeaderTextActive.classList.remove('d-block')
-                lastHeaderTextActive.classList.add('d-none')
-            }
-        }
-
-
-        document.querySelector('.certifications .confirm').addEventListener('click', () => {
-            document.querySelector('.other-certificate').classList.remove('d-none')
-            document.querySelector('.certificate-text button').classList.remove('text-main-brown')
-            document.querySelector('.certificate-text button').classList.add('text-main-blue')
-            document.querySelector('.certificate-text button').innerHTML = 'تعديل الشهادات المختارة'
-        })
+            newForm.appendChild(newRow);
+            $("#containerDialog .form-container").append(newForm);
+        });
     </script>
+
 
 </body>
 

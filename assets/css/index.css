@@ -282,7 +282,9 @@ input+span+span {
 }
 
 
-.service-details.service-three input+span+span {
+.service-details.service-three input+span+span ,
+.service-details.service-four input+span+span 
+{
     left: 52%;
 }
 
@@ -836,10 +838,12 @@ footer ul.list-none {
     width: calc(100% / 5) !important;
     text-align: center;
 }
+
 /*about us*/
-.about-us .our-mission .section2{
+.about-us .our-mission .section2 {
     margin-top: 60px;
 }
+
 /*using way*/
 .using-way .pt-115 {
     padding: 115px 0 145px;
@@ -1071,20 +1075,20 @@ footer ul.list-none {
     color: #9E9E9E;
 }
 
-.register form {
+.register section  form {
     margin: 0 70px 0;
     padding: 48px 42px;
     border-left: 1px solid #9E9E9E;
     border-right: 1px solid #9E9E9E;
 }
 
-.register form .input-group label {
+.register  form .input-group label {
     color: #5B5B5B;
     margin-bottom: 8px;
     line-height: 29px
 }
 
-.register form .input-group input {
+.register section form .input-group input {
     height: 60px;
     border: 1px solid #9E9E9E;
     width: 100%;
@@ -1095,7 +1099,7 @@ footer ul.list-none {
     color: #5B5B5B;
 }
 
-.register form button.btn {
+.register section form button.btn {
     background-color: #A0A0A0;
     border-radius: 30px;
     font-size: 28px;
@@ -1108,7 +1112,7 @@ footer ul.list-none {
     transform: translateX(50%);
 }
 
-.register form button.btn:hover {
+.register section form button.btn:hover {
     background-color: var(--main-blue-color) !important;
     color: white;
 }
@@ -1169,12 +1173,12 @@ footer ul.list-none {
 }
 
 .register .input-group span {
-    top: 48px;
+    top: 57px;
 }
 
 .register .modal-body span.icon {
-    top: 32px;
-    left: 37px;
+    top: 40px;
+    left: 44px;
 }
 
 .register .text .buttons button:first-of-type {
@@ -1252,6 +1256,8 @@ footer ul.list-none {
     height: 30px;
     text-align: center;
     color: #808080;
+    width: 100%;
+    max-width: 225px;
 }
 
 .register .modal-dialog .buttons button,
@@ -1708,7 +1714,90 @@ footer ul.list-none {
     margin: 76px 0 35px;
 }
 
+.service-details.service-three #data-entry .modal-body .row ,
+.service-details.service-four #data-entry .modal-body .row {
+    padding: 23px 42px;
+}
 
+.service-details.service-three #data-entry .modal-body p,
+.service-details.service-three #container .modal-body p ,
+.service-details.service-four #data-entry .modal-body p,
+.service-details.service-four #container .modal-body p {
+    margin-top: 17px;
+}
+
+.service-details.service-three #data-entry .modal-body select,
+.service-details.service-three #data-entry .modal-body input,
+.service-details.service-three #containerDialog .modal-body select,
+.service-details.service-three #containerDialog .modal-body input,
+.service-details.service-four #data-entry .modal-body select,
+.service-details.service-four #data-entry .modal-body input,
+.service-details.service-four #containerDialog .modal-body select,
+.service-details.service-four #containerDialog .modal-body input  {
+    margin-bottom: 22px;
+    height: 25px;
+    color: #5B5B5B99;
+    border: 0.49px solid #4A4A4A
+}
+
+.service-details.service-three #data-entry .modal-body select,
+.service-details.service-four #data-entry .modal-body select
+ {
+    max-width: 415px;
+}
+
+.service-details.service-three #containerDialog .modal-body select ,
+.service-details.service-four #containerDialog .modal-body select{
+    max-width: 216px;
+}
+
+.service-details.service-three #containerDialog .modal-body input[type='number'],
+.service-details.service-four #containerDialog .modal-body input[type='number']
+ {
+    max-width: 115px;
+}
+
+.service-details.service-three #data-entry .modal-body select+span,
+.service-details.service-three #containerDialog .modal-body select+span ,
+.service-details.service-four #data-entry .modal-body select+span,
+.service-details.service-four #containerDialog .modal-body select+span {
+    left: 30px;
+}
+
+.service-details.service-three #data-entry .modal-body input,
+.service-details.service-four #data-entry .modal-body input
+ {
+    max-width: 178px;
+}
+
+.service-details.service-three #containerDialog .upload ,
+.service-details.service-four #containerDialog .upload{
+    margin-bottom: 22px;
+    height: 25px;
+    width: 86px;
+    border-radius: 4px;
+    font-size: 11px;
+    text-align: center;
+    line-height: 26px;
+}
+.service-details.service-three #containerDialog button.add-container,
+.service-details.service-four #containerDialog button.add-container
+{
+    border: 0;
+    display: block;
+    margin:-10px auto 0;
+    height: 24px;
+}
+.service-details.service-three #containerDialog .modal-body input+span,
+.service-details.service-four #containerDialog .modal-body input+span
+{
+    right: 17px;
+}
+.service-details.service-three #containerDialog .modal-body input+span+span,
+.service-details.service-four #containerDialog .modal-body input+span+span
+{
+    right: 112px;
+}
 /*services*/
 
 .services-title .resources-khalasha h1 {
@@ -3678,7 +3767,7 @@ footer .item-brand {
 
     .using-way .owl-carousel h4,
     .register .text p,
-    .register form button.btn {
+    .register section form  button.btn {
         font-size: 22px;
     }
 
@@ -3696,15 +3785,15 @@ footer .item-brand {
         font-size: 34px;
     }
 
-    .register form {
+    .register section form {
         padding: 42px;
     }
 
-    .register form .input-group input {
+    .register section form .input-group input {
         height: 45px;
     }
 
-    .register form button.btn {
+    .register section form button.btn {
         width: 302px;
     }
 
@@ -3726,7 +3815,7 @@ footer .item-brand {
     .about-us .our-mission {
         margin-top: -56px;
     }
-  
+
     .about-us .our-strategy .bg-img {
         padding-top: 36px;
         clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
@@ -3894,9 +3983,9 @@ footer .item-brand {
         left: 24%;
     }
 
-.navbar .nav-link{
-    padding-left: 25px !important;
-}
+    .navbar .nav-link {
+        padding-left: 25px !important;
+    }
 }
 
 @media (max-width:1199.95px) {
@@ -3908,12 +3997,13 @@ footer .item-brand {
         left: 12%;
     }
 
- .navbar .nav-link{
-    padding-left: 20px !important;
-}
-.about-us .our-mission .section2{
-    margin-top: 30px;
-}
+    .navbar .nav-link {
+        padding-left: 20px !important;
+    }
+
+    .about-us .our-mission .section2 {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width:1024.95px) {
@@ -4191,7 +4281,7 @@ footer .item-brand {
         width: 207px;
     }
 
-    .register form {
+    .register section form {
         padding: 19px;
     }
 
@@ -4628,12 +4718,12 @@ footer .item-brand {
         padding-top: 60px;
     }
 
-    .register form {
+    .register section form {
         padding: 30px;
         margin: 0 30px;
     }
 
-    .register form .input-group input {
+    .register section form .input-group input {
         height: 45px;
     }
 
@@ -4650,7 +4740,7 @@ footer .item-brand {
         font-size: 27px;
     }
 
-    .register form button.btn {
+    .register section form button.btn {
         height: 45px;
         font-size: 20px;
         width: 225px;
@@ -4669,10 +4759,16 @@ footer .item-brand {
         left: -5px;
     }
 
-    .register .modal-dialog .modal-body input {
-        width: 100%;
+    .register .modal-dialog .modal-body .col-6,
+    .register  .modal-dialog .modal-body input{
+        width: 100% !important;
+        max-width: unset;
     }
 
+
+    .register .modal-body span.icon {
+        left: 37px;
+    }
     .about-us .py-150 {
         padding: 65px 0 !important;
     }
@@ -5045,6 +5141,38 @@ footer .item-brand {
         right: unset;
     }
 
+    .service-details.service-three #data-entry .modal-body input,
+    .service-details.service-three #data-entry .modal-body select ,
+    .service-details.service-three #containerDialog .modal-body input,
+    .service-details.service-three #containerDialog .modal-body select,
+    .service-details.service-four #data-entry .modal-body input,
+    .service-details.service-four #data-entry .modal-body select ,
+    .service-details.service-four #containerDialog .modal-body input,
+    .service-details.service-four #containerDialog .modal-body select{
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .service-details.service-three #data-entry .modal-body .row ,
+    .service-details.service-three #containerDialog .modal-body .row ,
+    .service-details.service-four #data-entry .modal-body .row ,
+    .service-details.service-four #containerDialog .modal-body .row 
+    {
+        padding: 20px 5px;
+    }
+
+    .service-details.service-three #containerDialog .modal-body input+span+span ,
+    .service-details.service-four #containerDialog .modal-body input+span+span 
+    {
+        left:8px;
+        right: unset;
+    } 
+    .service-details.service-three #data-entry .modal-body .fs-16,
+    .service-details.service-three #containerDialog .modal-body .fs-16,
+    .service-details.service-four #data-entry .modal-body .fs-16,
+    .service-details.service-four #containerDialog .modal-body .fs-16{
+        font-size: 14px;
+    }
 }
 
 @media (max-width:375px) {

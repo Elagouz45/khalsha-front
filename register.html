@@ -136,7 +136,7 @@
         <!-- Modal -->
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 600px;">
                 <div class="modal-content">
                     <div class="modal-header justify-content-center">
                         <h5 class="modal-title font-bold text-center text-main-blue" id="staticBackdropLabel">سجل دخولك
@@ -145,26 +145,28 @@
                             aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="row">
-                            <div class="col-sm-6 mb-sm-0 mb-3">
-                                <label class="font-bold fs-14">البريد الإلكتروني</label>
-                                <input type="email" class="fs-14">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-6 mb-sm-0 mb-3">
+                                    <label class="font-bold fs-14">البريد الإلكتروني</label>
+                                    <input type="email" class="fs-14">
+                                </div>
+                                <div class="col-6 mb-sm-0 mb-3 position-relative">
+                                    <label class="font-bold  fs-14">الرقم السري</label>
+                                    <input type="password" class="fs-14">
+                                    <span class="position-absolute icon">
+                                        <img src="./assets/images/Component 74.png">
+                                    </span>
+                                </div>
+    
+                                <button class="d-block btn font-bold fs-14  login">تسجيل الدخول</button>
+    
+                                <div class="buttons justify-content-center d-flex  w-100 ">
+                                    <button class="btn  text fs-14  ">استمر مع فيسبوك</button>
+                                    <button class="btn  text fs-14 ">استمر مع جوجل</button>
+                                </div>
                             </div>
-                            <div class="col-sm-6 mb-sm-0 mb-3 position-relative">
-                                <label class="font-bold  fs-14">الرقم السري</label>
-                                <input type="password" class="fs-14">
-                                <span class="position-absolute icon">
-                                    <img src="./assets/images/Component 74.png">
-                                </span>
-                            </div>
-
-                            <button class="d-block btn font-bold fs-14  login">تسجيل الدخول</button>
-
-                            <div class="buttons justify-content-center d-flex  w-100 ">
-                                <button class="btn  text fs-14  ">استمر مع فيسبوك</button>
-                                <button class="btn  text fs-14 ">استمر مع جوجل</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                     <div class="modal-footer"></div>
                 </div>

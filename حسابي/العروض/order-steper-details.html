@@ -520,72 +520,7 @@
     <script src="./../../assets/js/bootstrap.min.js"></script>
     <script src="./../../assets/js/index.js"></script>
     <script src="./../../assets/js/html2canvas.js"></script>
-    <script>
-        function changeOrderStatus() {
-
-            let order_status = [{
-                name: 'استلام الورق',
-                status: 'done'
-            }, {
-                name: 'استلام التفويض',
-                status: 'inproccess'
-            }, {
-                name: 'التدقيق في الاوراق',
-                status: 'none'
-            }, {
-                name: 'وصول الشحنة',
-                status: 'none'
-            }, {
-                name: 'تحضير الحاويات',
-                status: 'none'
-            }]
-
-            let y = Array.from(document.querySelectorAll('.slideinner .circle'))
-            y.forEach((ele, index) => {
-                ele.classList.add(order_status[index].status);
-            });
-
-        }
-
-        function downloadPill() {
-            $('.bill-paper h2').addClass('print')
-            let ele = $(".bill-paper");
-            html2canvas(ele, {
-                onrendered: function (canvas) {
-                    var a = document.createElement('a');
-                    a.href = canvas.toDataURL()
-                    a.download = 'الفاتورة.jpg';
-                    a.click();
-                    $('.bill-paper h2').removeClass('print')
-                }
-            })
-
-        }
-
-        function navigation(item1) {
-            console.log(item1)
-            var linksList = Array.from(document.querySelectorAll('.account-details .steper .steps span:nth-child(odd)'));
-            var contentList = Array.from(document.querySelectorAll('.account-details .steper .content'));
-            linksList.forEach(ele => {
-                if (ele.getAttribute('data-target') == item1) {
-                    ele.classList.add('active');
-                    console.log(ele)
-                } else {
-                    ele.classList.remove('active');
-                }
-            })
-
-            contentList.forEach((content) => {
-                if (content.classList.contains(item1)) {
-                    content.classList.add('d-block');
-                    content.classList.remove('d-none');
-                } else {
-                    content.classList.add('d-none');
-                    content.classList.remove('d-block');
-                }
-            });
-        }
-    </script>
+ 
 </body>
 
 </html>
