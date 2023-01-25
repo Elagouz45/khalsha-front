@@ -99,6 +99,7 @@
                         </div>
                     </div>
                     <div class="step-content fill-application table-responsive  d-block">
+                     <form action="">
                         <table class="w-100">
                             <tbody>
                                 <tr>
@@ -189,8 +190,10 @@
                                 </tr>
                             </tbody>
                         </table>
+                     </form>
                     </div>
                     <div class="additional-services service-two no-bg step-content table-responsive d-none">
+                    <form action="">
                         <table class="w-100">
                             <tbody>
                                 <tr>
@@ -231,54 +234,58 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </form>
                     </div>
                     <div class="location step-content table-responsive d-none">
-                        <table class="w-100">
-                            <tbody>
+                <form action="">
+                    <table class="w-100">
+                        <tbody>
 
 
-                                <tr class="two-input">
-                                    <td class=" fs-22 text-center text-bold-gray font-bold"> موقع التحميل</td>
-                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                        <input type="text" placeholder="وصف الموقع" class="fs-18">
-                                        <select class="fs-18">
-                                            <option value="" selected>الدور الاول</option>
-                                        </select>
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <span class="msg-icn">؟</span>
-                                    </td>
-                                </tr>
+                            <tr class="two-input">
+                                <td class=" fs-22 text-center text-bold-gray font-bold"> موقع التحميل</td>
+                                <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                    <input type="text" placeholder="وصف الموقع" class="fs-18">
+                                    <select class="fs-18">
+                                        <option value="" selected>الدور الاول</option>
+                                    </select>
+                                </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    <span class="msg-icn">؟</span>
+                                </td>
+                            </tr>
 
-                                <tr class="two-input">
-                                    <td class=" fs-22 text-center text-bold-gray font-bold">موقع التسليم </td>
-                                    <td class="  text-center text-bold-gray" colspan="2">
-                                        <input type="text" placeholder="وصف الموقع" class="fs-18">
-                                        <select class="fs-18">
-                                            <option value="" selected>الدور الثالث</option>
-                                        </select>
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <span class="msg-icn">؟</span>
-                                    </td>
-                                </tr>
+                            <tr class="two-input">
+                                <td class=" fs-22 text-center text-bold-gray font-bold">موقع التسليم </td>
+                                <td class="  text-center text-bold-gray" colspan="2">
+                                    <input type="text" placeholder="وصف الموقع" class="fs-18">
+                                    <select class="fs-18">
+                                        <option value="" selected>الدور الثالث</option>
+                                    </select>
+                                </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    <span class="msg-icn">؟</span>
+                                </td>
+                            </tr>
 
-                                <tr>
-                                    <td class=" fs-22 text-center text-bold-gray font-bold">ميعاد التسليم</td>
-                                    <td class=" text-center text-bold-gray" colspan="2">
-                                        <input type="date" class="fs-18">
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <span class="msg-icn">؟</span>
-                                    </td>
-                                </tr>
+                            <tr>
+                                <td class=" fs-22 text-center text-bold-gray font-bold">ميعاد التسليم</td>
+                                <td class=" text-center text-bold-gray" colspan="2">
+                                    <input type="date" class="fs-18">
+                                </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    <span class="msg-icn">؟</span>
+                                </td>
+                            </tr>
 
 
-                            </tbody>
-                        </table>
+                        </tbody>
+                    </table>
+                </form>
                     </div>
 
                     <div class="oreder-confirmation step-content table-responsive d-none">
+                     <form action="">
                         <table class="w-100">
                             <tbody>
 
@@ -319,6 +326,7 @@
 
                             </tbody>
                         </table>
+                     </form>
                     </div>
                     <div class="send-order step-content d-none">
                         <div class="card">
@@ -523,6 +531,7 @@
                 </div>
             </div>
         </section>
+
         <div class="modal fade  landShippingInfo" id="landShippingInfo" data-bs-backdrop="static"
             data-bs-keyboard="false" tabindex="-1" aria-labelledby="infoLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" style="max-width: 600px;">
@@ -547,13 +556,17 @@
                             <div class="formContainer2">
                                 <form>
                                     <div class="row">
-                                        <div class="col-6  mb-4">
-                                            <label class="fs-16 text-bold-gray ">نوع الشحنة </label>
-                                            <input type="text" class="fs-14 text-center w-100"
-                                                value="غرفة النوم ، أثاث">
+                                        <div class="col-6 position-relative">
+                                            <label class="fs-16 text-bold-gray d-block font-bold ">نوع الشحنة </label>
+                                          
+                                            
+                                                <select  class="fs-14 text-center w-100">
+                                                    <option value="">غرفة النوم ، أثاث</option>
+                                                </select>
+
                                         </div>
                                         <div class="col-6 mb-4">
-                                            <label class="d-block  fs-16 text-bold-gray ">
+                                            <label class="d-block  fs-16 text-bold-gray font-bold ">
                                                 أضف صورة
                                             </label>
 
@@ -566,15 +579,15 @@
 
                                         <div class="col-sm-12 d-flex justify-content-between mb-4">
                                             <div class="w-25">
-                                                <label class="fs-16 text-bold-gray ">الكمية</label>
+                                                <label class="fs-16 text-bold-gray font-bold ">الكمية</label>
                                                 <input class="w-100 fs-14 text-center" type="number" placeholder="2">
                                             </div>
                                             <div class="w-25">
-                                                <label class="fs-16 text-bold-gray ">الوحدة</label>
+                                                <label class="fs-16 text-bold-gray font-bold ">الوحدة</label>
                                                 <input class="w-100 fs-14 text-center" type="number" placeholder="2">
                                             </div>
                                             <div class="w-25">
-                                                <label class="fs-16 text-bold-gray ">إجمالى الوزن</label>
+                                                <label class="fs-16 text-bold-gray font-bold ">إجمالى الوزن</label>
                                                 <input class="w-100 fs-14 text-center" type="number" placeholder="2">
                                             </div>
 
@@ -582,7 +595,7 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="position-absolute add-button pointer-event addFormButton2">
+                            <div class="position-absolute add-button pointer-event addFormButton2" onclick="addContainer22()">
                                 اضافة صنف اخر
                             </div>
                         </article>
@@ -590,14 +603,14 @@
                             <div class="formContainer3">
                                 <form>
                                     <div class="row">
-                                        <div class="col-sm-6 ml-3 mb-4">
-                                            <label class=" fs-16 text-bold-gray ">نوع الشحنة </label>
+                                        <div class="col-sm-6 ml-3 ">
+                                            <label class=" fs-16 text-bold-gray font-bold">نوع الشحنة </label>
                                             <select class="w-100 d-block fs-14 text-center ">
                                                 <option value="">غرفة نوم</option>
                                             </select>
                                         </div>
                                         <div class="col-sm-6 mb-4">
-                                            <label class="d-block fs-16 text-bold-gray ">
+                                            <label class="d-block fs-16 text-bold-gray font-bold">
                                                 أضف صورة
                                             </label>
 
@@ -608,12 +621,12 @@
                                             <input type="file" hidden id="upload3">
                                         </div>
                                         <div class="col-sm-6 ">
-                                            <label class=" fs-16 text-bold-gray" for="">وصف الشحنة</label>
+                                            <label class=" fs-16 text-bold-gray font-bold" for="">وصف الشحنة</label>
                                             <input class="fs-14 text-center w-100" type="text"
                                                 placeholder="ثلاجات وتليفزيونات">
                                         </div>
                                         <div class="col-sm-6">
-                                            <label class=" fs-16 text-bold-gray ">نوع الشاحنة </label>
+                                            <label class=" fs-16 text-bold-gray font-bold">نوع الشاحنة </label>
                                             <select class="fs-14 text-center w-100 d-block">
                                                 <option value="">بيك أب</option>
                                             </select>
@@ -621,7 +634,7 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="position-absolute add-button pointer-event addFormButton3">
+                            <div class="position-absolute add-button pointer-event addFormButton3" onclick="addContainer23()">
                                 اضافة صنف اخر
                             </div>
                         </article>
@@ -636,7 +649,7 @@
         </div>
         <div class="modal fade   landShippingInfo" id="reassemble" data-bs-backdrop="static" data-bs-keyboard="false"
             tabindex="-1" aria-labelledby="infoLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 600px;">
                 <div class="modal-content border-0 rounded-0 text-bold-gray ">
                     <div class="modal-header position-relative border-0 ">
                         <button type="button"
@@ -650,37 +663,42 @@
                                 <form>
                                     <div class="row">
                                         <div class="col-sm-8 ml-3 mb-4">
-                                            <label class="d-block text-bold-gray fs-16 "> الصنف </label>
+                                            <label class="d-block text-bold-gray fs-16 font-bold "> الصنف </label>
                                             <input type="text" class="w-100 fs-14 text-center">
                                         </div>
 
                                         <div class="col-sm-4 mb-4">
-                                            <label class="d-block text-bold-gray fs-16 ">
-                                                عدد الايام
+                                            <label class="d-block  font-bold fs-16 text-bold-gray ">
+                                                أضف صورة
                                             </label>
-                                            <input type="number" class="w-100 fs-14 text-center">
+
+                                            <label class="upload" for="upload3">
+                                                تحميل
+                                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                                            </label>
+                                            <input type="file" hidden id="upload3">
                                         </div>
 
                                         <div class="col-sm-12 mb-4 d-flex justify-content-between">
                                             <div class="w-25">
                                                 <input id="assemble" type="checkbox" placeholder="2">
-                                                <label for="assemble" class="fs-14 text-center">فك</label>
+                                                <label for="assemble" class="fs-16 font-bold text-bold-gray text-center">فك</label>
                                             </div>
                                             <div class="w-25">
                                                 <input id="cover" type="checkbox" placeholder="2">
-                                                <label for="cover" class="fs-14 text-center">تغليف</label>
+                                                <label for="cover" class="fs-16 font-bold text-bold-gray text-center">تغليف</label>
 
                                             </div>
                                             <div class="w-25">
                                                 <input id="reassemble" type="checkbox" placeholder="2">
-                                                <label for="reassemble" class="fs-14 text-center">تركيب</label>
+                                                <label for="reassemble" class="fs-16 text-bold-gray font-bold text-center">تركيب</label>
                                             </div>
 
                                         </div>
                                     </div>
                                 </form>
                             </div>
-                            <div class="position-absolute add-button pointer-event addFormButton">
+                            <div class="position-absolute add-button pointer-event addFormButton" onclick="addContainer21()">
                                 اضافة صنف اخر
                             </div>
                         </div>
@@ -809,355 +827,6 @@
     <script src="./../assets/js/jquery-3.6.3.min.js"></script>
     <script src="./../assets/js/bootstrap.min.js"></script>
     <script src="./../assets/js/index.js"></script>
-    <script>
-
-        $(".addFormButton3").bind("click", function () {
-            // create the new form elements
-            const newForm = document.createElement("form");
-            const newRow = document.createElement("div");
-            newRow.classList.add("row");
-            for (let i = 0; i < 5; i++) {
-                const newCol = document.createElement("div");
-                const deleteDiv = document.createElement("div");
-                newCol.classList.add("col-6");
-                if (i === 1) {
-                    const newLabel1 = document.createElement("label");
-                    newLabel1.textContent = "نوع الشحنة";
-                    newLabel1.classList.add("text-bold-gray", "fs-16")
-                    const newInput1 = document.createElement("input");
-                    newInput1.classList.add("fs-14", "text-center", "w-100");
-                    newInput1.setAttribute("type", "text");
-                    newCol.appendChild(newLabel1);
-                    newCol.appendChild(newInput1);
-                }
-                else if (i === 2) {
-                    const newLabel2 = document.createElement("label");
-                    newLabel2.textContent = "أضف صورة";
-                    newLabel2.classList.add("d-block", "fs-16", "text-bold-gray");
-                    const newLabel3 = document.createElement("label");
-                    newLabel3.textContent = "تحميل";
-                    const newi = document.createElement("i");
-                    newi.classList.add("fa-solid", "fa-cloud-arrow-up");
-                    newLabel3.appendChild(newi);
-                    const newInput1 = document.createElement("input");
-                    newLabel3.classList.add("upload");
-                    newInput1.setAttribute("type", "file");
-                    newInput1.setAttribute("hidden", true);
-                    newInput1.setAttribute("id", "upload6");
-                    newLabel3.setAttribute("for", "upload6");
-                    newCol.appendChild(newLabel2);
-                    newCol.appendChild(newLabel3);
-                    newCol.appendChild(newInput1);
-                } else if (i === 3) {
-                    const newLabel3 = document.createElement("label");
-                    const newInput45 = document.createElement("input");
-                    // const div = document.createElement("div");
-                    // div.classList.add("w-25");
-                    newInput45.classList.add("w-100", "text-center", "fs-14");
-                    newLabel3.textContent = "وصف الشحنة";
-                    newLabel3.classList.add("fs-16", "text-bold-gray")
-                    newInput45.setAttribute("type", "text");
-                    newCol.append(newLabel3)
-                    newCol.append(newInput45)
-
-                } else if (i === 4) {
-                    const newLabel3 = document.createElement("label");
-                    const newInput45 = document.createElement("input");
-                    // const div = document.createElement("div");
-                    // div.classList.add("w-25");
-                    newInput45.classList.add("w-100", "text-center", "fs-14");
-                    newLabel3.textContent = "نوع الشحنة";
-                    newLabel3.classList.add("fs-16", "text-bold-gray")
-                    newInput45.setAttribute("type", "text");
-                    newCol.append(newLabel3)
-                    newCol.append(newInput45)
-
-                } else {
-                    // create delete button
-                    const deleteButton = document.createElement("i");
-                    deleteButton.classList.add("delete-form-button", "fa", "fa-times", "color-white", "delete-icon");
-                    newCol.classList.remove("col-6");
-                    newCol.classList.add("col-12");
-                    newCol.style.textAlign = "left"
-                    newCol.style.paddingLeft = 0
-                    newCol.appendChild(deleteButton);
-
-                    // add event listener to delete button
-                    deleteButton.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        const formToDelete = event.target.closest("form");
-                        formToDelete.remove();
-                    });
-                }
-
-                newRow.appendChild(newCol);
-            }
-
-            newForm.appendChild(newRow);
-            $(".formContainer3").append(newForm);
-        });
-
-        $(".addFormButton").bind("click", function () {
-            // create the new form elements
-            const newForm = document.createElement("form");
-            const newRow = document.createElement("div");
-            newRow.classList.add("row");
-
-            for (let i = 0; i < 4; i++) {
-                const newCol = document.createElement("div");
-                const deleteDiv = document.createElement("div");
-                if (i === 1) {
-                    newCol.classList.add("col-6", "mb-4");
-                    const newInput1 = document.createElement("input");
-                    const newLabel1 = document.createElement("label");
-                    newLabel1.textContent = "الصنف ";
-                    newInput1.classList.add("fs-14", "text-center", "w-100");
-                    newInput1.setAttribute("type", "text");
-                    newLabel1.classList.add("d-block", "fs-16", "text-bold-gray", "w-100");
-                    newCol.appendChild(newLabel1);
-                    newCol.appendChild(newInput1);
-                } else if (i === 2) {
-                    newCol.classList.add("col-6", "mb-4");
-                    const newInput2 = document.createElement("input");
-                    const newLabel2 = document.createElement("label");
-                    newLabel2.textContent = "عدد الايام ";
-                    newInput2.classList.add("fs-14", "text-center", "w-100");
-                    newLabel2.classList.add("d-block", "fs-16", "text-bold-gray", "w-100");
-                    newInput2.setAttribute("type", "number");
-
-                    let plus = document.createElement("span");
-                    plus.innerText = '+'
-                    let minus = document.createElement("span");
-                    minus.innerText = '-'
-
-
-                    newCol.appendChild(newLabel2);
-                    newCol.appendChild(newInput2);
-                    newCol.appendChild(plus);
-                    newCol.appendChild(minus);
-                } else if (i === 3) {
-                    newCol.classList.add("col-12", "d-flex", "justify-content-between", "mb-4");
-                    for (let index = 0; index < 3; index++) {
-                        if (index === 0) {
-                            const div = document.createElement("div");
-                            div.classList.add("w-25");
-                            const newLabel4 = document.createElement("label");
-                            newLabel4.textContent = "فك";
-                            newLabel4.classList.add("fs-14", "text-center")
-                            const newInput2 = document.createElement("input");
-                            newInput2.setAttribute("type", "checkbox");
-                            newInput2.setAttribute("id", `assemble${index}`);
-                            newLabel4.setAttribute("for", `assemble${index}`)
-                            div.appendChild(newInput2);
-                            div.appendChild(newLabel4);
-                            newCol.appendChild(div)
-                        }
-                        else if (index === 1) {
-                            const div = document.createElement("div");
-                            div.classList.add("w-25");
-                            const newLabel5 = document.createElement("label");
-                            newLabel5.textContent = " تغليف";
-                            newLabel5.classList.add("fs-14", "text-center")
-                            const newInput2 = document.createElement("input");
-                            newInput2.setAttribute("type", "checkbox");
-                            newInput2.setAttribute("id", `cover${index}`);
-                            newLabel5.setAttribute("for", `cover${index}`)
-                            div.appendChild(newInput2);
-                            div.appendChild(newLabel5);
-                            newCol.appendChild(div)
-                        }
-                        else if (index === 2) {
-                            const div = document.createElement("div");
-                            div.classList.add("w-25");
-                            const newLabel6 = document.createElement("label");
-                            newLabel6.textContent = " تركيب";
-                            newLabel6.classList.add("fs-14", "text-center")
-                            const newInput2 = document.createElement("input");
-                            newInput2.setAttribute("type", "checkbox");
-                            newInput2.setAttribute("id", `reassemble${index}`);
-                            newLabel6.setAttribute("for", `reassemble${index}`)
-                            div.appendChild(newInput2);
-                            div.appendChild(newLabel6);
-                            newCol.appendChild(div)
-                        }
-                    }
-
-                }
-                else {
-                    // create delete button
-                    const deleteButton = document.createElement("i");
-                    deleteButton.classList.add("delete-form-button", "fa", "fa-times", "color-white", "delete-icon");
-                    newCol.classList.remove("col-6");
-                    newCol.classList.add("col-12");
-                    newCol.style.textAlign = "left"
-                    newCol.style.paddingLeft = 0
-                    newCol.appendChild(deleteButton);
-
-                    // add event listener to delete button
-                    deleteButton.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        const formToDelete = event.target.closest("form");
-                        formToDelete.remove();
-                    });
-                }
-
-                newRow.appendChild(newCol);
-            }
-
-            newForm.appendChild(newRow);
-            $(".formContainer").append(newForm);
-        });
-
-        $(".addFormButton2").bind("click", function () {
-            // create the new form elements
-            const newForm = document.createElement("form");
-            const newRow = document.createElement("div");
-            newRow.classList.add("row");
-            for (let i = 0; i < 4; i++) {
-                const newCol = document.createElement("div");
-                const deleteDiv = document.createElement("div");
-                newCol.classList.add("col-6");
-                if (i === 1) {
-                    const newLabel1 = document.createElement("label");
-                    newLabel1.textContent = "نوع الشحنة";
-                    newLabel1.classList.add("text-bold-gray", "fs-16")
-                    const newInput1 = document.createElement("input");
-                    newInput1.classList.add("fs-14", "text-center", "w-100");
-                    newInput1.setAttribute("type", "text");
-                    newCol.appendChild(newLabel1);
-                    newCol.appendChild(newInput1);
-                } else if (i === 2) {
-                    const newLabel2 = document.createElement("label");
-                    newLabel2.textContent = "أضف صورة";
-                    newLabel2.classList.add("d-block", "fs-16", "text-bold-gray");
-                    const newLabel3 = document.createElement("label");
-
-                    newLabel3.textContent = "تحميل";
-                    const newi = document.createElement("i");
-                    newi.classList.add("fa-solid", "fa-cloud-arrow-up");
-                    newLabel3.appendChild(newi);
-                    const newInput1 = document.createElement("input");
-                    newLabel3.classList.add("upload");
-                    newInput1.setAttribute("type", "file");
-                    newInput1.setAttribute("hidden", true);
-                    newInput1.setAttribute("id", "upload6");
-                    newLabel3.setAttribute("for", "upload6");
-                    newCol.appendChild(newLabel2);
-                    newCol.appendChild(newLabel3);
-                    newCol.appendChild(newInput1);
-                } else if (i === 3) {
-                    for (let index = 0; index < 3; index++) {
-                        if (index === 0) {
-                            const newLabel3 = document.createElement("label");
-                            const newInput45 = document.createElement("input");
-                            const div = document.createElement("div");
-                            div.classList.add("w-25", "position-relative");
-                            newInput45.classList.add("w-100", "text-center", "fs-14");
-                            newLabel3.textContent = "الكمية";
-                            newLabel3.classList.add("fs-16", "text-bold-gray")
-                            newInput45.setAttribute("type", "number");
-                            newInput45.value = 0
-
-                            let plus = document.createElement("span");
-                            plus.innerText = '+'
-                            let minus = document.createElement("span");
-                            minus.innerText = '-'
-
-                            div.append(newLabel3)
-                            div.append(newInput45)
-                            div.appendChild(plus);
-                            div.appendChild(minus);
-
-                            plus.addEventListener('click', () => {
-                                newInput45.value++
-                            })
-                            minus.addEventListener('click', () => {
-                                newInput45.value--
-                            })
-
-                            newCol.appendChild(div);
-                        } else if (index === 1) {
-                            const newLabel3 = document.createElement("label");
-                            const newInput45 = document.createElement("input");
-                            const div = document.createElement("div");
-                            div.classList.add("w-25", "position-relative");
-                            newInput45.classList.add("w-100", "text-center", "fs-14");
-                            newLabel3.textContent = "الوزن";
-                            newLabel3.classList.add("fs-16", "text-bold-gray")
-                            newInput45.setAttribute("type", "number");
-                            newInput45.value = 0
-
-                            let plus = document.createElement("span");
-                            plus.innerText = '+'
-                            let minus = document.createElement("span");
-                            minus.innerText = '-'
-                            div.append(newLabel3)
-                            div.append(newInput45)
-                            div.appendChild(plus);
-                            div.appendChild(minus);
-                            plus.addEventListener('click', () => {
-                                newInput45.value++
-                            })
-                            minus.addEventListener('click', () => {
-                                newInput45.value--
-                            })
-                            newCol.appendChild(div);
-                        } else if (index === 2) {
-                            const newLabel3 = document.createElement("label");
-                            const newInput45 = document.createElement("input");
-                            const div = document.createElement("div");
-                            div.classList.add("w-25", "position-relative");
-                            newInput45.classList.add("w-100", "text-center", "fs-14");
-                            newLabel3.textContent = "إجمالى الوزن";
-                            newLabel3.classList.add("fs-16", "text-bold-gray")
-                            newInput45.setAttribute("type", "number");
-                            newInput45.value = 0
-
-                            let plus = document.createElement("span");
-                            plus.innerText = '+'
-                            let minus = document.createElement("span");
-                            minus.innerText = '-'
-                            div.append(newLabel3)
-                            div.append(newInput45)
-                            div.appendChild(plus);
-                            div.appendChild(minus);
-                            plus.addEventListener('click', () => {
-                                newInput45.value++
-                            })
-                            minus.addEventListener('click', () => {
-                                newInput45.value--
-                            })
-                            newCol.appendChild(div);
-                        }
-                    }
-                    newCol.classList.remove("col-6");
-                    newCol.classList.add("col-12", "d-flex", "justify-content-between");
-                    newRow.appendChild(newCol);
-                } else {
-                    // create delete button
-                    const deleteButton = document.createElement("i");
-                    deleteButton.classList.add("delete-form-button", "fa", "fa-times", "color-white", "delete-icon");
-                    newCol.classList.remove("col-6");
-                    newCol.classList.add("col-12");
-                    newCol.style.textAlign = "left"
-                    newCol.style.paddingLeft = 0
-                    newCol.appendChild(deleteButton);
-
-                    // add event listener to delete button
-                    deleteButton.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        const formToDelete = event.target.closest("form");
-                        formToDelete.remove();
-                    });
-                }
-
-                newRow.appendChild(newCol);
-            }
-
-            newForm.appendChild(newRow);
-            $(".formContainer2").append(newForm);
-        });
-    </script>
     <script>
       
         //toggle content on land shipping

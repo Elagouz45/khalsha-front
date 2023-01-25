@@ -282,9 +282,8 @@ input+span+span {
 }
 
 
-.service-details.service-three input+span+span ,
-.service-details.service-four input+span+span 
-{
+.service-details.service-three input+span+span,
+.service-details.service-four input+span+span {
     left: 52%;
 }
 
@@ -895,7 +894,7 @@ footer ul.list-none {
 }
 
 .using-way .source .owl-carousel .w-100 {
-    height: 570px;
+    height: 675px;
 }
 
 .using-way .services .owl-carousel .w-100 {
@@ -1075,14 +1074,14 @@ footer ul.list-none {
     color: #9E9E9E;
 }
 
-.register section  form {
+.register section form {
     margin: 0 70px 0;
     padding: 48px 42px;
     border-left: 1px solid #9E9E9E;
     border-right: 1px solid #9E9E9E;
 }
 
-.register  form .input-group label {
+.register form .input-group label {
     color: #5B5B5B;
     margin-bottom: 8px;
     line-height: 29px
@@ -1541,7 +1540,9 @@ footer ul.list-none {
     width: 390px;
 }
 
-
+.formContainer2 form .w-25{
+    min-width: 133px !important
+}
 
 .modal select+span {
     margin-right: 0;
@@ -1666,9 +1667,20 @@ footer ul.list-none {
     margin: 24px 0;
 }
 
-
-.service-details .certifications .col-sm-6 {
-    margin-bottom: 33px;
+.service-details .certifications .modal-dialog {
+    max-width: 600px;
+}
+.service-details .certifications .modal-body .row{
+    max-width: 428px !important;
+    margin: 21px auto 17px !important;
+    padding: 28px 34px !important;
+}
+.service-details .certifications .modal-body p{
+    margin-top: 34px;
+}
+.service-details .certifications .col-sm-7 ,
+    .service-details .certifications .col-sm-5 {
+    margin-bottom: 44px;
 }
 
 .service-details .modal-body .row {
@@ -1714,13 +1726,13 @@ footer ul.list-none {
     margin: 76px 0 35px;
 }
 
-.service-details.service-three #data-entry .modal-body .row ,
+.service-details.service-three #data-entry .modal-body .row,
 .service-details.service-four #data-entry .modal-body .row {
     padding: 23px 42px;
 }
 
 .service-details.service-three #data-entry .modal-body p,
-.service-details.service-three #container .modal-body p ,
+.service-details.service-three #container .modal-body p,
 .service-details.service-four #data-entry .modal-body p,
 .service-details.service-four #container .modal-body p {
     margin-top: 17px;
@@ -1733,7 +1745,7 @@ footer ul.list-none {
 .service-details.service-four #data-entry .modal-body select,
 .service-details.service-four #data-entry .modal-body input,
 .service-details.service-four #containerDialog .modal-body select,
-.service-details.service-four #containerDialog .modal-body input  {
+.service-details.service-four #containerDialog .modal-body input {
     margin-bottom: 22px;
     height: 25px;
     color: #5B5B5B99;
@@ -1741,63 +1753,76 @@ footer ul.list-none {
 }
 
 .service-details.service-three #data-entry .modal-body select,
-.service-details.service-four #data-entry .modal-body select
- {
+.service-details.service-four #data-entry .modal-body select {
     max-width: 415px;
 }
 
-.service-details.service-three #containerDialog .modal-body select ,
-.service-details.service-four #containerDialog .modal-body select{
+.service-details.service-three #containerDialog .modal-body select,
+.service-details.service-four #containerDialog .modal-body select {
     max-width: 216px;
 }
 
 .service-details.service-three #containerDialog .modal-body input[type='number'],
-.service-details.service-four #containerDialog .modal-body input[type='number']
- {
+.service-details.service-four #containerDialog .modal-body input[type='number'] {
     max-width: 115px;
 }
 
 .service-details.service-three #data-entry .modal-body select+span,
-.service-details.service-three #containerDialog .modal-body select+span ,
+.service-details.service-three #containerDialog .modal-body select+span,
 .service-details.service-four #data-entry .modal-body select+span,
 .service-details.service-four #containerDialog .modal-body select+span {
     left: 30px;
 }
 
 .service-details.service-three #data-entry .modal-body input,
-.service-details.service-four #data-entry .modal-body input
- {
+.service-details.service-four #data-entry .modal-body input {
     max-width: 178px;
 }
 
-.service-details.service-three #containerDialog .upload ,
-.service-details.service-four #containerDialog .upload{
-    margin-bottom: 22px;
-    height: 25px;
-    width: 86px;
-    border-radius: 4px;
+.service-details.service-three #containerDialog .upload,
+.service-details.service-four #containerDialog .upload,
+.formContainer .upload {
+    margin-bottom: 22px !important;
+    height: 25px !important;
+    width: 86px !important;
+    border-radius: 4px !important;
     font-size: 11px;
     text-align: center;
-    line-height: 26px;
+    line-height: 26px !important;
+}
+
+.service-details.service2 #reassemble input[type='text'] ,
+    .service-details.service2 #reassemble select {
+    height: 25px;
+    max-width: 275px;
+}
+.service-details.service2 #landShippingInfo input[type='text'],
+.service-details.service2 #landShippingInfo select {
+    height: 25px;
+    max-width: 206px !important; 
+}
+.service-details.service2 #landShippingInfo select+span{
+    left: 40px !important;
+    top: 50%;
 }
 .service-details.service-three #containerDialog button.add-container,
-.service-details.service-four #containerDialog button.add-container
-{
+.service-details.service-four #containerDialog button.add-container {
     border: 0;
     display: block;
-    margin:-10px auto 0;
+    margin: -10px auto 0;
     height: 24px;
 }
+
 .service-details.service-three #containerDialog .modal-body input+span,
-.service-details.service-four #containerDialog .modal-body input+span
-{
+.service-details.service-four #containerDialog .modal-body input+span {
     right: 17px;
 }
+
 .service-details.service-three #containerDialog .modal-body input+span+span,
-.service-details.service-four #containerDialog .modal-body input+span+span
-{
+.service-details.service-four #containerDialog .modal-body input+span+span {
     right: 112px;
 }
+
 /*services*/
 
 .services-title .resources-khalasha h1 {
@@ -2035,6 +2060,7 @@ article.on {
     padding: 4px 16px;
     color: #fff;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .landShippingInfo .modal-body {
@@ -3693,6 +3719,7 @@ footer .item-brand {
 }
 
 .formContainer2 input,
+.formContainer2 select,
 .formContainer3 input,
 .formContainer3 select {
     color: #5B5B5B99;
@@ -3767,7 +3794,7 @@ footer .item-brand {
 
     .using-way .owl-carousel h4,
     .register .text p,
-    .register section form  button.btn {
+    .register section form button.btn {
         font-size: 22px;
     }
 
@@ -4004,6 +4031,9 @@ footer .item-brand {
     .about-us .our-mission .section2 {
         margin-top: 30px;
     }
+    .using-way .source .owl-carousel .w-100 {
+        height: 695px;
+    }
 }
 
 @media (max-width:1024.95px) {
@@ -4058,7 +4088,7 @@ footer .item-brand {
     }
 
     .using-way .source .owl-carousel .w-100 {
-        height: 480;
+        height: 640px;
     }
 
 
@@ -4343,6 +4373,7 @@ footer .item-brand {
 }
 
 @media (max-width:767.95px) {
+   
 
     .home-page .home-header-banner .banner-content h2 {
         font-size: 35px;
@@ -4689,7 +4720,7 @@ footer .item-brand {
     }
 
     .using-way .source .owl-carousel .w-100 {
-        height: 530px;
+        height: 590px;
     }
 
     .using-way .services .owl-carousel .w-100 {
@@ -4760,7 +4791,7 @@ footer .item-brand {
     }
 
     .register .modal-dialog .modal-body .col-6,
-    .register  .modal-dialog .modal-body input{
+    .register .modal-dialog .modal-body input {
         width: 100% !important;
         max-width: unset;
     }
@@ -4769,6 +4800,7 @@ footer .item-brand {
     .register .modal-body span.icon {
         left: 37px;
     }
+
     .about-us .py-150 {
         padding: 65px 0 !important;
     }
@@ -4858,8 +4890,17 @@ footer .item-brand {
         padding: 6px 0;
         font-size: 10px;
     }
-
-
+    .service-details.service2 #landShippingInfo .col-6{
+        width: 100% !important;
+    }
+    .service-details.service2 #landShippingInfo input[type='text'], 
+    .service-details.service2 #landShippingInfo select {
+        width: 100% !important;
+        max-width: unset !important;
+    }
+    .service-details.service2 #landShippingInfo select+span{
+        left: 18px !important;
+    }
 
     /* .service-details table .two-input input:not([type="radio"]) {
         width: 100px;
@@ -5004,7 +5045,10 @@ footer .item-brand {
         font-size: 15px !important;
         width: 100px;
     }
-
+    .service-details .certifications .col-sm-7, 
+    .service-details .certifications .col-sm-5 {
+        margin-bottom: 17px;
+    }
     .my-account .col-sm-4 {
         width: calc((100% / 12) * 5);
     }
@@ -5129,6 +5173,11 @@ footer .item-brand {
 
     .formContainer2 form .w-25 {
         width: 32% !important;
+        min-width: unset !important;
+    }
+    .service-details table input:not([type="radio"]),
+     .service-details table select {
+        height: 33px;
     }
 
     .service-details .info .modal-body input,
@@ -5142,35 +5191,34 @@ footer .item-brand {
     }
 
     .service-details.service-three #data-entry .modal-body input,
-    .service-details.service-three #data-entry .modal-body select ,
+    .service-details.service-three #data-entry .modal-body select,
     .service-details.service-three #containerDialog .modal-body input,
     .service-details.service-three #containerDialog .modal-body select,
     .service-details.service-four #data-entry .modal-body input,
-    .service-details.service-four #data-entry .modal-body select ,
+    .service-details.service-four #data-entry .modal-body select,
     .service-details.service-four #containerDialog .modal-body input,
-    .service-details.service-four #containerDialog .modal-body select{
+    .service-details.service-four #containerDialog .modal-body select {
         max-width: 100% !important;
         width: 100% !important;
     }
 
-    .service-details.service-three #data-entry .modal-body .row ,
-    .service-details.service-three #containerDialog .modal-body .row ,
-    .service-details.service-four #data-entry .modal-body .row ,
-    .service-details.service-four #containerDialog .modal-body .row 
-    {
+    .service-details.service-three #data-entry .modal-body .row,
+    .service-details.service-three #containerDialog .modal-body .row,
+    .service-details.service-four #data-entry .modal-body .row,
+    .service-details.service-four #containerDialog .modal-body .row {
         padding: 20px 5px;
     }
 
-    .service-details.service-three #containerDialog .modal-body input+span+span ,
-    .service-details.service-four #containerDialog .modal-body input+span+span 
-    {
-        left:8px;
+    .service-details.service-three #containerDialog .modal-body input+span+span,
+    .service-details.service-four #containerDialog .modal-body input+span+span {
+        left: 8px;
         right: unset;
-    } 
+    }
+
     .service-details.service-three #data-entry .modal-body .fs-16,
     .service-details.service-three #containerDialog .modal-body .fs-16,
     .service-details.service-four #data-entry .modal-body .fs-16,
-    .service-details.service-four #containerDialog .modal-body .fs-16{
+    .service-details.service-four #containerDialog .modal-body .fs-16 {
         font-size: 14px;
     }
 }

@@ -22,7 +22,7 @@
                 <img src="./../assets/images/Frame.svg">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
@@ -107,205 +107,212 @@
                     </div>
 
                     <div class="step-content fill-application table-responsive  d-block">
-                        <table class="w-100">
-                            <tbody>
-                                <tr>
-                                    <td class=" fs-22 text-center text-bold-gray font-bold">نوع الشحنة</td>
-                                    <td class=" fs-22 text-center text-bold-gray " colspan="2">
-                                        <div class="d-inline-block w-50 px-3">
-                                            <input type="radio" name="type" id="import">
-                                            <label for="import">استيراد</label>
-                                        </div>
-                                        <div class="d-inline-block w-50 px-3">
-                                            <input type="radio" name="type" id="export">
-                                            <label for="export">تصدير</label>
-                                        </div>
-                                    </td>
+                        <form action="">
+                            <table class="w-100">
+                                <tbody>
+                                    <tr>
+                                        <td class=" fs-22 text-center text-bold-gray font-bold">نوع الشحنة</td>
+                                        <td class=" fs-22 text-center text-bold-gray " colspan="2">
+                                            <div class="d-inline-block w-50 px-3">
+                                                <input type="radio" name="type" id="import">
+                                                <label for="import">استيراد</label>
+                                            </div>
+                                            <div class="d-inline-block w-50 px-3">
+                                                <input type="radio" name="type" id="export">
+                                                <label for="export">تصدير</label>
+                                            </div>
+                                        </td>
 
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <span class="msg-icn">؟</span>
-                                    </td>
-                                </tr>
+                                        <td class=" fs-22 text-center text-bold-gray">
+                                            <span class="msg-icn">؟</span>
+                                        </td>
+                                    </tr>
 
-                                <tr>
-                                    <td class=" fs-22 text-center text-bold-gray font-bold">مجال الشحنة</td>
+                                    <tr>
+                                        <td class=" fs-22 text-center text-bold-gray font-bold">مجال الشحنة</td>
 
-                                    <td class=" fs-22 text-center text-bold-gray " colspan="2">
-                                        <div class="d-inline-block w-50 px-3">
-                                            <input name="field" type="radio" id="personality">
-                                            <label for="personality">شخصية</label>
-                                        </div>
-                                        <div class="d-inline-block w-50 px-3">
-                                            <input name="field" type="radio" id="commercial">
-                                            <label for="commercial">تجارية</label>
-                                        </div>
-                                    </td>
-                                    
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <span class="msg-icn">؟</span>
-                                    </td>
-                                </tr>
+                                        <td class=" fs-22 text-center text-bold-gray " colspan="2">
+                                            <div class="d-inline-block w-50 px-3">
+                                                <input name="field" type="radio" id="personality">
+                                                <label for="personality">شخصية</label>
+                                            </div>
+                                            <div class="d-inline-block w-50 px-3">
+                                                <input name="field" type="radio" id="commercial">
+                                                <label for="commercial">تجارية</label>
+                                            </div>
+                                        </td>
 
-
-                                <tr>
-                                    <td class=" fs-22 text-center text-bold-gray font-bold">نوع البضاعة</td>
-                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                        <select class="fs-18">
-                                            <option value="" selected>الاجهزة الكهربائية</option>
-                                        </select>
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <span class="msg-icn">؟</span>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class=" fs-22 text-center text-bold-gray font-bold">عدد الحاويات / الطرود </td>
-                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                        <input type="number" class="fs-18">
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <span class="msg-icn">؟</span>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="fs-22 text-center text-bold-gray font-bold">
-                                        وصف الشحنة</td>
-                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                        <input type="text" value="ثلاجات وتلفزيونات" class="fs-18">
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <span class="msg-icn">؟</span>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class=" fs-22 text-center text-bold-gray font-bold">منفذ الشحنة</td>
-                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                        <select class="fs-18">
-                                            <option value="" selected>ميناء الرياض الجاف</option>
-                                        </select>
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <span class="msg-icn">؟</span>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class=" fs-22 text-center text-bold-gray font-bold">التوصيل إلي</td>
-                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                        <select class="fs-18">
-                                            <option value="" selected>إسم المدينة - الرمز البريدي </option>
-                                        </select>
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <span class="msg-icn">؟</span>
-                                    </td>
-                                </tr>
+                                        <td class=" fs-22 text-center text-bold-gray">
+                                            <span class="msg-icn">؟</span>
+                                        </td>
+                                    </tr>
 
 
-                            </tbody>
-                        </table>
+                                    <tr>
+                                        <td class=" fs-22 text-center text-bold-gray font-bold">نوع البضاعة</td>
+                                        <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                            <select class="fs-18">
+                                                <option value="" selected>الاجهزة الكهربائية</option>
+                                            </select>
+                                        </td>
+                                        <td class=" fs-22 text-center text-bold-gray">
+                                            <span class="msg-icn">؟</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class=" fs-22 text-center text-bold-gray font-bold">عدد الحاويات / الطرود
+                                        </td>
+                                        <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                            <input type="number" class="fs-18">
+                                        </td>
+                                        <td class=" fs-22 text-center text-bold-gray">
+                                            <span class="msg-icn">؟</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="fs-22 text-center text-bold-gray font-bold">
+                                            وصف الشحنة</td>
+                                        <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                            <input type="text" value="ثلاجات وتلفزيونات" class="fs-18">
+                                        </td>
+                                        <td class=" fs-22 text-center text-bold-gray">
+                                            <span class="msg-icn">؟</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class=" fs-22 text-center text-bold-gray font-bold">منفذ الشحنة</td>
+                                        <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                            <select class="fs-18">
+                                                <option value="" selected>ميناء الرياض الجاف</option>
+                                            </select>
+                                        </td>
+                                        <td class=" fs-22 text-center text-bold-gray">
+                                            <span class="msg-icn">؟</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class=" fs-22 text-center text-bold-gray font-bold">التوصيل إلي</td>
+                                        <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                            <select class="fs-18">
+                                                <option value="" selected>إسم المدينة - الرمز البريدي </option>
+                                            </select>
+                                        </td>
+                                        <td class=" fs-22 text-center text-bold-gray">
+                                            <span class="msg-icn">؟</span>
+                                        </td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </form>
                     </div>
 
                     <div class="additional-services step-content table-responsive d-none">
-                        <table class="w-100">
-                            <tbody>
+                        <form action="">
+                            <table class="w-100">
+                                <tbody>
 
-                                <tr>
-                                    <td class=" fs-22 text-center text-bold-gray font-bold">إضافة الفاتورة التجارية
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                    <tr>
+                                        <td class=" fs-22 text-center text-bold-gray font-bold">إضافة الفاتورة التجارية
+                                        </td>
+                                        <td class=" fs-22 text-center text-bold-gray" colspan="2">
 
-                                        <label for="upload1">
-                                            تحميل
-                                            <i class="fa-solid fa-cloud-arrow-up"></i>
-                                        </label>
-                                        <input type="file" hidden id="upload1">
+                                            <label for="upload1">
+                                                تحميل
+                                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                                            </label>
+                                            <input type="file" hidden id="upload1">
 
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <span class="msg-icn">؟</span>
-                                    </td>
-                                </tr>
+                                        </td>
+                                        <td class=" fs-22 text-center text-bold-gray">
+                                            <span class="msg-icn">؟</span>
+                                        </td>
+                                    </tr>
 
-                                <tr>
-                                    <td class=" fs-22 text-center text-bold-gray font-bold">
-                                        إضافة البوليصة
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                        <label for="upload2">
-                                            تحميل
-                                            <i class="fa-solid fa-cloud-arrow-up"></i>
-                                        </label>
-                                        <input type="file" hidden id="upload2">
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <span class="msg-icn">؟</span>
-                                    </td>
-                                </tr>
+                                    <tr>
+                                        <td class=" fs-22 text-center text-bold-gray font-bold">
+                                            إضافة البوليصة
+                                        </td>
+                                        <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                            <label for="upload2">
+                                                تحميل
+                                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                                            </label>
+                                            <input type="file" hidden id="upload2">
+                                        </td>
+                                        <td class=" fs-22 text-center text-bold-gray">
+                                            <span class="msg-icn">؟</span>
+                                        </td>
+                                    </tr>
 
-                                <tr>
-                                    <td class=" fs-22 text-center text-bold-gray font-bold">
-                                        مرفقات آخــري</td>
-                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                        <label for="upload3">
-                                            تحميل
-                                            <i class="fa-solid fa-cloud-arrow-up"></i>
-                                        </label>
-                                        <input type="file" hidden id="upload3">
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <span class="msg-icn">؟</span>
-                                    </td>
-                                </tr>
+                                    <tr>
+                                        <td class=" fs-22 text-center text-bold-gray font-bold">
+                                            مرفقات آخــري</td>
+                                        <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                            <label for="upload3">
+                                                تحميل
+                                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                                            </label>
+                                            <input type="file" hidden id="upload3">
+                                        </td>
+                                        <td class=" fs-22 text-center text-bold-gray">
+                                            <span class="msg-icn">؟</span>
+                                        </td>
+                                    </tr>
 
 
-                            </tbody>
-                        </table>
+                                </tbody>
+                            </table>
+                        </form>
                     </div>
 
                     <div class="oreder-confirmation step-content table-responsive d-none">
-                        <table class="w-100">
-                            <tbody>
+                        <form action="">
+                            <table class="w-100">
+                                <tbody>
 
-                                <tr>
-                                    <td class=" fs-22 text-center text-bold-gray font-bold">اسم الشخص المسؤول</td>
-                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                        <input type="text" placeholder="عبد الكريم محمد" class="fs-18">
+                                    <tr>
+                                        <td class=" fs-22 text-center text-bold-gray font-bold">اسم الشخص المسؤول</td>
+                                        <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                            <input type="text" placeholder="عبد الكريم محمد" class="fs-18">
 
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <span class="msg-icn">؟</span>
-                                    </td>
-                                </tr>
+                                        </td>
+                                        <td class=" fs-22 text-center text-bold-gray">
+                                            <span class="msg-icn">؟</span>
+                                        </td>
+                                    </tr>
 
-                                <tr>
-                                    <td class=" fs-22 text-center text-bold-gray font-bold">
-                                        رقم الجوال
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                        <input type="text" placeholder="800 XXX XXXX" class="fs-18">
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <span class="msg-icn">؟</span>
-                                    </td>
-                                </tr>
+                                    <tr>
+                                        <td class=" fs-22 text-center text-bold-gray font-bold">
+                                            رقم الجوال
+                                        </td>
+                                        <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                            <input type="text" placeholder="800 XXX XXXX" class="fs-18">
+                                        </td>
+                                        <td class=" fs-22 text-center text-bold-gray">
+                                            <span class="msg-icn">؟</span>
+                                        </td>
+                                    </tr>
 
-                                <tr>
-                                    <td class=" fs-22 text-center text-bold-gray font-bold">الإيميل</td>
-                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                        <input type="text" placeholder="Support@khlasha.com" class="fs-18">
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <span class="msg-icn">؟</span>
-                                    </td>
-                                </tr>
+                                    <tr>
+                                        <td class=" fs-22 text-center text-bold-gray font-bold">الإيميل</td>
+                                        <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                            <input type="text" placeholder="Support@khlasha.com" class="fs-18">
+                                        </td>
+                                        <td class=" fs-22 text-center text-bold-gray">
+                                            <span class="msg-icn">؟</span>
+                                        </td>
+                                    </tr>
 
 
-                            </tbody>
-                        </table>
+                                </tbody>
+                            </table>
+                        </form>
                     </div>
 
                     <div class="send-order step-content d-none">
@@ -327,194 +334,194 @@
                 <hr>
 
                 <div class="w-75 mx-auto">
-                   
-                        <div class="row">
 
-                            <div class="col-12">
-                                <p class="bg-main-brown text-white mx-auto ">تصفح شركات مقدمي الخدمات</p>
-                            </div>
+                    <div class="row">
 
-                            <div class="col-sm-6">
-                                <div class="position-relative">
-                                    <button class="position-absolute btn fs-18 text-white bg-main-blue ">شركة النقل
-                                        البري</button>
-                                    <img src="./../assets/images/Trella 1.png" width="100%">
-                                    <div class="d-flex justify-content-around">
+                        <div class="col-12">
+                            <p class="bg-main-brown text-white mx-auto ">تصفح شركات مقدمي الخدمات</p>
+                        </div>
 
-                                        <p class="text-center">
-                                            <span class="text-bold-gray d-block fs-14">متوسط التقييم</span>
-                                            <span class="d-block fs-18">
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                            </span>
-                                        </p>
+                        <div class="col-sm-6">
+                            <div class="position-relative">
+                                <button class="position-absolute btn fs-18 text-white bg-main-blue ">شركة النقل
+                                    البري</button>
+                                <img src="./../assets/images/Trella 1.png" width="100%">
+                                <div class="d-flex justify-content-around">
 
-                                        <p class="text-center">
-                                            <span class="d-block text-bold-gray fs-14">متوسط الأسعار</span>
-                                            <span class="d-block fs-18  text-main-blue">2000 - 2300 ريال</span>
-                                        </p>
+                                    <p class="text-center">
+                                        <span class="text-bold-gray d-block fs-14">متوسط التقييم</span>
+                                        <span class="d-block fs-18">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                        </span>
+                                    </p>
 
-                                    </div>
-                                    <button class="position-absolute fs-18 text-white btn">تصفح الآراء</button>
+                                    <p class="text-center">
+                                        <span class="d-block text-bold-gray fs-14">متوسط الأسعار</span>
+                                        <span class="d-block fs-18  text-main-blue">2000 - 2300 ريال</span>
+                                    </p>
+
                                 </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <div class="position-relative">
-                                    <button class="position-absolute fs-18 btn text-white bg-main-blue ">شركة النقل
-                                        البري</button>
-                                    <img src="./../assets/images/Trella 1.png" width="100%">
-                                    <div class="d-flex justify-content-around">
-
-                                        <p class="text-center">
-                                            <span class="text-bold-gray d-block fs-14">متوسط التقييم</span>
-                                            <span class="d-block fs-18">
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                            </span>
-                                        </p>
-
-                                        <p class="text-center">
-                                            <span class="d-block text-bold-gray fs-14">متوسط الأسعار</span>
-                                            <span class="d-block fs-18 text-main-blue">2000 - 2300 ريال</span>
-                                        </p>
-
-                                    </div>
-                                    <button class="position-absolute fs-18 btn text-white ">تصفح الآراء</button>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <div class="position-relative">
-                                    <button class="position-absolute fs-18 btn text-white bg-main-blue ">شركة النقل
-                                        البري</button>
-                                    <img src="./../assets/images/Trella 1.png" width="100%">
-                                    <div class="d-flex justify-content-around">
-
-                                        <p class="text-center">
-                                            <span class="text-bold-gray d-block fs-14">متوسط التقييم</span>
-                                            <span class="d-block fs-18">
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                            </span>
-                                        </p>
-
-                                        <p class="text-center">
-                                            <span class="d-block text-bold-gray fs-14">متوسط الأسعار</span>
-                                            <span class="d-block fs-18 text-main-blue">2000 - 2300 ريال</span>
-                                        </p>
-
-                                    </div>
-                                    <button class="position-absolute fs-18 text-white btn">تصفح الآراء</button>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <div class="position-relative">
-                                    <button class="position-absolute fs-18 btn text-white bg-main-blue ">شركة النقل
-                                        البري</button>
-                                    <img src="./../assets/images/Trella 1.png" width="100%">
-                                    <div class="d-flex justify-content-around">
-
-                                        <p class="text-center">
-                                            <span class="text-bold-gray d-block fs-14">متوسط التقييم</span>
-                                            <span class="d-block fs-18">
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                            </span>
-                                        </p>
-
-                                        <p class="text-center">
-                                            <span class="d-block text-bold-gray fs-14">متوسط الأسعار</span>
-                                            <span class="d-block fs-18 text-main-blue">2000 - 2300 ريال</span>
-                                        </p>
-
-                                    </div>
-                                    <button class="position-absolute btn text-white fs-18 ">تصفح الآراء</button>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <div class="position-relative">
-                                    <button class="position-absolute fs-18 btn text-white bg-main-blue ">شركة النقل
-                                        البري</button>
-                                    <img src="./../assets/images/Trella 1.png" width="100%">
-                                    <div class="d-flex justify-content-around">
-
-                                        <p class="text-center">
-                                            <span class="text-bold-gray d-block fs-14">متوسط التقييم</span>
-                                            <span class="d-block fs-18">
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                            </span>
-                                        </p>
-
-                                        <p class="text-center">
-                                            <span class="d-block text-bold-gray fs-14">متوسط الأسعار</span>
-                                            <span class="d-block fs-18 text-main-blue">2000 - 2300 ريال</span>
-                                        </p>
-
-                                    </div>
-                                    <button class="position-absolute fs-18 text-white btn">تصفح الآراء</button>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <div class="position-relative">
-                                    <button class="position-absolute fs-18 btn text-white bg-main-blue ">شركة النقل
-                                        البري</button>
-                                    <img src="./../assets/images/Trella 1.png" width="100%">
-                                    <div class="d-flex justify-content-around">
-
-                                        <p class="text-center">
-                                            <span class="text-bold-gray d-block fs-14">متوسط التقييم</span>
-                                            <span class="d-block fs-18">
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                                <img src="../assets/images/Star 10.png" >
-                                            </span>
-                                        </p>
-
-                                        <p class="text-center">
-                                            <span class="d-block text-bold-gray fs-14">متوسط الأسعار</span>
-                                            <span class="d-block  fs-18 text-main-blue">2000 - 2300 ريال</span>
-                                        </p>
-
-                                    </div>
-                                    <button class="position-absolute fs-18 btn text-white ">تصفح الآراء</button>
-                                </div>
+                                <button class="position-absolute fs-18 text-white btn">تصفح الآراء</button>
                             </div>
                         </div>
-                   
+
+                        <div class="col-sm-6">
+                            <div class="position-relative">
+                                <button class="position-absolute fs-18 btn text-white bg-main-blue ">شركة النقل
+                                    البري</button>
+                                <img src="./../assets/images/Trella 1.png" width="100%">
+                                <div class="d-flex justify-content-around">
+
+                                    <p class="text-center">
+                                        <span class="text-bold-gray d-block fs-14">متوسط التقييم</span>
+                                        <span class="d-block fs-18">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                        </span>
+                                    </p>
+
+                                    <p class="text-center">
+                                        <span class="d-block text-bold-gray fs-14">متوسط الأسعار</span>
+                                        <span class="d-block fs-18 text-main-blue">2000 - 2300 ريال</span>
+                                    </p>
+
+                                </div>
+                                <button class="position-absolute fs-18 btn text-white ">تصفح الآراء</button>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="position-relative">
+                                <button class="position-absolute fs-18 btn text-white bg-main-blue ">شركة النقل
+                                    البري</button>
+                                <img src="./../assets/images/Trella 1.png" width="100%">
+                                <div class="d-flex justify-content-around">
+
+                                    <p class="text-center">
+                                        <span class="text-bold-gray d-block fs-14">متوسط التقييم</span>
+                                        <span class="d-block fs-18">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                        </span>
+                                    </p>
+
+                                    <p class="text-center">
+                                        <span class="d-block text-bold-gray fs-14">متوسط الأسعار</span>
+                                        <span class="d-block fs-18 text-main-blue">2000 - 2300 ريال</span>
+                                    </p>
+
+                                </div>
+                                <button class="position-absolute fs-18 text-white btn">تصفح الآراء</button>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="position-relative">
+                                <button class="position-absolute fs-18 btn text-white bg-main-blue ">شركة النقل
+                                    البري</button>
+                                <img src="./../assets/images/Trella 1.png" width="100%">
+                                <div class="d-flex justify-content-around">
+
+                                    <p class="text-center">
+                                        <span class="text-bold-gray d-block fs-14">متوسط التقييم</span>
+                                        <span class="d-block fs-18">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                        </span>
+                                    </p>
+
+                                    <p class="text-center">
+                                        <span class="d-block text-bold-gray fs-14">متوسط الأسعار</span>
+                                        <span class="d-block fs-18 text-main-blue">2000 - 2300 ريال</span>
+                                    </p>
+
+                                </div>
+                                <button class="position-absolute btn text-white fs-18 ">تصفح الآراء</button>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="position-relative">
+                                <button class="position-absolute fs-18 btn text-white bg-main-blue ">شركة النقل
+                                    البري</button>
+                                <img src="./../assets/images/Trella 1.png" width="100%">
+                                <div class="d-flex justify-content-around">
+
+                                    <p class="text-center">
+                                        <span class="text-bold-gray d-block fs-14">متوسط التقييم</span>
+                                        <span class="d-block fs-18">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                        </span>
+                                    </p>
+
+                                    <p class="text-center">
+                                        <span class="d-block text-bold-gray fs-14">متوسط الأسعار</span>
+                                        <span class="d-block fs-18 text-main-blue">2000 - 2300 ريال</span>
+                                    </p>
+
+                                </div>
+                                <button class="position-absolute fs-18 text-white btn">تصفح الآراء</button>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="position-relative">
+                                <button class="position-absolute fs-18 btn text-white bg-main-blue ">شركة النقل
+                                    البري</button>
+                                <img src="./../assets/images/Trella 1.png" width="100%">
+                                <div class="d-flex justify-content-around">
+
+                                    <p class="text-center">
+                                        <span class="text-bold-gray d-block fs-14">متوسط التقييم</span>
+                                        <span class="d-block fs-18">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                            <img src="../assets/images/Star 10.png">
+                                        </span>
+                                    </p>
+
+                                    <p class="text-center">
+                                        <span class="d-block text-bold-gray fs-14">متوسط الأسعار</span>
+                                        <span class="d-block  fs-18 text-main-blue">2000 - 2300 ريال</span>
+                                    </p>
+
+                                </div>
+                                <button class="position-absolute fs-18 btn text-white ">تصفح الآراء</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <hr>
             </div>
 
 
-         <div class="container">
-            <div class="w-75 mx-auto">
-                <div class="d-flex justify-content-between buttons">
-                    <button class="next btn text-bold-gray font-bold">
-                        <i class="fa-solid fa-right-long"></i>
-                        التالي</button>
-                    <button class="back btn text-bold-gray font-bold">الرجوع
-                        <i class="fa-solid fa-left-long"></i>
-                    </button>
+            <div class="container">
+                <div class="w-75 mx-auto">
+                    <div class="d-flex justify-content-between buttons">
+                        <button class="next btn text-bold-gray font-bold">
+                            <i class="fa-solid fa-right-long"></i>
+                            التالي</button>
+                        <button class="back btn text-bold-gray font-bold">الرجوع
+                            <i class="fa-solid fa-left-long"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-         </div>
 
 
 
@@ -640,7 +647,7 @@
     <script src="./../assets/js/bootstrap.min.js"></script>
     <script src="./../assets/js/index.js"></script>
 
-   
+
 </body>
 
 </html>
