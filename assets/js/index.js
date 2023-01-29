@@ -150,129 +150,129 @@ determineCertificates('.certifications .confirm', '.certificate-text div', 'تع
 
 
 // add container   =========> service four details
-function addContainer() {  
-            const newForm = document.createElement("form");
-            const newRow = document.createElement("div");
-            newRow.classList.add("row");
-            for (let i = 0; i < 5; i++) {
-                const newCol = document.createElement("div");
-                newCol.classList.add("col-6");
-                if (i === 1) {
-                    newCol.classList.add("order-1", "position-relative");
-                    const newLabel1 = document.createElement("label");
-                    newLabel1.textContent = "موقع الشحنة";
-                    newLabel1.classList.add("text-bold-gray", "fs-16", "font-bold", "d-block");
+function addContainer() {
+    const newForm = document.createElement("form");
+    const newRow = document.createElement("div");
+    newRow.classList.add("row");
+    for (let i = 0; i < 5; i++) {
+        const newCol = document.createElement("div");
+        newCol.classList.add("col-6");
+        if (i === 1) {
+            newCol.classList.add("order-1", "position-relative");
+            const newLabel1 = document.createElement("label");
+            newLabel1.textContent = "موقع الشحنة";
+            newLabel1.classList.add("text-bold-gray", "fs-16", "font-bold", "d-block");
 
-                    const newselect1 = document.createElement("select");
-                    const newoption = document.createElement("option");
-                    newselect1.classList.add("fs-14", "text-center", "w-100");
-                    newoption.setAttribute("value", "");
+            const newselect1 = document.createElement("select");
+            const newoption = document.createElement("option");
+            newselect1.classList.add("fs-14", "text-center", "w-100");
+            newoption.setAttribute("value", "");
 
-                    let span = document.createElement("span");
-
-
-                    newselect1.append(newoption)
-                    newCol.appendChild(newLabel1);
-                    newCol.appendChild(newselect1);
-                    newCol.appendChild(span);
-                }
-
-                else if (i === 2) {
-                    newCol.classList.add('order-sm-2', 'order-4')
-                    const newLabel2 = document.createElement("label");
-                    newLabel2.textContent = "أضف صورة";
-                    newLabel2.classList.add("text-bold-gray", "fs-16", "font-bold", "d-block");
-                    const newLabel3 = document.createElement("label");
-
-                    newLabel3.textContent = "تحميل";
-                    const newi = document.createElement("i");
-                    newi.classList.add("fa-solid", "fa-cloud-arrow-up");
-                    newLabel3.appendChild(newi);
-                    const newInput1 = document.createElement("input");
-                    newLabel3.classList.add("upload");
-                    newInput1.setAttribute("type", "file");
-                    newInput1.setAttribute("hidden", true);
-                    newInput1.setAttribute("id", "upload2");
-                    newLabel3.setAttribute("for", "upload2");
-                    newCol.appendChild(newLabel2);
-                    newCol.appendChild(newLabel3);
-                    newCol.appendChild(newInput1);
-                }
-
-                else if (i === 3) {
-                    newCol.classList.add("position-relative", 'order-sm-3', 'order-2');
-                    const newLabel1 = document.createElement("label");
-                    newLabel1.textContent = " نوع الحاوية";
-                    newLabel1.classList.add("text-bold-gray", "fs-16", "font-bold", "d-block");
-
-                    const newselect1 = document.createElement("select");
-                    const newoption = document.createElement("option");
-                    newselect1.classList.add("fs-14", "text-center", "w-100");
-                    newoption.setAttribute("value", "");
-
-                    let span = document.createElement("span");
+            let span = document.createElement("span");
 
 
-                    newselect1.append(newoption)
-                    newCol.appendChild(newLabel1);
-                    newCol.appendChild(newselect1);
-                    newCol.appendChild(span);
-                }
+            newselect1.append(newoption)
+            newCol.appendChild(newLabel1);
+            newCol.appendChild(newselect1);
+            newCol.appendChild(span);
+        }
 
-                else if (i === 4) {
-                    newCol.classList.add("order-sm-4", "order-3", "position-relative")
-                    const newLabel3 = document.createElement("label");
-                    const newInput45 = document.createElement("input");
+        else if (i === 2) {
+            newCol.classList.add('order-sm-2', 'order-4')
+            const newLabel2 = document.createElement("label");
+            newLabel2.textContent = "أضف صورة";
+            newLabel2.classList.add("text-bold-gray", "fs-16", "font-bold", "d-block");
+            const newLabel3 = document.createElement("label");
 
-                    newInput45.classList.add("fs-14", "text-center", "w-100")
-                    newLabel3.textContent = "عدد الحاويات";
-                    newLabel3.classList.add("fs-16", "text-bold-gray", "font-bold", "d-block")
-                    newInput45.setAttribute("type", "number");
-                    newInput45.value = 0
+            newLabel3.textContent = "تحميل";
+            const newi = document.createElement("i");
+            newi.classList.add("fa-solid", "fa-cloud-arrow-up");
+            newLabel3.appendChild(newi);
+            const newInput1 = document.createElement("input");
+            newLabel3.classList.add("upload");
+            newInput1.setAttribute("type", "file");
+            newInput1.setAttribute("hidden", true);
+            newInput1.setAttribute("id", "upload2");
+            newLabel3.setAttribute("for", "upload2");
+            newCol.appendChild(newLabel2);
+            newCol.appendChild(newLabel3);
+            newCol.appendChild(newInput1);
+        }
 
-                    let plus = document.createElement("span");
-                    plus.innerText = '+'
-                    let minus = document.createElement("span");
-                    minus.innerText = '-'
+        else if (i === 3) {
+            newCol.classList.add("position-relative", 'order-sm-3', 'order-2');
+            const newLabel1 = document.createElement("label");
+            newLabel1.textContent = " نوع الحاوية";
+            newLabel1.classList.add("text-bold-gray", "fs-16", "font-bold", "d-block");
 
-                    newCol.append(newLabel3)
-                    newCol.append(newInput45)
-                    newCol.appendChild(plus);
-                    newCol.appendChild(minus);
+            const newselect1 = document.createElement("select");
+            const newoption = document.createElement("option");
+            newselect1.classList.add("fs-14", "text-center", "w-100");
+            newoption.setAttribute("value", "");
 
-                    plus.addEventListener('click', () => {
-                        newInput45.value++
-                    })
-                    minus.addEventListener('click', () => {
-                        newInput45.value--
-                    })
-                }
+            let span = document.createElement("span");
 
-                else {
-                    // create delete button
-                    const deleteButton = document.createElement("i");
-                    deleteButton.classList.add("delete-form-button", "fa", "fa-times", "color-white", "delete-icon");
-                    newCol.classList.remove("col-6");
-                    newCol.classList.add("col-12");
-                    newCol.style.textAlign = "left"
-                    newCol.style.paddingLeft = 0
-                    newCol.appendChild(deleteButton);
 
-                    // add event listener to delete button
-                    deleteButton.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        const formToDelete = event.target.closest("form");
-                        formToDelete.remove();
-                    });
-                }
+            newselect1.append(newoption)
+            newCol.appendChild(newLabel1);
+            newCol.appendChild(newselect1);
+            newCol.appendChild(span);
+        }
 
-                newRow.appendChild(newCol);
-            }
+        else if (i === 4) {
+            newCol.classList.add("order-sm-4", "order-3", "position-relative")
+            const newLabel3 = document.createElement("label");
+            const newInput45 = document.createElement("input");
 
-            newForm.appendChild(newRow);
-            $("#containerDialog .form-container").append(newForm);
-    
-    
+            newInput45.classList.add("fs-14", "text-center", "w-100")
+            newLabel3.textContent = "عدد الحاويات";
+            newLabel3.classList.add("fs-16", "text-bold-gray", "font-bold", "d-block")
+            newInput45.setAttribute("type", "number");
+            newInput45.value = 0
+
+            let plus = document.createElement("span");
+            plus.innerText = '+'
+            let minus = document.createElement("span");
+            minus.innerText = '-'
+
+            newCol.append(newLabel3)
+            newCol.append(newInput45)
+            newCol.appendChild(plus);
+            newCol.appendChild(minus);
+
+            plus.addEventListener('click', () => {
+                newInput45.value++
+            })
+            minus.addEventListener('click', () => {
+                newInput45.value--
+            })
+        }
+
+        else {
+            // create delete button
+            const deleteButton = document.createElement("i");
+            deleteButton.classList.add("delete-form-button", "fa", "fa-times", "color-white", "delete-icon");
+            newCol.classList.remove("col-6");
+            newCol.classList.add("col-12");
+            newCol.style.textAlign = "left"
+            newCol.style.paddingLeft = 0
+            newCol.appendChild(deleteButton);
+
+            // add event listener to delete button
+            deleteButton.addEventListener("click", function (event) {
+                event.preventDefault();
+                const formToDelete = event.target.closest("form");
+                formToDelete.remove();
+            });
+        }
+
+        newRow.appendChild(newCol);
+    }
+
+    newForm.appendChild(newRow);
+    $("#containerDialog .form-container").append(newForm);
+
+
 
 }
 
@@ -379,7 +379,7 @@ function addOtherProduct() {
 }
 
 //add container   ==========> service three details
-function addContainer3(){
+function addContainer3() {
     const newForm = document.createElement("form");
     const newRow = document.createElement("div");
     newRow.classList.add("row");
@@ -388,7 +388,7 @@ function addContainer3(){
         const deleteDiv = document.createElement("div");
         newCol.classList.add("col-6");
         if (i === 1) {
-            newCol.classList.add("order-1","position-relative");
+            newCol.classList.add("order-1", "position-relative");
             const newLabel1 = document.createElement("label");
             newLabel1.textContent = "موقع الشحنة";
             newLabel1.classList.add("text-bold-gray", "fs-16", "font-bold", "d-block");
@@ -399,7 +399,7 @@ function addContainer3(){
             newoption.setAttribute("value", "");
 
             let span = document.createElement("span");
-       
+
 
             newselect1.append(newoption)
             newCol.appendChild(newLabel1);
@@ -430,7 +430,7 @@ function addContainer3(){
         }
 
         else if (i === 3) {
-            newCol.classList.add("position-relative",'order-sm-3', 'order-2');
+            newCol.classList.add("position-relative", 'order-sm-3', 'order-2');
             const newLabel1 = document.createElement("label");
             newLabel1.textContent = " نوع الحاوية";
             newLabel1.classList.add("text-bold-gray", "fs-16", "font-bold", "d-block");
@@ -441,7 +441,7 @@ function addContainer3(){
             newoption.setAttribute("value", "");
 
             let span = document.createElement("span");
-       
+
 
             newselect1.append(newoption)
             newCol.appendChild(newLabel1);
@@ -450,7 +450,7 @@ function addContainer3(){
         }
 
         else if (i === 4) {
-            newCol.classList.add("order-sm-4","order-3","position-relative")
+            newCol.classList.add("order-sm-4", "order-3", "position-relative")
             const newLabel3 = document.createElement("label");
             const newInput45 = document.createElement("input");
 
@@ -504,7 +504,7 @@ function addContainer3(){
 }
 
 //add container   ==========> service two details
-function addContainer21(){
+function addContainer21() {
     const newForm = document.createElement("form");
     const newRow = document.createElement("div");
     newRow.classList.add("row");
@@ -518,11 +518,11 @@ function addContainer21(){
             newLabel1.textContent = "الصنف ";
             newInput1.classList.add("fs-14", "text-center", "w-100");
             newInput1.setAttribute("type", "text");
-            newLabel1.classList.add("d-block", 'font-bold',"fs-16", "text-bold-gray", "w-100");
+            newLabel1.classList.add("d-block", 'font-bold', "fs-16", "text-bold-gray", "w-100");
             newCol.appendChild(newLabel1);
             newCol.appendChild(newInput1);
         } else if (i === 2) {
-            newCol.classList.add("col-sm-4", "mb-4","position-relative");
+            newCol.classList.add("col-sm-4", "mb-4", "position-relative");
             const newLabel2 = document.createElement("label");
             newLabel2.textContent = "أضف صورة";
             newLabel2.classList.add("text-bold-gray", "fs-16", "font-bold", "d-block");
@@ -549,7 +549,7 @@ function addContainer21(){
                     div.classList.add("w-25");
                     const newLabel4 = document.createElement("label");
                     newLabel4.textContent = "فك";
-                    newLabel4.classList.add("fs-16", "text-center","text-bold-gray","font-bold")
+                    newLabel4.classList.add("fs-16", "text-center", "text-bold-gray", "font-bold")
                     const newInput2 = document.createElement("input");
                     newInput2.setAttribute("type", "checkbox");
                     newInput2.setAttribute("id", `assemble${index}`);
@@ -563,7 +563,7 @@ function addContainer21(){
                     div.classList.add("w-25");
                     const newLabel5 = document.createElement("label");
                     newLabel5.textContent = " تغليف";
-                    newLabel5.classList.add("fs-16", "text-center","text-bold-gray","font-bold")
+                    newLabel5.classList.add("fs-16", "text-center", "text-bold-gray", "font-bold")
                     const newInput2 = document.createElement("input");
                     newInput2.setAttribute("type", "checkbox");
                     newInput2.setAttribute("id", `cover${index}`);
@@ -577,7 +577,7 @@ function addContainer21(){
                     div.classList.add("w-25");
                     const newLabel6 = document.createElement("label");
                     newLabel6.textContent = " تركيب";
-                    newLabel6.classList.add("fs-16", "text-center","text-bold-gray","font-bold")
+                    newLabel6.classList.add("fs-16", "text-center", "text-bold-gray", "font-bold")
                     const newInput2 = document.createElement("input");
                     newInput2.setAttribute("type", "checkbox");
                     newInput2.setAttribute("id", `reassemble${index}`);
@@ -615,25 +615,25 @@ function addContainer21(){
 }
 
 //add container   ==========> service two details
-function addContainer22(){
+function addContainer22() {
     const newForm = document.createElement("form");
     const newRow = document.createElement("div");
     newRow.classList.add("row");
     for (let i = 0; i < 4; i++) {
-        const newCol = document.createElement("div","position-relative");
+        const newCol = document.createElement("div", "position-relative");
         if (i === 1) {
-        newCol.classList.add("col-6","position-relative");
+            newCol.classList.add("col-6", "position-relative");
             const newLabel1 = document.createElement("label");
             newLabel1.textContent = "نوع الشحنة";
-            newLabel1.classList.add("fs-16","text-bold-gray","font-bold")
-        
+            newLabel1.classList.add("fs-16", "text-bold-gray", "font-bold")
+
             const newselect1 = document.createElement("select");
             const newoption = document.createElement("option");
             newselect1.classList.add("fs-14", "text-center", "w-100");
             newoption.setAttribute("value", "");
 
             let span = document.createElement("span");
-       
+
 
             newselect1.append(newoption)
             newCol.appendChild(newLabel1);
@@ -642,11 +642,11 @@ function addContainer22(){
 
 
         } else if (i === 2) {
-        newCol.classList.add("col-6","mb-4");
+            newCol.classList.add("col-6", "mb-4");
 
             const newLabel2 = document.createElement("label");
             newLabel2.textContent = "أضف صورة";
-            newLabel2.classList.add("fs-16","d-block", "text-bold-gray","font-bold")
+            newLabel2.classList.add("fs-16", "d-block", "text-bold-gray", "font-bold")
             const newLabel3 = document.createElement("label");
 
             newLabel3.textContent = "تحميل";
@@ -667,11 +667,11 @@ function addContainer22(){
                 if (index === 0) {
                     const newLabel3 = document.createElement("label");
                     const newInput45 = document.createElement("input");
-                    const div = document.createElement("div" ,"position-relative");
+                    const div = document.createElement("div", "position-relative");
                     div.classList.add("w-25", "position-relative");
                     newInput45.classList.add("w-100", "text-center", "fs-14");
                     newLabel3.textContent = "الكمية";
-                    newLabel3.classList.add("text-bold-gray","d-block", "fs-16","font-bold")
+                    newLabel3.classList.add("text-bold-gray", "d-block", "fs-16", "font-bold")
                     newInput45.setAttribute("type", "number");
                     newInput45.value = 0
 
@@ -700,7 +700,7 @@ function addContainer22(){
                     div.classList.add("w-25", "position-relative");
                     newInput45.classList.add("w-100", "text-center", "fs-14");
                     newLabel3.textContent = "الوزن";
-                    newLabel3.classList.add("text-bold-gray","d-block", "fs-16","font-bold")
+                    newLabel3.classList.add("text-bold-gray", "d-block", "fs-16", "font-bold")
                     newInput45.setAttribute("type", "number");
                     newInput45.value = 0
 
@@ -727,7 +727,7 @@ function addContainer22(){
                     div.classList.add("w-25", "position-relative");
                     newInput45.classList.add("w-100", "text-center", "fs-14");
                     newLabel3.textContent = "إجمالى الوزن";
-                    newLabel3.classList.add("text-bold-gray","d-block", "fs-16","font-bold")
+                    newLabel3.classList.add("text-bold-gray", "d-block", "fs-16", "font-bold")
                     newInput45.setAttribute("type", "number");
                     newInput45.value = 0
 
@@ -777,18 +777,18 @@ function addContainer22(){
 }
 
 //add container   ==========> service two details
-function addContainer23(){
+function addContainer23() {
     const newForm = document.createElement("form");
     const newRow = document.createElement("div");
     newRow.classList.add("row");
     for (let i = 0; i < 5; i++) {
         const newCol = document.createElement("div");
-        newCol.classList.add("col-6","position-relative");
+        newCol.classList.add("col-6", "position-relative");
         if (i === 1) {
             const newLabel1 = document.createElement("label");
             newLabel1.textContent = "نوع الشحنة";
-            newLabel1.classList.add("text-bold-gray","font-bold","d-block", "fs-16")
-       
+            newLabel1.classList.add("text-bold-gray", "font-bold", "d-block", "fs-16")
+
 
             const newselect1 = document.createElement("select");
             const newoption = document.createElement("option");
@@ -796,7 +796,7 @@ function addContainer23(){
             newoption.setAttribute("value", "");
 
             let span = document.createElement("span");
-       
+
 
             newselect1.append(newoption)
             newCol.appendChild(newLabel1);
@@ -807,7 +807,7 @@ function addContainer23(){
             newCol.classList.add("mb-4");
             const newLabel2 = document.createElement("label");
             newLabel2.textContent = "أضف صورة";
-            newLabel2.classList.add("d-block", "fs-16","font-bold", "text-bold-gray");
+            newLabel2.classList.add("d-block", "fs-16", "font-bold", "text-bold-gray");
             const newLabel3 = document.createElement("label");
             newLabel3.textContent = "تحميل";
             const newi = document.createElement("i");
@@ -825,7 +825,7 @@ function addContainer23(){
         } else if (i === 3) {
             const newLabel3 = document.createElement("label");
             newLabel3.textContent = "وصف الشحنة";
-            newLabel3.classList.add("fs-16", "text-bold-gray","font-bold")
+            newLabel3.classList.add("fs-16", "text-bold-gray", "font-bold")
             const newInput1 = document.createElement("input");
             newInput1.classList.add("fs-14", "text-center", "w-100");
             newInput1.setAttribute("type", "text");
@@ -836,15 +836,15 @@ function addContainer23(){
         } else if (i === 4) {
             const newLabel3 = document.createElement("label");
             newLabel3.textContent = "نوع الشاحنة";
-            newLabel3.classList.add("fs-16", "text-bold-gray","font-bold")
-            
+            newLabel3.classList.add("fs-16", "text-bold-gray", "font-bold")
+
             const newselect1 = document.createElement("select");
             const newoption = document.createElement("option");
             newselect1.classList.add("fs-14", "text-center", "w-100");
             newoption.setAttribute("value", "");
 
             let span = document.createElement("span");
-       
+
 
             newselect1.append(newoption)
             newCol.appendChild(newLabel3);
