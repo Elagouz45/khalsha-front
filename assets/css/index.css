@@ -1559,7 +1559,17 @@ footer ul.list-none {
     transform: translateY(90%);
     left: 6px;
 }
-
+.orders-table .modal input+span,
+.orders-table .modal input+span+span{
+top: 72%;
+text-align: center;
+}
+.orders-table .modal input+span{
+left: 0;
+}
+.orders-table .modal input+span+span{
+right: 0;
+}
 .my-account select {
     padding-left: 15px;
 }
@@ -1944,19 +1954,21 @@ footer ul.list-none {
 }
 
 .orders-table .modal .modal-dialog {
-    max-width: 530px !important;
-    /* height: 530px; */
     display: block;
-    padding: 60px;
+    padding:61px 54px 47px ;
     background: #FAFAFA;
 
+}.orders-table .modal .modal-body{
+    padding: 55px;
+    background: #FAFAFA;
 }
+
 
 .orders-table .modal .modal-header {
     left: 0;
 }
 
-.modal-content {
+.orders-table .modal-content {
     border: 1px solid #5B5B5B;
 }
 
@@ -1969,6 +1981,9 @@ footer ul.list-none {
     color: #AAAAAA;
     text-align: center;
     height: 29px;
+    width: 217px;
+
+border: 1px solid #5B5B5B;
 }
 
 .orders-table .modal-footer .update {

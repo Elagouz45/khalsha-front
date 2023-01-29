@@ -1132,6 +1132,45 @@ $(document).ready(function () {
     //my-account page
     toggleActiveClass(".sidebar ul li")
     changeContent('.sidebar ul li', '.my-account  .content')
+
+    if (location.hash.slice(1)) {
+        changeContentRouting('.my-account  .content');
+        toggleActiveClassRouting('.sidebar ul li')
+    }
+
+
+
+    function toggleActiveClassRouting(item) {
+
+        let list = Array.from(document.querySelectorAll(item))
+        list.forEach(ele => {
+            if (ele.getAttribute('data-target') == location.hash.slice(1)) {
+                ele.classList.add('active')
+            } else {
+                ele.classList.remove('active')
+            }
+        })
+    }
+
+    function changeContentRouting(content, className) {
+        var contentList = Array.from(document.querySelectorAll(content));
+
+        let href = location.hash.slice(1);
+
+        contentList.forEach((content) => {
+            if (content.classList.contains(href)) {
+                content.classList.add(className);
+                content.classList.remove('d-none');
+            } else {
+                content.classList.add('d-none');
+                content.classList.remove(className);
+            }
+        });
+    }
+
+
+
+
     //register page
     toggleActiveClass(".toggle-active-btn")
     // using-way
