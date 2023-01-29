@@ -3777,6 +3777,10 @@ footer .item-brand {
     margin:12px auto 57px !important;
     border-radius: 7px;
 }
+.service-details .w-404 input,
+.service-details .w-404 select{
+    border-radius: 7px;
+}
 @media (max-width:1600px) {
     h1 {
         line-height: 47px;
