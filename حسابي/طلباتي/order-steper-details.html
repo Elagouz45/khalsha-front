@@ -63,9 +63,11 @@
 
         <section class="position-relative header" style="z-index: 3;">
             <div class="container d-flex justify-content-between  align-items-center  ">
-                <p class="font-bold text-black">
-                    <i class="fa-solid fa-right-long"></i>
-                    طلب رقم #1465
+                <p >
+               <a href="./../my-account-importer&exporter.html#my-order" class="font-bold text-black">
+                <i class="fa-solid fa-right-long"></i>
+                طلب رقم #1465
+               </a>
                 </p>
                 <p class="font-bold text-black">/ شركة الرياض</p>
             </div>
@@ -77,16 +79,20 @@
             <div class="container ">
 
                 <div class="steps m-auto  d-flex justify-content-center align-items-center overflow-auto">
-                    <span data-target="order-describtion"
-                        class="active text-bold-gray text-center text-nowrap font-bold">وصف الطلب</span>
+                    <span data-target="order-describtion" class="active  text-center">
+                        <a href="#order-describtion" class="text-bold-gray text-nowrap font-bold">وصف الطلب</a>
+                    </span>
                     <span></span>
-                    <span data-target="offers" class="text-bold-gray text-center text-nowrap font-bold">عروض
-                        أسعار</span>
+                    <span data-target="offers" class="text-center">
+                        <a href="#offers" class="text-bold-gray text-nowrap font-bold">عروض الاسعار</a>
+                    </span>
                     <span></span>
-                    <span data-target="order-status" class="text-bold-gray text-center text-nowrap font-bold"
-                        onclick="changeOrderStatus()">حالة الطلب</span>
+                    <span data-target="order-status" class="text-center" onclick="changeOrderStatus()">
+                        <a href="#order-status" class="text-bold-gray text-nowrap font-bold">حالة الطلب</a></span>
                     <span></span>
-                    <span data-target="bill" class="text-bold-gray text-center text-nowrap font-bold">الفاتورة</span>
+                    <span data-target="bill" class="text-center">
+                        <a href="#bill" class="text-bold-gray text-nowrap font-bold">الفاتورة</a>
+                    </span>
                 </div>
 
                 <div class="content order-describtion d-block">

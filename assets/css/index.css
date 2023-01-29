@@ -2023,10 +2023,11 @@ border: 1px solid #5B5B5B;
 }
 
 .orders-table table td,
+.orders-table table td a,
 .orders-table table th {
     height: 54px;
     line-height: 53px;
-    color: #7E7E7E;
+    color: #7E7E7E ;
 }
 
 .orders-table table tbody tr:nth-child(odd) {
@@ -2042,7 +2043,7 @@ border: 1px solid #5B5B5B;
     color: white !important;
 }
 
-.orders-table table tbody tr:hover td {
+.orders-table table tbody tr:hover td a{
     color: white !important;
 }
 
@@ -2453,10 +2454,11 @@ footer .item-brand {
 }
 
 .account-details .steper .steps span:nth-child(odd).active {
-    color: white !important;
     background-color: var(--main-blue-color) !important;
 }
-
+.account-details .steper .steps span:nth-child(odd).active  a{
+    color: white !important;
+}
 .account-details .steper .steps span:nth-child(even) {
     width: 59px;
     height: 4px;
@@ -3177,8 +3179,8 @@ footer .item-brand {
     color: var(--main-brown-color);
 }
 
-.my-account .notifications li span {
-    color: #8a8a8a;
+.my-account .notifications li span a{
+    color: #8a8a8a !important;
 }
 
 .my-account .bills table {
@@ -3199,9 +3201,14 @@ footer .item-brand {
 }
 
 .my-account table td,
-.my-account table:hover td {
-    color: #7e7e7e;
+.my-account table:hover td ,
+.my-account table td a:not(.text-main-brown),
+.my-account table td:hover a:not(.text-main-brown){
+    color: #7e7e7e ;
 }
+
+
+
 
 .my-account .my-order table tbody tr:nth-child(odd) {
     background: #f3f3f3;
@@ -4036,7 +4043,7 @@ footer .item-brand {
 
     .my-account .notifications li p.fs-18,
     .my-account .notifications li span,
-    .orders-table td.fs-18,
+    .orders-table td a.fs-18,
     .orders-table th.fs-18,
     .account-details .fs-18,
     .my-account table th.fs-18,

@@ -44,7 +44,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./../../register.html">التسجيل</a>
                     </li>
-            
+
                     <li class="nav-item">
                         <a class="nav-link" href="./../../بنك المعلومات/common-questions.html">الأسئلة الشائعة</a>
                     </li>
@@ -62,9 +62,11 @@
 
         <section class="position-relative header" style="z-index: 3;">
             <div class="container d-flex justify-content-between  align-items-center  ">
-                <p class="font-bold text-black">
-                    <i class="fa-regular fa-right-long"></i>
-                    طلب رقم #1465
+                <p>
+                    <a href="" class="font-bold text-black">
+                        <i class="fa-regular fa-right-long"></i>
+                        طلب رقم #1465
+                    </a>
                 </p>
                 <p class="font-bold text-black">/ شركة الرياض</p>
             </div>
@@ -76,13 +78,16 @@
             <div class="container ">
 
                 <div class="steps m-auto  d-flex justify-content-center align-items-center overflow-auto">
-                    <span data-target="order-describtion"
-                        class="active text-bold-gray text-center text-nowrap font-bold">وصف الطلب</span>
+                    <span data-target="order-describtion" class="active  text-center">
+                        <a href="#order-describtion" class="text-bold-gray text-nowrap font-bold">وصف الطلب</a>
+                    </span>
                     <span></span>
-                    <span data-target="order-status" class="text-bold-gray text-center text-nowrap font-bold"
-                        onclick="changeOrderStatus()">حالة الطلب</span>
+                    <span data-target="order-status" class="text-center" onclick="changeOrderStatus()">
+                        <a href="#order-status" class="text-bold-gray text-nowrap font-bold">حالة الطلب</a></span>
                     <span></span>
-                    <span data-target="bill" class="text-bold-gray text-center text-nowrap font-bold">الفاتورة</span>
+                    <span data-target="bill" class="text-center">
+                        <a href="#bill" class="text-bold-gray text-nowrap font-bold">الفاتورة</a>
+                    </span>
                 </div>
 
                 <div class="content order-describtion d-block">
@@ -386,7 +391,8 @@
                                         </div>
                                     </div>
 
-                                    <input type="text" class="form-control fs-18 notes text-center" placeholder="ملاحظــات">
+                                    <input type="text" class="form-control fs-18 notes text-center"
+                                        placeholder="ملاحظــات">
                                     <button class="btn fs-18 transition position-absolute text-white  "> ارسال الفاتورة
                                     </button>
                                 </div>
@@ -433,7 +439,7 @@
                         <div class="col-lg-2 col-sm-6 order-sm-3  offset-lg-0  offset-sm-1 order-lg-0  mb-4">
                             <ul class="list-none">
                                 <li class="header font-bold fs-18">
-                                    <a > عن خلصها</a>
+                                    <a> عن خلصها</a>
                                 </li>
                                 <li class="fs-14">
                                     <a href="./../../about-us.html"> من نحن</a>
@@ -532,7 +538,7 @@
     <script src="./../../assets/js/bootstrap.min.js"></script>
     <script src="./../../assets/js/index.js"></script>
     <script src="./../../assets/js/html2canvas.js"></script>
- 
+
 </body>
 
 </html>

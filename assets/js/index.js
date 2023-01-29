@@ -1070,6 +1070,7 @@ $(document).ready(function () {
         items: 1,
     })
 });
+
 $(document).ready(function () {
     function changeContent(links, content, className) {
 
@@ -1131,17 +1132,21 @@ $(document).ready(function () {
 
     //my-account page
     toggleActiveClass(".sidebar ul li")
-    changeContent('.sidebar ul li', '.my-account  .content')
+    changeContent('.sidebar ul li', '.my-account  .content');
 
     if (location.hash.slice(1)) {
         changeContentRouting('.my-account  .content');
-        toggleActiveClassRouting('.sidebar ul li')
+        toggleActiveClassRouting('.sidebar ul li');
+        changeContentRouting('.account-details .steper .content', 'd-block')
+        toggleActiveClassRouting('.account-details .steper .steps span:nth-child(odd)')
+        if(location.hash.slice(1) == 'order-status'){
+            changeOrderStatus()
+        }
     }
 
 
 
     function toggleActiveClassRouting(item) {
-
         let list = Array.from(document.querySelectorAll(item))
         list.forEach(ele => {
             if (ele.getAttribute('data-target') == location.hash.slice(1)) {
