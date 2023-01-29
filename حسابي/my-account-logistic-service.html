@@ -15,785 +15,786 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="../assets/images/Frame.svg">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="../assets/images/Frame.svg">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">الرئيسية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">من نحن</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">طريقة الإستخدام</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">الخدمات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">التسجيل</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">الأسئلة الشائعة</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">اتصل بنا</a>
-                    </li>
-                </ul>
-            </div>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">من نحن</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">طريقة الإستخدام</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">الخدمات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">التسجيل</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">الأسئلة الشائعة</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">اتصل بنا</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="../assets/images/home/notify.png">
+                    </a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <div class="my-account position-relative">
-        <div class="overlay bg-overlay position-absolute"></div>
-        <section class="position-relative" style="z-index: 3;">
-            <div class="container">
-                <div class="row">
+<div class="my-account position-relative">
+    <div class="overlay bg-overlay position-absolute"></div>
+    <section class="position-relative" style="z-index: 3;">
+        <div class="container">
+            <div class="row">
 
-                    <div class="col-md-3 col-sm-4">
-                        <div class="sidebar text-center">
+                <div class="col-md-3 col-sm-4">
+                    <div class="sidebar text-center">
 
-                            <div class="account-info content d-block">
-                                <div class="img m-auto">
+                        <div class="account-info content d-block">
+                            <div class="img m-auto">
+                                <form class="m-0">
                                     <input type="file" hidden id="file">
                                     <label class="text-black font-bold d-block" for="file" class="text-main-blue">
                                         اضف صورة
                                     </label>
-                                </div>
-                                <p class="font-bold text-main-blue mb-0">عبد الكريم محمد</p>
-                                <span class="fs-14">مقدم خدمات لوجيستية</span>
+                                </form>
                             </div>
-
-                            <div class="notifications content d-none">
-                                <div class="img m-auto">
-                                    <img width="100%" src="../assets/images/mdi_bell-notificatio22n.png">
-                                </div>
-                            </div>
-
-                            <div class="my-order content d-none">
-                                <div class="img m-auto">
-                                    <img width="100%" src="../assets/images/Group222.png">
-                                </div>
-                            </div>
-
-                            <div class="statistics content d-none">
-                                <div class="img m-auto">
-                                    <img width="100%" src="../assets/images/wpf_statistics.png">
-                                </div>
-                            </div>
-
-                            <div class="bills content d-none">
-                                <div class="img m-auto">
-                                    <img width="100%" src="../assets/images/Vectorhnn.png">
-                                </div>
-                            </div>
-
-                            <div class="settlement content d-none">
-                                <div class="img m-auto">
-                                    <img width="100%" src="../assets/images/tabler_receipt-tax.png">
-                                </div>
-                            </div>
-
-                            <ul class="list-unstyled  p-0">
-                                <li data-target="account-info" class="active">معلومات الحساب</li>
-                                <li data-target="notifications">الإشعارات</li>
-                                <li data-target="my-order">طلباتي</li>
-                                <li data-target="statistics">الاحصائيات</li>
-                                <li data-target="bills">الفواتير</li>
-                                <li data-target="settlement">التسوية</li>
-                            </ul>
-
-                            <button class="btn logout fs-14 font-bold">تسجيل الخروج</button>
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-sm-8 leftSide">
-                        <div class="account-info content d-block">
-                            <h2 class="font-bold text-main-brown">تعديل الحساب</h2>
-                            <hr>
-                            <form>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <label class="text-black fs-14 font-bold d-block">الإسم</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label class="text-black fs-14 font-bold d-block">السجل التجاري</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label class="text-black fs-14 font-bold d-block">رقم الجوال</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="col-sm-6 ">
-                                        <label class="text-black fs-14 font-bold d-block">الشهادة الضريبية</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label class="text-black fs-14 font-bold d-block">الإيميل</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label class="text-black fs-14 font-bold d-block">الرقم السري</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <button class="btn fs-18 font-bold">تعديل</button>
-                                    </div>
-                                </div>
-                            </form>
+                            <p class="font-bold text-main-blue mb-0">عبد الكريم محمد</p>
+                            <span class="fs-14">مقدم خدمات لوجيستية</span>
                         </div>
 
                         <div class="notifications content d-none">
-                            <h2 class="font-bold text-main-brown">
-                                الإشعارات الحالية
-                            </h2>
-                            <hr>
-                            <ul class="p-0 ">
-                                <li
+                            <div class="img m-auto">
+                                <img width="100%" src="../assets/images/mdi_bell-notificatio22n.png">
+                            </div>
+                        </div>
+
+                        <div class="my-order content d-none">
+                            <div class="img m-auto">
+                                <img width="100%" src="../assets/images/Group222.png">
+                            </div>
+                        </div>
+
+                        <div class="statistics content d-none">
+                            <div class="img m-auto">
+                                <img width="100%" src="../assets/images/wpf_statistics.png">
+                            </div>
+                        </div>
+
+                        <div class="bills content d-none">
+                            <div class="img m-auto">
+                                <img width="100%" src="../assets/images/Vectorhnn.png">
+                            </div>
+                        </div>
+
+                        <div class="settlement content d-none">
+                            <div class="img m-auto">
+                                <img width="100%" src="../assets/images/tabler_receipt-tax.png">
+                            </div>
+                        </div>
+
+                        <ul class="list-unstyled  p-0">
+                            <li data-target="account-info" class="active"><a>معلومات الحساب</a></li>
+                            <li data-target="notifications"><a>الإشعارات</a></li>
+                            <li data-target="my-order"><a>طلباتي</a></li>
+                            <li data-target="statistics"><a href="#">الاحصائيات</a> </li>
+                            <li data-target="bills"><a href="#">الفواتير</a></li>
+                            <li data-target="settlement"><a>التسوية</a></li>
+                        </ul>
+
+                        <button class="btn logout fs-14 font-bold"><a>تسجيل الخروج</a></button>
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-8 leftSide">
+                    <div class="account-info content d-block">
+                        <h2 class="font-bold text-main-brown">تعديل الحساب</h2>
+                        <hr>
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label class="text-black fs-14 font-bold d-block">الإسم</label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="text-black fs-14 font-bold d-block">السجل التجاري</label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="text-black fs-14 font-bold d-block">رقم الجوال</label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <label class="text-black fs-14 font-bold d-block">الشهادة الضريبية</label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="text-black fs-14 font-bold d-block">الإيميل</label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="text-black fs-14 font-bold d-block">الرقم السري</label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn fs-18 font-bold">تعديل</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="notifications content d-none">
+                        <h2 class="font-bold text-main-brown">
+                            الإشعارات الحالية
+                        </h2>
+                        <hr>
+                        <ul class="p-0 ">
+                            <li
                                     class="d-flex w-100 position-relative active justify-content-between align-items-center">
-                                    <p class="text-main-brown mb-0">تفقد شحنتك قد وصلت إلي الميناء.</p>
-                                    <span>الإنتقال</span>
-                                </li>
-                                <li class="d-flex w-100 position-relative justify-content-between align-items-center">
-                                    <p class="mb-0">تم قبول عرض السعر الذي أرسلته إلي شركة النبهان.</p>
-                                    <span>الإنتقال</span>
-                                </li>
+                                <p class="text-main-brown mb-0">تفقد شحنتك قد وصلت إلي الميناء.</p>
+                                <span>الإنتقال</span>
+                            </li>
+                            <li class="d-flex w-100 position-relative justify-content-between align-items-center">
+                                <p class="mb-0">تم قبول عرض السعر الذي أرسلته إلي شركة النبهان.</p>
+                                <span>الإنتقال</span>
+                            </li>
 
-                                <li class="d-flex w-100 position-relative justify-content-between align-items-center">
-                                    <p class="mb-0">
-                                        تم استخلاص الأوراق اللازمة للشحنة رقم #1332.
-                                    </p>
-                                    <span>الإنتقال</span>
-                                </li>
+                            <li class="d-flex w-100 position-relative justify-content-between align-items-center">
+                                <p class="mb-0">
+                                    تم استخلاص الأوراق اللازمة للشحنة رقم #1332.
+                                </p>
+                                <span>الإنتقال</span>
+                            </li>
 
-                            </ul>
-                        </div>
+                        </ul>
+                    </div>
 
-                        <div class="my-order content  d-none">
+                    <div class="my-order content  d-none">
 
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h2 class="font-bold text-main-brown  ">
-                                    طلباتي
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h2 class="font-bold text-main-brown  ">
+                                طلباتي
 
-                                </h2>
-                                <select class="fs-14">
-                                    <option value="0">التخليص الجمركي</option>
-                                </select>
-                            </div>
-                            <hr>
-
-                            <div class=" table-responsive ">
-                                <table class="table  table-hover">
-                                    <thead class="text-white text-center font-bold bg-main-brown ">
-                                        <tr>
-                                            <th class="fs-18" scope="col">عنوان الطلب</th>
-                                            <th class="fs-18" scope="col">نوع البضاعة</th>
-                                            <th class="fs-18" scope="col">منفذ الشحنة</th>
-                                            <th class="fs-18" scope="col">توصيل إلى</th>
-                                            <th class="fs-18" scope="col">حالة الطلب</th>
-                                            <th class="fs-18" scope="col">إجمالي الفاتورة</th>
-                                            <th class="fs-18" scope="col">العروض</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="fs-18">تخليص مواد غذائية</td>
-                                            <td class="fs-18">مواد غذائية</td>
-                                            <td class="fs-18">الميناء الجاف</td>
-                                            <td class="fs-18">جدة</td>
-                                            <td class="fs-18">انتظار</td>
-                                            <td class="fs-18">1600 ريال</td>
-                                            <td class="fs-18">
-                                                <a class="text-main-brown">استلام التفويض</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="fs-18">نقل أغذية</td>
-                                            <td class="fs-18">فواكة</td>
-                                            <td class="fs-18">جازان</td>
-                                            <td class="fs-18">الإمارات</td>
-                                            <td class="fs-18">انتظار</td>
-                                            <td class="fs-18">1600 ريال</td>
-                                            <td class="fs-18">
-                                                <a class="text-main-brown">استلام التفويض</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="fs-18"> نقل أثاث</td>
-                                            <td class="fs-18">أخشاب</td>
-                                            <td class="fs-18">الرياض</td>
-                                            <td class="fs-18">جدة</td>
-                                            <td class="fs-18">انتظار</td>
-                                            <td class="fs-18">1600 ريال</td>
-                                            <td class="fs-18">
-                                                <a class="text-main-brown">استلام التفويض</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="fs-18">نقل أغذية</td>
-                                            <td class="fs-18">فواكة</td>
-                                            <td class="fs-18">جازان</td>
-                                            <td class="fs-18">الإمارات</td>
-                                            <td class="fs-18">انتظار</td>
-                                            <td class="fs-18">1600 ريال</td>
-                                            <td class="fs-18">
-                                                <a class="text-main-brown">استلام التفويض</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="fs-18"> نقل أثاث</td>
-                                            <td class="fs-18">أخشاب</td>
-                                            <td class="fs-18">الرياض</td>
-                                            <td class="fs-18">جدة</td>
-                                            <td class="fs-18">انتظار</td>
-                                            <td class="fs-18">1600 ريال</td>
-                                            <td class="fs-18">
-                                                <a class="text-main-brown">استلام التفويض</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="fs-18">نقل أغذية</td>
-                                            <td class="fs-18">فواكة</td>
-                                            <td class="fs-18">جازان</td>
-                                            <td class="fs-18">الإمارات</td>
-                                            <td class="fs-18">انتظار</td>
-                                            <td class="fs-18">1600 ريال</td>
-                                            <td class="fs-18">
-                                                <a class="text-main-brown">استلام التفويض</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="fs-18"> نقل أثاث</td>
-                                            <td class="fs-18">أخشاب</td>
-                                            <td class="fs-18">الرياض</td>
-                                            <td class="fs-18">جدة</td>
-                                            <td class="fs-18">انتظار</td>
-                                            <td class="fs-18">1600 ريال</td>
-                                            <td class="fs-18">
-                                                <a class="text-main-brown">استلام التفويض</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                        </div>
-
-                        <div class="statistics content  d-none">
-
-                            <h2 class="font-bold text-main-brown">
-                                الاحصائيات
                             </h2>
-                            <hr>
-                            <div class="d-flex overflow-x-auto steps">
+                            <select class="fs-14">
+                                <option value="0">التخليص الجمركي</option>
+                            </select>
+                        </div>
+                        <hr>
+
+                        <div class=" table-responsive ">
+                            <table class="table  table-hover">
+                                <thead class="text-white text-center font-bold bg-main-brown ">
+                                <tr>
+                                    <th class="fs-18" scope="col">عنوان الطلب</th>
+                                    <th class="fs-18" scope="col">نوع البضاعة</th>
+                                    <th class="fs-18" scope="col">منفذ الشحنة</th>
+                                    <th class="fs-18" scope="col">توصيل إلى</th>
+                                    <th class="fs-18" scope="col">حالة الطلب</th>
+                                    <th class="fs-18" scope="col">إجمالي الفاتورة</th>
+                                    <th class="fs-18" scope="col">العروض</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="fs-18">تخليص مواد غذائية</td>
+                                    <td class="fs-18">مواد غذائية</td>
+                                    <td class="fs-18">الميناء الجاف</td>
+                                    <td class="fs-18">جدة</td>
+                                    <td class="fs-18">انتظار</td>
+                                    <td class="fs-18">1600 ريال</td>
+                                    <td class="fs-18">
+                                        <a class="text-main-brown">استلام التفويض</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fs-18">نقل أغذية</td>
+                                    <td class="fs-18">فواكة</td>
+                                    <td class="fs-18">جازان</td>
+                                    <td class="fs-18">الإمارات</td>
+                                    <td class="fs-18">انتظار</td>
+                                    <td class="fs-18">1600 ريال</td>
+                                    <td class="fs-18">
+                                        <a class="text-main-brown">استلام التفويض</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fs-18"> نقل أثاث</td>
+                                    <td class="fs-18">أخشاب</td>
+                                    <td class="fs-18">الرياض</td>
+                                    <td class="fs-18">جدة</td>
+                                    <td class="fs-18">انتظار</td>
+                                    <td class="fs-18">1600 ريال</td>
+                                    <td class="fs-18">
+                                        <a class="text-main-brown">استلام التفويض</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fs-18">نقل أغذية</td>
+                                    <td class="fs-18">فواكة</td>
+                                    <td class="fs-18">جازان</td>
+                                    <td class="fs-18">الإمارات</td>
+                                    <td class="fs-18">انتظار</td>
+                                    <td class="fs-18">1600 ريال</td>
+                                    <td class="fs-18">
+                                        <a class="text-main-brown">استلام التفويض</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fs-18"> نقل أثاث</td>
+                                    <td class="fs-18">أخشاب</td>
+                                    <td class="fs-18">الرياض</td>
+                                    <td class="fs-18">جدة</td>
+                                    <td class="fs-18">انتظار</td>
+                                    <td class="fs-18">1600 ريال</td>
+                                    <td class="fs-18">
+                                        <a class="text-main-brown">استلام التفويض</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fs-18">نقل أغذية</td>
+                                    <td class="fs-18">فواكة</td>
+                                    <td class="fs-18">جازان</td>
+                                    <td class="fs-18">الإمارات</td>
+                                    <td class="fs-18">انتظار</td>
+                                    <td class="fs-18">1600 ريال</td>
+                                    <td class="fs-18">
+                                        <a class="text-main-brown">استلام التفويض</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fs-18"> نقل أثاث</td>
+                                    <td class="fs-18">أخشاب</td>
+                                    <td class="fs-18">الرياض</td>
+                                    <td class="fs-18">جدة</td>
+                                    <td class="fs-18">انتظار</td>
+                                    <td class="fs-18">1600 ريال</td>
+                                    <td class="fs-18">
+                                        <a class="text-main-brown">استلام التفويض</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <div class="statistics content  d-none">
+
+                        <h2 class="font-bold text-main-brown">
+                            الاحصائيات
+                        </h2>
+                        <hr>
+                        <div class="d-flex overflow-x-auto steps">
                                 <span
-                                    class="font-bold fs-14 position-relative text-center text-white bg-main-brown">الشحن
+                                        class="font-bold fs-14 position-relative text-center text-white bg-main-brown">الشحن
                                     البري</span>
-                                <span class="font-bold fs-14 position-relative text-center text-bold-gray ">الشحن
+                            <span class="font-bold fs-14 position-relative text-center text-bold-gray ">الشحن
                                     البحري</span>
-                                <span class="font-bold fs-14 position-relative text-center text-bold-gray ">الشحن
+                            <span class="font-bold fs-14 position-relative text-center text-bold-gray ">الشحن
                                     الجوي</span>
-                                <span class="font-bold fs-14 position-relative text-center text-bold-gray ">المختبرات و
+                            <span class="font-bold fs-14 position-relative text-center text-bold-gray ">المختبرات و
                                     المقاييس</span>
-                                <span class="font-bold fs-14 position-relative text-center text-bold-gray ">المخازن
+                            <span class="font-bold fs-14 position-relative text-center text-bold-gray ">المخازن
                                     والمستودعات</span>
-                                <span class="font-bold fs-14  text-center text-bold-gray ">التسوية</span>
+                            <span class="font-bold fs-14  text-center text-bold-gray ">التسوية</span>
+                        </div>
+
+                        <div class="row earnings">
+                            <div class="col-lg-4 col-sm-6  ">
+                                <div
+                                        class="bg-main-blue text-white d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="mb-0 font-bold text-nowrap">أرباح اليوم</p>
+                                        <p>0.00 ريال</p>
+                                    </div>
+                                    <div>
+                                        <img src="../assets/images/Group (8).png">
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="row earnings">
-                                <div class="col-lg-4 col-sm-6  ">
-                                    <div
+                            <div class="col-lg-4 col-sm-6 ">
+
+                                <div
                                         class="bg-main-blue text-white d-flex align-items-center justify-content-between">
-                                        <div>
-                                            <p class="mb-0 font-bold text-nowrap">أرباح اليوم</p>
-                                            <p>0.00 ريال</p>
-                                        </div>
-                                        <div>
-                                            <img src="../assets/images/Group (8).png">
-                                        </div>
+                                    <div>
+                                        <p class="mb-0 font-bold text-nowrap"> أرباح الأسبوع</p>
+                                        <p>0.00 ريال</p>
+                                    </div>
+                                    <div>
+                                        <img src="../assets/images/Groupbbb.png">
                                     </div>
                                 </div>
-
-                                <div class="col-lg-4 col-sm-6 ">
-
-                                    <div
-                                        class="bg-main-blue text-white d-flex align-items-center justify-content-between">
-                                        <div>
-                                            <p class="mb-0 font-bold text-nowrap"> أرباح الأسبوع</p>
-                                            <p>0.00 ريال</p>
-                                        </div>
-                                        <div>
-                                            <img src="../assets/images/Groupbbb.png">
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-lg-4 col-sm-6  ">
-                                    <div
-                                        class="bg-main-blue text-white d-flex align-items-center justify-content-between">
-                                        <div>
-                                            <p class="mb-0 font-bold text-nowrap">أرباح الشهر</p>
-                                            <p>0.00 ريال</p>
-                                        </div>
-                                        <div>
-                                            <img src="../assets/images/Group (9).png">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class=" col-sm-6 ">
-
-                                    <div
-                                        class="bg-main-blue text-white d-flex align-items-center justify-content-between">
-                                        <div>
-                                            <p class="mb-0 font-bold text-nowrap"> أرباح السنــة </p>
-                                            <p>0.00 ريال</p>
-                                        </div>
-                                        <div>
-                                            <img src="../assets/images/Group (10).png">
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class=" col-sm-6 ">
-                                    <div
-                                        class="bg-main-blue text-white d-flex align-items-center justify-content-between">
-                                        <div>
-                                            <p class="mb-0 font-bold text-nowrap">إجمالي أرباح النظام </p>
-                                            <p>0.00 ريال</p>
-                                        </div>
-                                        <div>
-                                            <img src="../assets/images/Frame.png" class="total">
-                                        </div>
-                                    </div>
-                                </div>
-
-
 
                             </div>
 
+                            <div class="col-lg-4 col-sm-6  ">
+                                <div
+                                        class="bg-main-blue text-white d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="mb-0 font-bold text-nowrap">أرباح الشهر</p>
+                                        <p>0.00 ريال</p>
+                                    </div>
+                                    <div>
+                                        <img src="../assets/images/Group (9).png">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class=" col-sm-6 ">
+
+                                <div
+                                        class="bg-main-blue text-white d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="mb-0 font-bold text-nowrap"> أرباح السنــة </p>
+                                        <p>0.00 ريال</p>
+                                    </div>
+                                    <div>
+                                        <img src="../assets/images/Group (10).png">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class=" col-sm-6 ">
+                                <div
+                                        class="bg-main-blue text-white d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="mb-0 font-bold text-nowrap">إجمالي أرباح النظام </p>
+                                        <p>0.00 ريال</p>
+                                    </div>
+                                    <div>
+                                        <img src="../assets/images/Frame.png" class="total">
+                                    </div>
+                                </div>
+                            </div>
 
 
-                            <div class="leaflets one">
+                        </div>
+
+
+                        <div class="leaflets one">
                                 <span data-target="accepted-leaflets" class="position-relative fs-14 font-bold text-bold-gray active text-white
                                      d-inline-block text-center">
                                     منشورات مقبولة
                                     <sup class="position-absolute  ">2</sup>
                                 </span>
-                                <span data-target="waiting-leaflets"
-                                    class="position-relative font-bold text-bold-gray fs-14 d-inline-block text-center   ">
+                            <span data-target="waiting-leaflets"
+                                  class="position-relative font-bold text-bold-gray fs-14 d-inline-block text-center   ">
                                     منشورات بالإنتظار
                                     <sup class="position-absolute  ">2</sup>
                                 </span>
-                                <span data-target="rejected-leaflets"
-                                    class="position-relative font-bold text-bold-gray fs-14 d-inline-block text-center   ">
+                            <span data-target="rejected-leaflets"
+                                  class="position-relative font-bold text-bold-gray fs-14 d-inline-block text-center   ">
                                     منشورات مرفوضة
                                     <sup class="position-absolute  ">2</sup>
                                 </span>
-                            </div>
+                        </div>
 
 
-                            <div class="table-responsive mini-table one accepted-leaflets d-block">
-                                <table class=" w-100 ">
-                                    <thead>
-                                        <th></th>
-                                        <th class="text-bold-gray fs-14">الطلب</th>
-                                        <th class="text-bold-gray fs-14">بواسطة</th>
-                                        <th class="text-bold-gray fs-14">تاريخ الإضافة</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-black fs-14">التخليص الجمركي</td>
-                                            <td class="text-black fs-14">شركة النبهان</td>
-                                            <td class="text-black fs-14">12 /12 /2022 الساعة 10:33</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="table-responsive mini-table one accepted-leaflets d-block">
+                            <table class=" w-100 ">
+                                <thead>
+                                <th></th>
+                                <th class="text-bold-gray fs-14">الطلب</th>
+                                <th class="text-bold-gray fs-14">بواسطة</th>
+                                <th class="text-bold-gray fs-14">تاريخ الإضافة</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-black fs-14">التخليص الجمركي</td>
+                                    <td class="text-black fs-14">شركة النبهان</td>
+                                    <td class="text-black fs-14">12 /12 /2022 الساعة 10:33</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                            <div class="table-responsive mini-table one d-none waiting-leaflets">
-                                <table class=" w-100">
-                                    <thead>
-                                        <th></th>
-                                        <th class="text-bold-gray fs-14">الطلب</th>
-                                        <th class="text-bold-gray fs-14">بواسطة</th>
-                                        <th class="text-bold-gray fs-14">تاريخ الإضافة</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-black fs-14">التخليص الجمركي</td>
-                                            <td class="text-black fs-14">شركة النبهان</td>
-                                            <td class="text-black fs-14">12 /12 /2022 الساعة 10:33</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-
-                            <div class="table-responsive mini-table one d-none rejected-leaflets">
-                                <table class=" w-100  ">
-                                    <thead>
-                                        <th></th>
-                                        <th class="text-bold-gray fs-14">الطلب</th>
-                                        <th class="text-bold-gray fs-14">بواسطة</th>
-                                        <th class="text-bold-gray fs-14">تاريخ الإضافة</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-black fs-14">التخليص الجمركي</td>
-                                            <td class="text-black fs-14">شركة النبهان</td>
-                                            <td class="text-black fs-14">12 /12 /2022 الساعة 10:33</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="table-responsive mini-table one d-none waiting-leaflets">
+                            <table class=" w-100">
+                                <thead>
+                                <th></th>
+                                <th class="text-bold-gray fs-14">الطلب</th>
+                                <th class="text-bold-gray fs-14">بواسطة</th>
+                                <th class="text-bold-gray fs-14">تاريخ الإضافة</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-black fs-14">التخليص الجمركي</td>
+                                    <td class="text-black fs-14">شركة النبهان</td>
+                                    <td class="text-black fs-14">12 /12 /2022 الساعة 10:33</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
 
+                        <div class="table-responsive mini-table one d-none rejected-leaflets">
+                            <table class=" w-100  ">
+                                <thead>
+                                <th></th>
+                                <th class="text-bold-gray fs-14">الطلب</th>
+                                <th class="text-bold-gray fs-14">بواسطة</th>
+                                <th class="text-bold-gray fs-14">تاريخ الإضافة</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-black fs-14">التخليص الجمركي</td>
+                                    <td class="text-black fs-14">شركة النبهان</td>
+                                    <td class="text-black fs-14">12 /12 /2022 الساعة 10:33</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                            <div class="leaflets two ">
+
+                        <div class="leaflets two ">
                                 <span data-target="accepted-offer"
-                                    class="position-relative fs-14 font-bold active text-bold-gray text-white d-inline-block text-center">
+                                      class="position-relative fs-14 font-bold active text-bold-gray text-white d-inline-block text-center">
                                     عروض مقبولة
                                     <sup class="position-absolute  ">2</sup>
                                 </span>
-                                <span data-target="waiting-offer"
-                                    class="position-relative fs-14 font-bold text-bold-gray d-inline-block text-center   ">
+                            <span data-target="waiting-offer"
+                                  class="position-relative fs-14 font-bold text-bold-gray d-inline-block text-center   ">
                                     عروض بالإنتظار
                                     <sup class="position-absolute  ">2</sup>
                                 </span>
-                                <span data-target="rejected-offer"
-                                    class="position-relative fs-14 font-bold text-bold-gray d-inline-block text-center   ">
+                            <span data-target="rejected-offer"
+                                  class="position-relative fs-14 font-bold text-bold-gray d-inline-block text-center   ">
 
                                     عروض مرفوضة
                                     <sup class="position-absolute  ">2</sup>
                                 </span>
-                            </div>
+                        </div>
 
 
-                            <div class="table-responsive mini-table two accepted-offer d-block">
-                                <table class=" w-100  ">
-                                    <thead>
-                                        <th></th>
-                                        <th class="text-bold-gray fs-14">الطلب</th>
-                                        <th class="text-bold-gray fs-14">بواسطة</th>
-                                        <th class="text-bold-gray fs-14">تاريخ الإضافة</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-black fs-14">التخليص الجمركي</td>
-                                            <td class="text-black fs-14">شركة النبهان</td>
-                                            <td class="text-black fs-14">12 /12 /2022 الساعة 10:33</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="table-responsive mini-table two accepted-offer d-block">
+                            <table class=" w-100  ">
+                                <thead>
+                                <th></th>
+                                <th class="text-bold-gray fs-14">الطلب</th>
+                                <th class="text-bold-gray fs-14">بواسطة</th>
+                                <th class="text-bold-gray fs-14">تاريخ الإضافة</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-black fs-14">التخليص الجمركي</td>
+                                    <td class="text-black fs-14">شركة النبهان</td>
+                                    <td class="text-black fs-14">12 /12 /2022 الساعة 10:33</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                            <div class="table-responsive mini-table two waiting-offer d-none">
-                                <table class=" w-100  ">
-                                    <thead>
-                                        <th></th>
-                                        <th class="text-bold-gray fs-14">الطلب</th>
-                                        <th class="text-bold-gray fs-14">بواسطة</th>
-                                        <th class="text-bold-gray fs-14">تاريخ الإضافة</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-black fs-14">التخليص الجمركي</td>
-                                            <td class="text-black fs-14">شركة النبهان</td>
-                                            <td class="text-black fs-14">12 /12 /2022 الساعة 10:33</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="table-responsive mini-table two waiting-offer d-none">
+                            <table class=" w-100  ">
+                                <thead>
+                                <th></th>
+                                <th class="text-bold-gray fs-14">الطلب</th>
+                                <th class="text-bold-gray fs-14">بواسطة</th>
+                                <th class="text-bold-gray fs-14">تاريخ الإضافة</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-black fs-14">التخليص الجمركي</td>
+                                    <td class="text-black fs-14">شركة النبهان</td>
+                                    <td class="text-black fs-14">12 /12 /2022 الساعة 10:33</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                            <div class="table-responsive mini-table two rejected-offer d-none">
-                                <table class=" w-100  ">
-                                    <thead>
-                                        <th></th>
-                                        <th class="text-bold-gray fs-14">الطلب</th>
-                                        <th class="text-bold-gray fs-14">بواسطة</th>
-                                        <th class="text-bold-gray fs-14">تاريخ الإضافة</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td class="text-black fs-14">التخليص الجمركي</td>
-                                            <td class="text-black fs-14">شركة النبهان</td>
-                                            <td class="text-black fs-14">12 /12 /2022 الساعة 10:33</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="table-responsive mini-table two rejected-offer d-none">
+                            <table class=" w-100  ">
+                                <thead>
+                                <th></th>
+                                <th class="text-bold-gray fs-14">الطلب</th>
+                                <th class="text-bold-gray fs-14">بواسطة</th>
+                                <th class="text-bold-gray fs-14">تاريخ الإضافة</th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td class="text-black fs-14">التخليص الجمركي</td>
+                                    <td class="text-black fs-14">شركة النبهان</td>
+                                    <td class="text-black fs-14">12 /12 /2022 الساعة 10:33</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
 
-                            <div class="leaflets three">
+                        <div class="leaflets three">
                                 <span data-target="current-week"
-                                    class="position-relative font-bold active text-bold-gray d-inline-block text-center">
+                                      class="position-relative font-bold active text-bold-gray d-inline-block text-center">
                                     الأسبوع الحالي
                                 </span>
-                                <span data-target="current-month"
-                                    class="position-relative font-bold text-bold-gray d-inline-block text-center   ">
+                            <span data-target="current-month"
+                                  class="position-relative font-bold text-bold-gray d-inline-block text-center   ">
                                     الشهر الحالي
                                 </span>
-                                <span data-target="current-year"
-                                    class="position-relative font-bold text-bold-gray d-inline-block text-center   ">
+                            <span data-target="current-year"
+                                  class="position-relative font-bold text-bold-gray d-inline-block text-center   ">
                                     علي مدار السنة
                                 </span>
-                            </div>
-
-                            <div class="current-week chart d-block">
-                                <canvas id="week"></canvas>
-                            </div>
-
-                            <div class="current-month chart d-none ">
-                                <canvas id="month"></canvas>
-                            </div>
-                            <div class="current-year chart d-none">
-                                <canvas id="year"></canvas>
-                            </div>
-
-
-
-
-
                         </div>
 
-                        <div class="bills content  d-none">
-                            <h2 class="font-bold text-main-brown">
-                                الفواتير
-                            </h2>
-                            <hr>
-                            <div class=" table-responsive ">
-                                <table class="table  table-hover">
-                                    <tbody>
-                                        <tr>
-                                            <td>فاتورة رقم #1568</td>
-                                            <td>خدمة الشحن البري</td>
-                                            <td>بتاريخ 15/9/2022</td>
-                                            <td class="text-main-brown">عرض الفاتورة</td>
-                                        </tr>
-                                        <tr>
-                                            <td>فاتورة رقم #1545</td>
-                                            <td> خدمة التخليص الجمركي</td>
-                                            <td>بتاريخ 15/9/2022</td>
-                                            <td class="text-main-brown">عرض الفاتورة</td>
-                                        </tr>
-                                        <tr>
-                                            <td>فاتورة رقم #1589</td>
-                                            <td>خدمة الشحن الجوي</td>
-                                            <td>بتاريخ 15/9/2022</td>
-                                            <td class="text-main-brown">عرض الفاتورة</td>
-                                        </tr>
-                                        <tr>
-                                            <td>فاتورة رقم #1258</td>
-                                            <td>خدمة الشحن البري</td>
-                                            <td>بتاريخ 15/9/2022</td>
-                                            <td class="text-main-brown">عرض الفاتورة</td>
-                                        </tr>
-                                        <tr>
-                                            <td>فاتورة رقم #1598</td>
-                                            <td>خدمة الشحن الاجوي</td>
-                                            <td>بتاريخ 15/9/2022</td>
-                                            <td class="text-main-brown">عرض الفاتورة</td>
-                                        </tr>
-                                        <tr>
-                                            <td>فاتورة رقم #1258</td>
-                                            <td>خدمة الشحن البري</td>
-                                            <td>بتاريخ 15/9/2022</td>
-                                            <td class="text-main-brown">عرض الفاتورة</td>
-                                        </tr>
-                                        <tr>
-                                            <td>فاتورة رقم #1598</td>
-                                            <td>خدمة الشحن الاجوي</td>
-                                            <td>بتاريخ 15/9/2022</td>
-                                            <td class="text-main-brown">عرض الفاتورة</td>
-                                        </tr>
-                                        <tr>
-                                            <td>فاتورة رقم #1568</td>
-                                            <td>خدمة الشحن البري</td>
-                                            <td>بتاريخ 15/9/2022</td>
-                                            <td class="text-main-brown">عرض الفاتورة</td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
+                        <div class="current-week chart d-block">
+                            <canvas id="week"></canvas>
                         </div>
 
-                        <div class="settlement content  d-none">
-                            <h2 class="font-bold text-main-brown">
-                                التسوية
-                            </h2>
-                            <hr>
-                            <div class=" table-responsive ">
-                                <table class="table  table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-bold-gray font-bold">رقم الفاتورة</th>
-                                            <th class="text-bold-gray font-bold">الإجمالي</th>
-                                            <th class="text-bold-gray font-bold">الحالة</th>
-                                            <th class="text-bold-gray font-bold"></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>رقم #1569</td>
-                                            <td> 1500 ريال</td>
-                                            <td>انتظار</td>
-                                            <td class="text-main-brown"> تسوية</td>
-                                        </tr>
-                                        <tr>
-                                            <td>رقم #1568</td>
-                                            <td> 2500 ريال</td>
-                                            <td>تمـت التسوية</td>
-                                            <td class="text-main-blue">تمت التسوية </td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <p class="hint fs-14">يتم تسوية الفاتورة في حال تجاوزها مده لا تقل عن ثلاثين يوماً او في حال
-                                بلوغها الحد الإقصي وهو مائة ريال.</p>
+                        <div class="current-month chart d-none ">
+                            <canvas id="month"></canvas>
                         </div>
+                        <div class="current-year chart d-none">
+                            <canvas id="year"></canvas>
+                        </div>
+
+
+                    </div>
+
+                    <div class="bills content  d-none">
+                        <h2 class="font-bold text-main-brown">
+                            الفواتير
+                        </h2>
+                        <hr>
+                        <div class=" table-responsive ">
+                            <table class="table  table-hover">
+                                <tbody>
+                                <tr>
+                                    <td>فاتورة رقم #1568</td>
+                                    <td>خدمة الشحن البري</td>
+                                    <td>بتاريخ 15/9/2022</td>
+                                    <td class="text-main-brown">عرض الفاتورة</td>
+                                </tr>
+                                <tr>
+                                    <td>فاتورة رقم #1545</td>
+                                    <td> خدمة التخليص الجمركي</td>
+                                    <td>بتاريخ 15/9/2022</td>
+                                    <td class="text-main-brown">عرض الفاتورة</td>
+                                </tr>
+                                <tr>
+                                    <td>فاتورة رقم #1589</td>
+                                    <td>خدمة الشحن الجوي</td>
+                                    <td>بتاريخ 15/9/2022</td>
+                                    <td class="text-main-brown">عرض الفاتورة</td>
+                                </tr>
+                                <tr>
+                                    <td>فاتورة رقم #1258</td>
+                                    <td>خدمة الشحن البري</td>
+                                    <td>بتاريخ 15/9/2022</td>
+                                    <td class="text-main-brown">عرض الفاتورة</td>
+                                </tr>
+                                <tr>
+                                    <td>فاتورة رقم #1598</td>
+                                    <td>خدمة الشحن الاجوي</td>
+                                    <td>بتاريخ 15/9/2022</td>
+                                    <td class="text-main-brown">عرض الفاتورة</td>
+                                </tr>
+                                <tr>
+                                    <td>فاتورة رقم #1258</td>
+                                    <td>خدمة الشحن البري</td>
+                                    <td>بتاريخ 15/9/2022</td>
+                                    <td class="text-main-brown">عرض الفاتورة</td>
+                                </tr>
+                                <tr>
+                                    <td>فاتورة رقم #1598</td>
+                                    <td>خدمة الشحن الاجوي</td>
+                                    <td>بتاريخ 15/9/2022</td>
+                                    <td class="text-main-brown">عرض الفاتورة</td>
+                                </tr>
+                                <tr>
+                                    <td>فاتورة رقم #1568</td>
+                                    <td>خدمة الشحن البري</td>
+                                    <td>بتاريخ 15/9/2022</td>
+                                    <td class="text-main-brown">عرض الفاتورة</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="settlement content  d-none">
+                        <h2 class="font-bold text-main-brown">
+                            التسوية
+                        </h2>
+                        <hr>
+                        <div class=" table-responsive ">
+                            <table class="table  table-hover">
+                                <thead>
+                                <tr>
+                                    <th class="text-bold-gray font-bold">رقم الفاتورة</th>
+                                    <th class="text-bold-gray font-bold">الإجمالي</th>
+                                    <th class="text-bold-gray font-bold">الحالة</th>
+                                    <th class="text-bold-gray font-bold"></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>رقم #1569</td>
+                                    <td> 1500 ريال</td>
+                                    <td>انتظار</td>
+                                    <td class="text-main-brown"> تسوية</td>
+                                </tr>
+                                <tr>
+                                    <td>رقم #1568</td>
+                                    <td> 2500 ريال</td>
+                                    <td>تمـت التسوية</td>
+                                    <td class="text-main-blue">تمت التسوية</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p class="hint fs-14">يتم تسوية الفاتورة في حال تجاوزها مده لا تقل عن ثلاثين يوماً او في حال
+                            بلوغها الحد الإقصي وهو مائة ريال.</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+</div>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-1 d-none d-xl-block "></div>
-                <div class="col-xl-10 ">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-6 offset-lg-0 order-sm-1 order-lg-0  offset-sm-1 mb-4">
-                            <div class="right-side">
-                                <div class="item mb-3">
-                                    <img src="./../assets/images/home/footer-logo.svg">
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-1 d-none d-xl-block "></div>
+            <div class="col-xl-10 ">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 offset-lg-0 order-sm-1 order-lg-0  offset-sm-1 mb-4">
+                        <div class="right-side">
+                            <div class="item mb-3">
+                                <img src="./../assets/images/home/footer-logo.svg">
+                            </div>
+                            <p class="fs-14">
+                                في خلصها, لا نملك شركات مباشرة ولكن نساعدك في البحث و الحصول على الخدمة المناسبة او
+                                التسويق
+                                لشركتك بالشكل المناسب . إذا كنت تبحث عن خدمة النقل البري او البحري او الجوي أو خدمة
+                                المستودعات و
+                                المختبرات أو التخليص الجمركي, منصة خلصها توفر لك خيارات متعددة ومناسبة لك ونضمن
+                                لك تجربة ممتعة.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 d-none d-lg-block"></div>
+                    <div class="col-lg-2 col-sm-6 order-sm-3  offset-lg-0  offset-sm-1 order-lg-0  mb-4">
+                        <ul class="list-none">
+                            <li class="header font-bold fs-18">
+                                عن خلصها
+                            </li>
+                            <li class="fs-14">
+                                من نحن
+                            </li>
+                            <li class="fs-14">
+                                طريقة الاستخدام
+                            </li>
+                            <li class="fs-14">
+                                التسجيل
+                            </li>
+                            <li class="fs-14">
+                                الأسئلة الشائعة
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-sm-5 order-sm-4   order-lg-0   mb-4">
+                        <ul class="list-none">
+                            <li class="header font-bold fs-18">
+                                خدماتنا
+                            </li>
+                            <li class="fs-14">
+                                التخليص الجمركي
+                            </li>
+                            <li class="fs-14">
+                                خدمات الشحن
+                            </li>
+                            <li class="fs-14">
+                                المخازن والمستودعات
+                            </li>
+                            <li class="fs-14">
+                                المختبرات والمقاييس
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-5 order-sm-2  order-lg-0 mb-4">
+                        <ul class="list-none ps-0">
+                            <li class="header font-bold fs-18">
+                                تواصل معنا
+                            </li>
+                            <li class="d-flex justify-content-between fs-14">
+                                <div class="brand-icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
                                 </div>
-                                <p class="fs-14">
-                                    في خلصها, لا نملك شركات مباشرة ولكن نساعدك في البحث و الحصول على الخدمة المناسبة او
-                                    التسويق
-                                    لشركتك بالشكل المناسب . إذا كنت تبحث عن خدمة النقل البري او البحري او الجوي أو خدمة
-                                    المستودعات و
-                                    المختبرات أو التخليص الجمركي, منصة خلصها توفر لك خيارات متعددة ومناسبة لك ونضمن
-                                    لك تجربة ممتعة.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-1 d-none d-lg-block"></div>
-                        <div class="col-lg-2 col-sm-6 order-sm-3  offset-lg-0  offset-sm-1 order-lg-0  mb-4">
-                            <ul class="list-none">
-                                <li class="header font-bold fs-18">
-                                    عن خلصها
-                                </li>
-                                <li class="fs-14">
-                                    من نحن
-                                </li>
-                                <li class="fs-14">
-                                    طريقة الاستخدام
-                                </li>
-                                <li class="fs-14">
-                                    التسجيل
-                                </li>
-                                <li class="fs-14">
-                                    الأسئلة الشائعة
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-2 col-sm-5 order-sm-4   order-lg-0   mb-4">
-                            <ul class="list-none">
-                                <li class="header font-bold fs-18">
-                                    خدماتنا
-                                </li>
-                                <li class="fs-14">
-                                    التخليص الجمركي
-                                </li>
-                                <li class="fs-14">
-                                    خدمات الشحن
-                                </li>
-                                <li class="fs-14">
-                                    المخازن والمستودعات
-                                </li>
-                                <li class="fs-14">
-                                    المختبرات والمقاييس
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 col-sm-5 order-sm-2  order-lg-0 mb-4">
-                            <ul class="list-none ps-0">
-                                <li class="header font-bold fs-18">
-                                    تواصل معنا
-                                </li>
-                                <li class="d-flex justify-content-between fs-14">
-                                    <div class="brand-icon">
-                                        <i class="fa-brands fa-facebook-f"></i>
+                                <div class="brand-icon">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div class="brand-icon">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                                <div class="brand-icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </li>
+                            <li class="fs-14">
+                                <div class="item-brand d-flex justify-content-between">
+                                    <div class="content d-flex flex-column">
+                                        <span class="text-start">GET IN ON</span>
+                                        <img src="./../assets/images/home/google%20play.svg">
                                     </div>
-                                    <div class="brand-icon">
-                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <i class="fa-brands fa-google-play"></i>
                                     </div>
-                                    <div class="brand-icon">
-                                        <i class="fa-brands fa-twitter"></i>
+                                </div>
+                            </li>
+                            <li class="fs-14">
+                                <div class="item-brand d-flex justify-content-between">
+                                    <div class="content d-flex flex-column">
+                                        <span class="text-start">Download on the</span>
+                                        <img src="./../assets/images/home/apple.svg">
                                     </div>
-                                    <div class="brand-icon">
-                                        <i class="fa-brands fa-instagram"></i>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <i class="fa-brands fa-apple"></i>
                                     </div>
-                                </li>
-                                <li class="fs-14">
-                                    <div class="item-brand d-flex justify-content-between">
-                                        <div class="content d-flex flex-column">
-                                            <span class="text-start">GET IN ON</span>
-                                            <img src="./../assets/images/home/google%20play.svg">
-                                        </div>
-                                        <div class="d-flex justify-content-center align-items-center">
-                                            <i class="fa-brands fa-google-play"></i>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="fs-14">
-                                    <div class="item-brand d-flex justify-content-between">
-                                        <div class="content d-flex flex-column">
-                                            <span class="text-start">Download on the</span>
-                                            <img src="./../assets/images/home/apple.svg">
-                                        </div>
-                                        <div class="d-flex justify-content-center align-items-center">
-                                            <i class="fa-brands fa-apple"></i>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-xl-1 d-none d-xl-block "></div>
             </div>
+            <div class="col-xl-1 d-none d-xl-block "></div>
         </div>
-        <div class="footer-bottom">
-            <span>جميع الحقوق محفوظة لــ خلصها 2021 تم تطويره بواسطة النظم المعتمدة.</span>
-        </div>
-    </footer>
+    </div>
+    <div class="footer-bottom">
+        <span>جميع الحقوق محفوظة لــ خلصها 2021 تم تطويره بواسطة النظم المعتمدة.</span>
+    </div>
+</footer>
 
-    <script src="./../assets/js/jquery-3.6.3.min.js"></script>
-    <script src="./../assets/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./../assets/js/index.js"></script>
+<script src="./../assets/js/jquery-3.6.3.min.js"></script>
+<script src="./../assets/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./../assets/js/index.js"></script>
 
 </body>
 

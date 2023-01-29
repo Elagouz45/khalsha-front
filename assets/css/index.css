@@ -294,21 +294,21 @@ footer {
 }
 
 footer p,
-footer .list-none li {
+footer .list-none li  {
     font-weight: 500;
     line-height: 22px;
 }
 
 
 footer p,
-footer .list-none li,
+footer .list-none li a,
 footer .header {
     text-align: right;
     color: #FFFFFF;
 }
 
 
-footer .list-none li {
+footer .list-none li  {
     list-style-type: none;
     margin-bottom: 24px;
 }
@@ -3033,12 +3033,16 @@ footer .item-brand {
     cursor: pointer;
     transition: 0.5s all;
 }
-
+.my-account .sidebar ul li a{
+    color: var(--main-blue-color);
+}
 .my-account .sidebar ul li.active {
     background: var(--main-blue-color);
     color: white;
 }
-
+.my-account .sidebar ul li.active a{
+    color: white;
+}
 .my-account .sidebar .logout {
     width: 155px;
     height: 32px;
@@ -4189,7 +4193,7 @@ footer .item-brand {
         height: 44px;
     }
 
-    footer .list-none li {
+    footer .list-none li a {
         margin-bottom: 14px;
     }
 
