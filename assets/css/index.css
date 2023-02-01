@@ -294,7 +294,7 @@ footer {
 }
 
 footer p,
-footer .list-none li  {
+footer .list-none li {
     font-weight: 500;
     line-height: 22px;
 }
@@ -308,7 +308,7 @@ footer .header {
 }
 
 
-footer .list-none li  {
+footer .list-none li {
     list-style-type: none;
     margin-bottom: 24px;
 }
@@ -1177,7 +1177,7 @@ footer ul.list-none {
 
 .register .modal-body span.icon {
     top: 40px;
-    left: 44px;
+    left: 20px;
 }
 
 .register .text .buttons button:first-of-type {
@@ -1213,10 +1213,11 @@ footer ul.list-none {
 }
 
 .register .modal-dialog .modal-header button {
-    top: -10px;
-    left: -15px;
+    top: -16px;
+    left: -16px;
     background-color: #C76E61 !important;
     border-radius: 50%;
+    margin: 0;
 }
 
 .register .modal-dialog h5 {
@@ -1224,7 +1225,7 @@ footer ul.list-none {
 }
 
 .register .modal-dialog .modal-body {
-    padding: 37px;
+    padding: 27px 63px 0;
 }
 
 .register .modal-dialog .modal-body label {
@@ -1243,7 +1244,7 @@ footer ul.list-none {
 .register .modal-dialog .login {
     padding: 0 25px;
     line-height: 23px;
-    width: 207px;
+    width: 203px;
     height: 39px;
     border-radius: 6px;
     color: #9E9E9E;
@@ -1273,7 +1274,7 @@ footer ul.list-none {
 }
 
 .register .modal-dialog .modal-footer {
-    padding-top: 45px;
+    padding: 0 0 45px;
 }
 
 
@@ -1489,18 +1490,20 @@ footer ul.list-none {
     background-color: var(--main-blue-color);
 }
 
-.service-details .buttons button ,
-.service-details #success .modal-footer button{
+.service-details .buttons button,
+.service-details #success .modal-footer button {
     background: #D9D9D9;
     border-radius: 6px;
     width: 144px;
     height: 62px;
     font-size: 22px;
 }
-#success .modal-footer button{
+
+#success .modal-footer button {
     transform: translateX(-50%);
     bottom: -24px;
 }
+
 .service-details .buttons button:hover {
     background-color: var(--main-brown-color) !important;
     color: white !important;
@@ -1544,7 +1547,7 @@ footer ul.list-none {
     width: 390px;
 }
 
-.formContainer2 form .w-25{
+.formContainer2 form .w-25 {
     min-width: 133px !important
 }
 
@@ -1559,17 +1562,21 @@ footer ul.list-none {
     transform: translateY(90%);
     left: 6px;
 }
+
 .orders-table .modal input+span,
-.orders-table .modal input+span+span{
-top: 72%;
-text-align: center;
+.orders-table .modal input+span+span {
+    top: 72%;
+    text-align: center;
 }
-.orders-table .modal input+span{
-left: 0;
+
+.orders-table .modal input+span {
+    left: 0;
 }
-.orders-table .modal input+span+span{
-right: 0;
+
+.orders-table .modal input+span+span {
+    right: 0;
 }
+
 .my-account select {
     padding-left: 15px;
 }
@@ -1684,16 +1691,19 @@ right: 0;
 .service-details .certifications .modal-dialog {
     max-width: 600px;
 }
-.service-details .certifications .modal-body .row{
+
+.service-details .certifications .modal-body .row {
     max-width: 428px !important;
     margin: 21px auto 17px !important;
     padding: 28px 34px !important;
 }
-.service-details .certifications .modal-body p{
+
+.service-details .certifications .modal-body p {
     margin-top: 34px;
 }
-.service-details .certifications .col-sm-7 ,
-    .service-details .certifications .col-sm-5 {
+
+.service-details .certifications .col-sm-7,
+.service-details .certifications .col-sm-5 {
     margin-bottom: 44px;
 }
 
@@ -1703,9 +1713,11 @@ right: 0;
     padding: 15px;
     color: black
 }
-.service-details .modal.order .modal-body .row{
+
+.service-details .modal.order .modal-body .row {
     border: 0;
 }
+
 .service-details .modal-footer .confirm {
     background: #A0A0A0;
     border-radius: 6px;
@@ -1807,20 +1819,23 @@ right: 0;
     line-height: 26px !important;
 }
 
-.service-details.service2 #reassemble input[type='text'] ,
-    .service-details.service2 #reassemble select {
+.service-details.service2 #reassemble input[type='text'],
+.service-details.service2 #reassemble select {
     height: 25px;
     max-width: 275px;
 }
+
 .service-details.service2 #landShippingInfo input[type='text'],
 .service-details.service2 #landShippingInfo select {
     height: 25px;
-    max-width: 206px !important; 
+    max-width: 206px !important;
 }
-.service-details.service2 #landShippingInfo select+span{
+
+.service-details.service2 #landShippingInfo select+span {
     left: 40px !important;
     top: 50%;
 }
+
 .service-details.service-three #containerDialog button.add-container,
 .service-details.service-four #containerDialog button.add-container {
     border: 0;
@@ -1955,10 +1970,12 @@ right: 0;
 
 .orders-table .modal .modal-dialog {
     display: block;
-    padding:61px 54px 47px ;
+    padding: 61px 54px 47px;
     background: #FAFAFA;
 
-}.orders-table .modal .modal-body{
+}
+
+.orders-table .modal .modal-body {
     padding: 55px;
     background: #FAFAFA;
 }
@@ -1983,7 +2000,7 @@ right: 0;
     height: 29px;
     width: 217px;
 
-border: 1px solid #5B5B5B;
+    border: 1px solid #5B5B5B;
 }
 
 .orders-table .modal-footer .update {
@@ -2027,7 +2044,7 @@ border: 1px solid #5B5B5B;
 .orders-table table th {
     height: 54px;
     line-height: 53px;
-    color: #7E7E7E ;
+    color: #7E7E7E;
 }
 
 .orders-table table tbody tr:nth-child(odd) {
@@ -2043,7 +2060,7 @@ border: 1px solid #5B5B5B;
     color: white !important;
 }
 
-.orders-table table tbody tr:hover td a{
+.orders-table table tbody tr:hover td a {
     color: white !important;
 }
 
@@ -2456,9 +2473,11 @@ footer .item-brand {
 .account-details .steper .steps span:nth-child(odd).active {
     background-color: var(--main-blue-color) !important;
 }
-.account-details .steper .steps span:nth-child(odd).active  a{
+
+.account-details .steper .steps span:nth-child(odd).active a {
     color: white !important;
 }
+
 .account-details .steper .steps span:nth-child(even) {
     width: 59px;
     height: 4px;
@@ -2867,14 +2886,13 @@ footer .item-brand {
     border-radius: 6px;
 }
 
-.account-details .modal.order p ,
+.account-details .modal.order p,
 .service-details .modal.order p {
     margin-bottom: 17px;
 }
 
 .account-details .modal.order p.text-main-brown,
-.service-details .modal.order p.text-main-brown
- {
+.service-details .modal.order p.text-main-brown {
     margin-top: 7px;
 }
 
@@ -2885,34 +2903,34 @@ footer .item-brand {
     height: 2px;
 }
 
-.account-details .modal.order .modal-body h2 ,
+.account-details .modal.order .modal-body h2,
 .service-details .modal.order .modal-body h2 {
     font-size: 28px;
 }
 
-.account-details .modal.order .modal-dialog ,
-.service-details .modal.order .modal-dialog{
+.account-details .modal.order .modal-dialog,
+.service-details .modal.order .modal-dialog {
     max-width: 55% !important;
 }
 
-.account-details .modal.order .modal-header button ,
+.account-details .modal.order .modal-header button,
 .service-details .modal.order .modal-header button {
     left: -1px;
     border-radius: 0;
 }
 
-.account-details .modal.order .w-60 ,
-.service-details .modal.order .w-60{
+.account-details .modal.order .w-60,
+.service-details .modal.order .w-60 {
     width: 60%;
 }
 
-.account-details .modal.order .w-40 ,
+.account-details .modal.order .w-40,
 .service-details .modal.order .w-40 {
     width: 40%;
 }
 
-.account-details .modal.order .rates ,
-.service-details .modal.order .rates{
+.account-details .modal.order .rates,
+.service-details .modal.order .rates {
     border: 1px solid var(--main-blue-color);
     padding: 0 35px;
     margin-top: 67px;
@@ -2929,7 +2947,7 @@ footer .item-brand {
     line-height: 39px;
 }
 
-.account-details .modal.order .rates .rate ,
+.account-details .modal.order .rates .rate,
 .service-details .modal.order .rates .rate {
     overflow: auto;
     height: 203px;
@@ -2938,8 +2956,8 @@ footer .item-brand {
     padding: 0 14px;
 }
 
-.account-details .modal.order .rates .rate::-webkit-scrollbar ,
-.service-details .modal.order .rates .rate::-webkit-scrollbar{
+.account-details .modal.order .rates .rate::-webkit-scrollbar,
+.service-details .modal.order .rates .rate::-webkit-scrollbar {
     width: 4px;
 }
 
@@ -2949,39 +2967,41 @@ footer .item-brand {
     border-radius: 0 !important;
 }
 
-.account-details .modal.order .rate .desc-rate ,
-.service-details .modal.order .rate .desc-rate{
+.account-details .modal.order .rate .desc-rate,
+.service-details .modal.order .rate .desc-rate {
     font-size: 12px;
 }
 
 .account-details .modal.order .col-12,
-.service-details .modal.order .col-12  {
+.service-details .modal.order .col-12 {
     margin-top: 70px;
 }
 
-.account-details .modal.order .col-12 input ,
-.service-details .modal.order .col-12 input{
+.account-details .modal.order .col-12 input,
+.service-details .modal.order .col-12 input {
     width: 24px;
     height: 24px;
 }
 
-.account-details .modal.order .col-12 p ,
+.account-details .modal.order .col-12 p,
 .service-details .modal.order .col-12 p {
     display: inline-block;
     vertical-align: middle;
     margin-right: 11px;
 }
 
-.account-details .modal.order .modal-footer button ,
+.account-details .modal.order .modal-footer button,
 .service-details .modal.order .modal-footer button,
 .service-details #success .modal-footer button {
     background: #9E9E9E;
     width: 143px;
     height: 41px !important;
 }
-.service-details #success .modal-footer button{
+
+.service-details #success .modal-footer button {
     font-size: 18px !important;
 }
+
 .account-details .modal.order .trella,
 .service-details .modal.order .trella {
     height: 190px;
@@ -3079,16 +3099,20 @@ footer .item-brand {
     cursor: pointer;
     transition: 0.5s all;
 }
-.my-account .sidebar ul li a{
+
+.my-account .sidebar ul li a {
     color: var(--main-blue-color);
 }
+
 .my-account .sidebar ul li.active {
     background: var(--main-blue-color);
     color: white;
 }
-.my-account .sidebar ul li.active a{
+
+.my-account .sidebar ul li.active a {
     color: white;
 }
+
 .my-account .sidebar .logout {
     width: 155px;
     height: 32px;
@@ -3179,7 +3203,7 @@ footer .item-brand {
     color: var(--main-brown-color);
 }
 
-.my-account .notifications li span a{
+.my-account .notifications li span a {
     color: #8a8a8a !important;
 }
 
@@ -3201,10 +3225,10 @@ footer .item-brand {
 }
 
 .my-account table td,
-.my-account table:hover td ,
+.my-account table:hover td,
 .my-account table td a:not(.text-main-brown),
-.my-account table td:hover a:not(.text-main-brown){
-    color: #7e7e7e ;
+.my-account table td:hover a:not(.text-main-brown) {
+    color: #7e7e7e;
 }
 
 
@@ -3776,33 +3800,95 @@ footer .item-brand {
 .formContainer2 input,
 .formContainer2 select,
 .formContainer3 input,
-.formContainer3 select {
+.formContainer3 select,
+.formContainer4 input,
+.formContainer4 select  {
     color: #5B5B5B99;
     border: 0.49px solid #4A4A4A;
     margin-bottom: 21px;
 }
-
+.formContainer4 input,
+.formContainer4 select,
+.formContainer4 .type {
+    border-radius: 7px;
+}
 .formContainer2 label.upload,
-.formContainer3 label.upload {
+.formContainer3 label.upload,
+.formContainer4 label.upload
+ {
     width: 85px;
     height: 25px;
     text-align: center;
     font-size: 11px;
     line-height: 25px;
+
 }
-.service-details #success p{
+.formContainer4 > .row{
+    padding: 23px 30px !important;
+    margin: 15px 71px 38px !important;
+    border-radius: 7px;
+}
+.formContainer4 input,
+    .formContainer4 .col-sm-6.pe-0 > div,
+        .formContainer4 .col-sm-6.ps-0 > div{
+    max-width: 115px !important;
+}
+.formContainer4 input+span{
+left: 5px !important;
+text-align: center;
+}
+.formContainer4 input+span+span{
+    right: 5px !important;
+    left: unset !important;
+    text-align: center;
+}
+.formContainer4 .type{
+    padding:0 77px ;
+    border: 0.49px solid #4A4A4A;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 25px;
+    margin-bottom: 16px;
+}
+.formContainer4 .w-25 input+span,
+.formContainer4 .w-25 input+span+span
+{
+top: 22%;
+}
+.formContainer4 .amount input+span,
+.formContainer4 .amount input+span+span{
+    top: 45% !important;
+
+}
+.formContainer4 .amount,
+    .formContainer4 .amount input{
+    max-width: 193px !important;
+}
+.formContainer4 .amount input{
+    width: 100%;
+    margin-bottom: 27px !important;
+}
+.unit-type .addFormButton{
+    width: 110px;
+    white-space: nowrap;
+    border-radius: 7px;
+}
+.service-details #success p {
     font-size: 28px;
 }
-.service-details .w-404{
+
+.service-details .w-404 {
     max-width: 404px;
     padding: 18px 53px 12px !important;
-    margin:12px auto 57px !important;
+    margin: 12px auto 57px !important;
     border-radius: 7px;
 }
+
 .service-details .w-404 input,
-.service-details .w-404 select{
+.service-details .w-404 select {
     border-radius: 7px;
 }
+
 @media (max-width:1600px) {
     h1 {
         line-height: 47px;
@@ -4082,7 +4168,7 @@ footer .item-brand {
         padding-left: 25px !important;
     }
 
-    .service-details #success p{
+    .service-details #success p {
         font-size: 20px;
     }
 }
@@ -4103,6 +4189,7 @@ footer .item-brand {
     .about-us .our-mission .section2 {
         margin-top: 30px;
     }
+
     .using-way .source .owl-carousel .w-100 {
         height: 695px;
     }
@@ -4196,7 +4283,9 @@ footer .item-brand {
     .resources-products .product-item {
         margin-bottom: 50px;
     }
-    .account-details .modal.order .modal-dialog, .service-details .modal.order .modal-dialog{
+
+    .account-details .modal.order .modal-dialog,
+    .service-details .modal.order .modal-dialog {
         max-width: 72% !important;
     }
 }
@@ -4329,12 +4418,12 @@ footer .item-brand {
         width: 80% !important;
     }
 
-    .account-details .modal.order .modal-body h2 ,
-    .service-details .modal.order .modal-body h2{
+    .account-details .modal.order .modal-body h2,
+    .service-details .modal.order .modal-body h2 {
         font-size: 18px;
     }
 
-    .account-details .modal.order .modal-dialog ,
+    .account-details .modal.order .modal-dialog,
     .service-details .modal.order .modal-dialog,
     .service-details #success .modal-dialog {
         max-width: 85% !important;
@@ -4453,10 +4542,11 @@ footer .item-brand {
 }
 
 @media (max-width:767.95px) {
-   
-    .service-details #success p{
+
+    .service-details #success p {
         font-size: 16px !important;
     }
+
     .home-page .home-header-banner .banner-content h2 {
         font-size: 35px;
         line-height: 50px;
@@ -4868,8 +4958,9 @@ footer .item-brand {
     }
 
     .register .modal-dialog .modal-header button {
-        top: 1px;
-        left: -5px;
+        top: 0px;
+        left: 0px;
+        border-radius: 0 !important;
     }
 
     .register .modal-dialog .modal-body .col-6,
@@ -4937,9 +5028,11 @@ footer .item-brand {
         height: 39px !important;
         width: 110px;
     }
-    .service-details .modal-body .row{
+
+    .service-details .modal-body .row {
         margin: 0;
     }
+
     .service-details table tr td {
         padding: 20px 10px;
     }
@@ -4960,7 +5053,7 @@ footer .item-brand {
     }
 
     .service-details .choose-offer .row .col-12 p {
-        font-size: 15px;
+        font-size: 15px !important;
         width: 235px;
     }
 
@@ -4974,15 +5067,18 @@ footer .item-brand {
         padding: 6px 0;
         font-size: 10px;
     }
-    .service-details.service2 #landShippingInfo .col-6{
+
+    .service-details.service2 #landShippingInfo .col-6 {
         width: 100% !important;
     }
-    .service-details.service2 #landShippingInfo input[type='text'], 
+
+    .service-details.service2 #landShippingInfo input[type='text'],
     .service-details.service2 #landShippingInfo select {
         width: 100% !important;
         max-width: unset !important;
     }
-    .service-details.service2 #landShippingInfo select+span{
+
+    .service-details.service2 #landShippingInfo select+span {
         left: 18px !important;
     }
 
@@ -5103,26 +5199,26 @@ footer .item-brand {
         margin-right: 15px;
     }
 
-    .account-details .modal.order .col-12 input ,
-    .service-details .modal.order .col-12 input{
+    .account-details .modal.order .col-12 input,
+    .service-details .modal.order .col-12 input {
         width: 14px;
         height: 14px;
     }
 
-    .account-details .modal.order .rates ,
-    .service-details .modal.order .rates{
+    .account-details .modal.order .rates,
+    .service-details .modal.order .rates {
         padding: 0 15px;
     }
 
     .account-details .modal.order .rates,
-    .account-details .modal.order .col-12 ,
+    .account-details .modal.order .col-12,
     .service-details .modal.order .rates,
     .service-details .modal.order .col-12 {
         margin-top: 10px;
     }
 
-    .account-details .modal.order .col-12 ,
-    .service-details .modal.order .col-12{
+    .account-details .modal.order .col-12,
+    .service-details .modal.order .col-12 {
         margin-bottom: 1.5rem;
     }
 
@@ -5136,10 +5232,12 @@ footer .item-brand {
         font-size: 15px !important;
         width: 100px;
     }
-    .service-details .certifications .col-sm-7, 
+
+    .service-details .certifications .col-sm-7,
     .service-details .certifications .col-sm-5 {
         margin-bottom: 17px;
     }
+
     .my-account .col-sm-4 {
         width: calc((100% / 12) * 5);
     }
@@ -5266,8 +5364,9 @@ footer .item-brand {
         width: 32% !important;
         min-width: unset !important;
     }
+
     .service-details table input:not([type="radio"]),
-     .service-details table select {
+    .service-details table select {
         height: 33px;
     }
 

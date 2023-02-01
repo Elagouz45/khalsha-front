@@ -10,7 +10,6 @@ selects.forEach(ele => {
 //add +- icon for input[type='number']   =======> service details
 let inputNumbers = Array.from(document.querySelectorAll('input[type="number"]'))
 inputNumbers.forEach(ele => {
-    ele.value = 0
     ele.parentElement.classList.add("position-relative")
     let plus = document.createElement("span");
     plus.innerText = '+'
