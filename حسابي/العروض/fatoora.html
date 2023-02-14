@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفاتورة</title>
+    <link rel="stylesheet" href="./../../assets/css/bootstrap.min.css">
+    <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/fontawesome.min.css" rel="stylesheet">
+    <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/brands.css" rel="stylesheet">
+    <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/solid.css" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="./../../assets/css/index.css">-->
+    <style>
+        @font-face {
+            src: url(./../../assets/fonts/alfont_com_AlFont_com_Bahij_TheSansArabic-Bold-1.ttf);
+            font-family: fontFamilyBold;
+        }
+
+        @font-face {
+            src: url(./../../assets/fonts/alfont_com_Bahij_TheSansArabic-Plain.ttf);
+            font-family: fontFamilyNormal;
+        }
+
+        :root {
+            --main-blue-color: #628CA5;
+            --main-brown-color: #C76E61;
+            --main-font-bold: fontFamilyBold;
+            --main-font-normal: fontFamilyNormal;
+            --main-bg-gray: #f5f5f580;
+            --bg-overlay: #F5F5F5;
+            --gray-bold-color: #5B5B5B
+        }
+
+
+        .bg-main-blue {
+            background-color: var(--main-blue-color) !important;
+        }
+
+        .bg-main-brown {
+            background-color: var(--main-brown-color) !important;
+        }
+
+        .bg-gray {
+            background-color: var(--main-bg-gray) !important;
+        }
+
+        .bg-overlay {
+            background-color: var(--bg-overlay) !important;
+        }
+
+        .text-main-blue {
+            color: var(--main-blue-color) !important;
+        }
+
+        .text-main-brown {
+            color: var(--main-brown-color) !important;
+        }
+
+        .font-bold {
+            font-family: var(--main-font-bold);
+        }
+
+        .font-normal {
+            font-family: var(--main-font-normal);
+        }
+
+        .bg-bold-gray {
+            background-color: var(--gray-bold-color) !important;
+        }
+
+        .text-bold-gray {
+            color: var(--gray-bold-color) !important;
+        }
+
+        .py-150 {
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+
+        .fs-14 {
+            font-size: 14px;
+        }
+
+        .fs-16 {
+            font-size: 16px;
+        }
+
+        .fs-18 {
+            font-size: 18px;
+        }
+
+        * {
+            box-sizing: border-box;
+            direction: rtl;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            font-family: var(--main-font-normal);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .account-details .current-status h5::after,
+        .account-details .bill-paper::before,
+        .account-details .bill-paper::after,
+        .account-details .bill-paper h2::after,
+        .account-details .srcl .circle::after {
+            position: absolute;
+            content: '';
+        }
+
+        .account-details .current-status h5::after,
+        .account-details .bill-paper h2::after,
+        .account-details .add-term {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .account-details .current-status h5::after,
+        .account-details .bill-paper h2::after {
+            bottom: -10px;
+            height: 3px;
+        }
+
+        .account-details .bill-paper {
+            margin-top: 78px;
+            padding: 48px 0 36px;
+        }
+
+        .account-details .bill-paper::after {
+            left: 0;
+            box-shadow: -5px -5px 4px -4px #ccc;
+        }
+
+        .account-details .bill-paper::before {
+            right: 0;
+            box-shadow: 5px 5px 4px -4px #ccc
+        }
+
+        .account-details .bill-paper::before,
+        .account-details .bill-paper::after {
+            top: 0;
+            width: 50%;
+            height: 100%;
+        }
+
+        .account-details .bill-paper h2 {
+            margin-bottom: 78px;
+        }
+
+        .account-details .bill-paper h2::after {
+            width: 160px;
+            background-color: var(--main-brown-color);
+        }
+
+        .account-details .bill-paper span {
+            margin-top: 24px;
+        }
+
+        .account-details .bill .bill-download,
+        .account-details .bill-paper span.total-bill,
+        .account-details .creation-offer-price span.total-bill {
+            border: 1px solid var(--gray-bold-color);
+            height: 31px !important;
+            line-height: 28px !important;
+        }
+
+        .account-details .bill-paper h2.print {
+            margin-bottom: 40px !important;
+        }
+
+        .account-details .bill-paper h2.print::after {
+            display: none !important;
+        }
+
+        .account-details .bill-paper span.total-bill,
+        .account-details .creation-offer-price span.total-bill {
+            width: 200px;
+        }
+
+        .font-bold {
+            font-family: var(--main-font-bold);
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="account-details">
+    <div class="container ">
+        <div class="content bill">
+            <div>
+                <div class="m-auto">
+
+                    <div class="bill-paper position-relative bg-white">
+                        <h2 class="font-bold text-center position-relative text-main-brown">فاتورة طلب رقم #1465
+                        </h2>
+                        <div class="d-flex" style="margin-top: 48px;">
+                            <span class="w-50 d-inline-block text-center text-bold-gray">المخلص الجمركي</span>
+                            <span class="w-50 d-inline-block text-center text-bold-gray">شركة النبهان</span>
+                        </div>
+                        <div class="d-flex">
+                            <span class="w-50 d-inline-block text-center text-bold-gray">التخليص الجمركي</span>
+                            <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                        </div>
+                        <div class="d-flex">
+                            <span class="w-50 d-inline-block text-center text-bold-gray">العـــرض</span>
+                            <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                        </div>
+                        <div class="d-flex">
+                            <span class="w-50 d-inline-block text-center text-bold-gray">الباخــرة</span>
+                            <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                        </div>
+                        <div class="d-flex">
+                            <span class="w-50 d-inline-block text-center text-bold-gray">رقم البوليصة</span>
+                            <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                        </div>
+                        <div class="d-flex">
+                            <span class="w-50 d-inline-block text-center text-bold-gray">الوزن</span>
+                            <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                        </div>
+                        <div class="d-flex">
+                            <span class="w-50 d-inline-block text-center text-bold-gray">عدد الحاويات</span>
+                            <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                        </div>
+                        <div class="d-flex">
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">رقم بيان
+                                        الإستيراد</span>
+                            <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                        </div>
+                        <div class="d-flex">
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">تاريخ بيان
+                                        الإستيراد</span>
+                            <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                        </div>
+
+                        <span class="w-50 me-auto d-block  text-main-brown
+                                 font-bold text-center" style="margin-bottom: 14px;">إجمالي الفاتورة</span>
+                        <div class="w-50 me-auto">
+                                    <span class=" d-block  m-auto fs-18
+                                 font-bold text-center total-bill ">2100 ريال </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<script src="./../../assets/js/jquery-3.6.3.min.js"></script>
+<script src="./../../assets/js/bootstrap.min.js"></script>
+<script src="./../../assets/js/index.js"></script>
+<script src="./../../assets/js/html2canvas.js"></script>
+</body>
+
+</html>
