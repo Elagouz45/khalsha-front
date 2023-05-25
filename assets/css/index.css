@@ -3577,7 +3577,7 @@ footer .item-brand {
 }
 
 .resources-products .sidebar ul {
-    padding-top: 56px;
+    padding: 56px 10px 0px 10px;
 }
 
 .resources-products .sidebar {
@@ -3589,15 +3589,36 @@ footer .item-brand {
 
 .resources-products .sidebar li {
     list-style-type: none;
-    font-weight: 500;
-    font-size: 17.5px;
     line-height: 28px;
     text-align: right;
-    text-transform: capitalize;
     margin-bottom: 38px;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+/*new css 25 may 2023*/
+.resources-products .sidebar li a{
+    font-weight: 500;
+    font-size: 17.5px;
+    text-transform: capitalize;
     color: #363636;
 }
-
+.resources-products .sidebar li a:hover{
+    color: #C76E61;
+}
+.bg-resources-active a{
+    color: var(--main-blue-color) !important;
+    font-weight: bold;
+}
+.author-name-item img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.line-height-45{
+    line-height: 45px;
+    font-weight: bold;
+}
 .resources-products .product-item .product-item-image img {
     width: 216px;
     height: 131px;
