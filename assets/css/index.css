@@ -3615,6 +3615,17 @@ footer .item-brand {
     width: 30px;
     height: 30px;
 }
+.news-count .item-field{
+    background-color: var(--main-blue-color);
+    border-radius: 20px;
+    padding: 3px 10px;
+}
+.news-count i {
+    color: #FFFFFF;
+}
+.news-count span {
+    color: #FFFFFF;
+}
 .line-height-45{
     line-height: 45px;
     font-weight: bold;
